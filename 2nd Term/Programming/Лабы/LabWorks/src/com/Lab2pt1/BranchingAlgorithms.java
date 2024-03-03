@@ -40,10 +40,13 @@ public class BranchingAlgorithms {
                 break;
 
             default:
-                if (-1111 < a && a <= 11) {
-                    result = Math.pow(a, 2);
-                } else {
-                    result = a + 2;
+                switch((-1111 < a && a <= 11)?1:0){
+                    case 1:
+                        result = Math.pow(a, 2);
+                        break;
+                    default:
+                        result = a + 2;
+                        break;
                 }
                 break;
         }
