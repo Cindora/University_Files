@@ -1,5 +1,6 @@
 package com.Lab2pt1;
 
+import java.util.Scanner;
 import static java.lang.Math.*;
 
 public class BranchingAlgorithms {
@@ -54,7 +55,9 @@ public class BranchingAlgorithms {
     }
 
     public static void main(String[] args) {
-        int a = 1;
+
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
 
         double ifResult = ifAlgotithm(a);
         double switchResult = switchAlgotithm(a);

@@ -1,5 +1,6 @@
 package com.Lab2pt2;
 
+import java.util.Scanner;
 import static java.lang.Math.*;
 
 public class BranchingAlgorithm {
@@ -17,10 +18,11 @@ public class BranchingAlgorithm {
     }
 
     public static void main(String[] args) {
-        double  x1 = 1,
-                x2 = -2,
-                x3 = -6,
-                x4 = -13;
+        Scanner in = new Scanner(System.in);
+        double  x1 = in.nextDouble(),
+                x2 = in.nextDouble(),
+                x3 = in.nextDouble(),
+                x4 = in.nextDouble();
 
         double answer = solveEquation(x1, x2, x3, x4);
         System.out.println("Answer: " + answer);
