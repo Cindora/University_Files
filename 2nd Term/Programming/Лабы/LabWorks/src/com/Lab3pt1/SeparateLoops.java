@@ -13,9 +13,12 @@ public class SeparateLoops {
             result += (i+a)/(2*i+1);
             result += (i+a)/(a*i);
         }
+
+        double multResult = 1;
         for (int k = 1; k <= M; k++) {
-            result += (double) (2 * k) / (2+k);
+            multResult *= (double) (2 * k) / (2+k);
         }
+        result += multResult;
 
         return result;
     }
@@ -31,10 +34,12 @@ public class SeparateLoops {
         }
 
         int k = 1;
+        double multResult = 1;
         while (k <= M) {
-            result += (double) (2 * k) / (2+k);
+            multResult *= (double) (2 * k) / (2+k);
             k++;
         }
+        result += multResult;
 
         return result;
     }
@@ -53,10 +58,12 @@ public class SeparateLoops {
 
         if (M>=1) {
             int k = 1;
+            double multResult = 1;
             do {
-                result += (double) (2 * k) / (2+k);
+                multResult *= (double) (2 * k) / (2+k);
                 k++;
             } while (k <= M);
+            result += multResult;
         }
         return result;
     }
