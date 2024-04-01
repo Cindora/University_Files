@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6bced60-ed88-4952-bfa5-1d62d474131d" name="Changes" comment="small edit in default branch">
+    <list default="true" id="e6bced60-ed88-4952-bfa5-1d62d474131d" name="Changes" comment="add Programming Lab5 solution">
+      <change afterPath="$PROJECT_DIR$/src/com/Lab5/FunctionTabulating.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LabWorks/com/Lab2pt1/BranchingAlgorithms.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabWorks/com/Lab2pt1/BranchingAlgorithms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Lab2pt1/BranchingAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab2pt1/BranchingAlgorithms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabWorks/com/Lab1/EquationSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabWorks/com/Lab1/EquationSolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabWorks/com/Lab2pt2/BranchingAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabWorks/com/Lab2pt2/BranchingAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Lab1/EquationSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab1/EquationSolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Lab2pt2/BranchingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab2pt2/BranchingAlgorithm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,23 +56,32 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Lab1.executor": "Run",
+    "Application.Lab2.1.executor": "Run",
     "Application.Lab2.2.executor": "Run",
     "Application.Lab2.executor": "Run",
+    "Application.Lab3.1.executor": "Debug",
+    "Application.Lab3.2.executor": "Debug",
+    "Application.Lab4.executor": "Debug",
+    "Application.Lab5.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Programming/University Files/2nd Term/Programming/Лабы/LabWorks/src/com",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "settings.editor.splitter.proportion": "0.33095723"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\University Files\2nd Term\Programming\Лабы\LabWorks\src\com" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.Lab2pt2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lab2.1">
+  <component name="RunManager" selected="Application.Lab5">
     <configuration name="Lab1" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.Lab1.EquationSolver" />
       <module name="LabWorks" />
@@ -92,10 +103,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Lab3.1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab3pt1.SeparateLoops" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab3.2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab3pt2.NestedLoops" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab4" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab4.FinalAmounts" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab5" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab5.FunctionTabulating" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Lab1" />
       <item itemvalue="Application.Lab2.1" />
       <item itemvalue="Application.Lab2.2" />
+      <item itemvalue="Application.Lab3.1" />
+      <item itemvalue="Application.Lab3.2" />
+      <item itemvalue="Application.Lab4" />
+      <item itemvalue="Application.Lab5" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -162,7 +205,55 @@
       <option name="project" value="LOCAL" />
       <updated>1709481922082</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add var input">
+      <option name="closed" value="true" />
+      <created>1709490758370</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709490758370</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add Lab3.1 solution">
+      <option name="closed" value="true" />
+      <created>1710781863172</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710781863172</updated>
+    </task>
+    <task id="LOCAL-00009" summary="edit Lab3.1 solution">
+      <option name="closed" value="true" />
+      <created>1710782201427</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710782201427</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add Lab3.2 solution">
+      <option name="closed" value="true" />
+      <created>1710783021197</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710783021197</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add Probability Theory Lab 1 solution">
+      <option name="closed" value="true" />
+      <created>1710783071651</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710783071651</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add Programming Lab4 solution">
+      <option name="closed" value="true" />
+      <created>1711987629496</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1711987629497</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,9 +279,17 @@
     <MESSAGE value="add comments" />
     <MESSAGE value="change vch root dir" />
     <MESSAGE value="small edit in default branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="small edit in default branch" />
+    <MESSAGE value="add var input" />
+    <MESSAGE value="add Lab3.1 solution" />
+    <MESSAGE value="edit Lab3.1 solution" />
+    <MESSAGE value="add Lab3.2 solution" />
+    <MESSAGE value="add Probability Theory Lab 1 solution" />
+    <MESSAGE value="add Programming Lab4 solution" />
+    <MESSAGE value="add Programming Lab5 solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Programming Lab5 solution" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LabWorks$Lab1.ic" NAME="Lab1 Coverage Results" MODIFIED="1709481658025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/LabWorks$Lab3_1.ic" NAME="Lab3.1 Coverage Results" MODIFIED="1710780218546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

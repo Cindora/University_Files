@@ -1,5 +1,7 @@
 package com.Lab1;
 
+import java.util.Scanner;
+
 import static java.lang.Math.*;
 
 public class EquationSolver {
@@ -15,11 +17,13 @@ public class EquationSolver {
     }
 
     public static void main(String[] args) {
-        double a = 1;
-        double b = 0;
-        double c = PI/3;
+
+        Scanner in = new Scanner(System.in);
+        double a = in.nextDouble();
+        double b = in.nextDouble();
+        double c = in.nextDouble();
 
         double answer = solveEquation(a, b, c);
-        System.out.println("Answer for a = 1, b = 0, c = Pi/3: " + answer);
+        System.out.println("Answer: " + answer);
     }
 }
