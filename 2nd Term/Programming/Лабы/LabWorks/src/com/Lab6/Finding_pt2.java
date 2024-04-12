@@ -3,7 +3,7 @@ package com.Lab6;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Sorting_pt2 {
+public class Finding_pt2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

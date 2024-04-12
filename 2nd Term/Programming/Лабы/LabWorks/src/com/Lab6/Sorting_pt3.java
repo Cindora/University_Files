@@ -26,7 +26,7 @@ public class Sorting_pt3 {
         int newN = 0;
         for (int el : Xn) {
             if (el < 0) {
-                Xn[newN] = el;
+                Xn[newN] = Math.abs(el);
                 newN++;
             }
         }
