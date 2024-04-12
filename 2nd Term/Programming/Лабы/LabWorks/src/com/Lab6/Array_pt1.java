@@ -7,6 +7,10 @@ public class Array_pt1 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите количество элементов массива: ");
         int n = scanner.nextInt();
+        while (n <= 0) {
+            System.out.print("Ошибка ввода размера массива (N > 0) ");
+            n = scanner.nextInt();
+        }
         int[] Xn = new int[n];
 
         System.out.println("Введите элементы массива:");
