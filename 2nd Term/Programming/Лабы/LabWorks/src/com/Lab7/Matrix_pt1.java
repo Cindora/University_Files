@@ -62,19 +62,4 @@ public class Matrix_pt1 {
 
         }
     }
-
-    /**
-     * Метод вывода матрицы в консоль.
-     * @param matrix Матрица n x m.
-     * @param n Число строк матрицы.
-     * @param m Число столбцов матрицы.
-     */
-    public static void PrintMatrix(double[][] matrix, int n, int m) {
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                System.out.printf("%6.2f; ", matrix[i][j]);
-            }
-            System.out.println();
-        }
-    }
 }
