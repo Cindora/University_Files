@@ -45,7 +45,7 @@ public class Matrix_pt3 {
          */
         for (int i = 0; i < n; i++) {
             if (i % 2 != 0) {
-                for (int j = 0; j < matrix[i].length; j++) {
+                for (int j = 0; j < n; j++) {
                     if (matrix[i][j] % 2 == 0) {
                         matrix[i][j] = 0;
                     }
