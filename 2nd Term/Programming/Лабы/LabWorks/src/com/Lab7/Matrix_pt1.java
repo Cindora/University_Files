@@ -42,22 +42,22 @@ public class Matrix_pt1 {
         /*
           Вычисление и вывод результата
          */
-        double[] maxInLine = new double[n];
+        double maxInLine;
 
         System.out.println("Номера строк и элементы, делящиеся на 5:");
         for (int i = 0; i < n; i++) {
-            maxInLine[i] = Double.NEGATIVE_INFINITY;
+            maxInLine = Double.NEGATIVE_INFINITY;
 
             // Вычисление максимального элемента строки и её номера
             for (int j = 0; j < m; j++) {
-                if (matrix[i][j] > maxInLine[i]) {
-                    maxInLine[i] = matrix[i][j];
+                if (matrix[i][j] > maxInLine) {
+                    maxInLine = matrix[i][j];
                 }
             }
 
             // Проверка делимости на 5
-            if (maxInLine[i] % 5 == 0) {
-                System.out.printf("%2d: %3.2f; ", i, maxInLine[i]);
+            if (maxInLine % 5 == 0) {
+                System.out.printf("%2d: %3.2f; ", i, maxInLine);
             }
 
         }
