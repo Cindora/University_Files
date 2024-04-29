@@ -19,10 +19,11 @@ public class FunctionTabulating {
                 H = (B - A) / (N - 1);
         while (x<=B + H/2) {
             F = Math.log(1/(2 + 2*x + x*x));
+            System.out.printf("x = %1.4f, F(x) = %1.4f.\n", x, F);
             if (F>Fmax) { Fmax = F; Xmax = x; }
             x += H;
         }
-
+        // Два столбца X, F(X)
         System.out.printf("Максимум: x = %1.4f, F(x) = %1.4f.\n", Xmax, Fmax);
     }
 }

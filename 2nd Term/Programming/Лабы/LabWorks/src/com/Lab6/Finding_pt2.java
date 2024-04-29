@@ -38,9 +38,9 @@ public class Finding_pt2 {
 
         //Вычисление суммы элементов массива в интервале [A;B], не равных D
         int sum = 0;
-        for (int i = A; i <= B; i++) {
-            if (Xn[i] != D) {
-                sum += Xn[i];
+        for (int el : Xn) {
+            if (A <= el && el <= B && el != D) {
+                sum += el;
             }
         }
         System.out.println("Сумма элементов массива в интервале [" + A + "; " + B + "], не равных " + D + ": " + sum);

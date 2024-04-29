@@ -24,7 +24,7 @@ public class Array_pt1 {
         for (int el : Xn) {
             sum += el;
         }
-        double avg = sum / Xn.length;
+        double avg = sum / n;
         //
 
         // Количество элементов, меньших среднего
@@ -39,7 +39,7 @@ public class Array_pt1 {
 
         // Значения и номера элементов, делящихся на 3
         System.out.println("Элементы, делящиеся на 3 без остатка:");
-        for (int i = 0; i < Xn.length; i++) {
+        for (int i = 0; i < n; i++) {
             if (Xn[i] % 3 == 0) {
                 System.out.println("Элемент: " + Xn[i] + ". Номер: " + i);
             }

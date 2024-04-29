@@ -20,31 +20,31 @@ public class Sorting_pt3 {
             Xn[i] = scanner.nextInt();
         }
 
-
+        int [] Zn = new int[n];
         // Формирование массива, состоящего из
         // модулей отрицательных элементов исходного массива
         int newN = 0;
         for (int el : Xn) {
             if (el < 0) {
-                Xn[newN] = Math.abs(el);
+                Zn[newN] = Math.abs(el);
                 newN++;
             }
         }
-        Xn = Arrays.copyOf(Xn, newN);
+        Zn = Arrays.copyOf(Xn, newN);
         //
 
         // Сортировка массива по убыванию
-        for (int i = 0; i < Xn.length - 1; i++) {
-            for (int j = i + 1; j < Xn.length; j++) {
-                if (Xn[i] < Xn[j]) {
-                    int temp = Xn[i];
-                    Xn[i] = Xn[j];
-                    Xn[j] = temp;
+        for (int i = 0; i < newN - 1; i++) {
+            for (int j = i + 1; j < newN; j++) {
+                if (Zn[i] < Zn[j]) {
+                    int temp = Zn[i];
+                    Zn[i] = Xn[j];
+                    Zn[j] = temp;
                 }
             }
         }
         //
 
-        System.out.println("Отсортированный массив Zn: " + Arrays.toString(Xn));
+        System.out.println("Отсортированный массив Zn: " + Arrays.toString(Zn));
     }
 }

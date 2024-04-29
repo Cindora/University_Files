@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6bced60-ed88-4952-bfa5-1d62d474131d" name="Changes" comment="add Programming Lab5 solution">
-      <change afterPath="$PROJECT_DIR$/src/com/Lab5/FunctionTabulating.java" afterDir="false" />
+    <list default="true" id="e6bced60-ed88-4952-bfa5-1d62d474131d" name="Changes" comment="add Programming Lab7pt2 solution">
+      <change afterPath="$PROJECT_DIR$/src/com/Lab7/Matrix_pt3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LabWorks/com/Lab1/EquationSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabWorks/com/Lab1/EquationSolver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LabWorks/com/Lab2pt2/BranchingAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabWorks/com/Lab2pt2/BranchingAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Lab1/EquationSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab1/EquationSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Lab2pt2/BranchingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab2pt2/BranchingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Lab5/FunctionTabulating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab5/FunctionTabulating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Lab6/Array_pt1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab6/Array_pt1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Lab6/Finding_pt2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab6/Finding_pt2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Lab6/Sorting_pt3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab6/Sorting_pt3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +64,12 @@
     "Application.Lab3.2.executor": "Debug",
     "Application.Lab4.executor": "Debug",
     "Application.Lab5.executor": "Run",
+    "Application.Lab6pt1.executor": "Run",
+    "Application.Lab6pt2.executor": "Run",
+    "Application.Lab6pt3.executor": "Run",
+    "Application.Lab7pt1.executor": "Run",
+    "Application.Lab7pt2.executor": "Run",
+    "Application.Lab7pt3.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -81,7 +88,7 @@
       <recent name="com.Lab2pt2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lab5">
+  <component name="RunManager" selected="Application.Lab7pt3">
     <configuration name="Lab1" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.Lab1.EquationSolver" />
       <module name="LabWorks" />
@@ -131,6 +138,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Lab6pt1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab6.Array_pt1" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab6pt2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab6.Finding_pt2" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab6pt3" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab6.Sorting_pt3" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab7pt1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab7.Matrix_pt1" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab7pt2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab7.Matrix_pt2" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab7pt3" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab7.Matrix_pt3" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Lab1" />
       <item itemvalue="Application.Lab2.1" />
@@ -139,6 +188,12 @@
       <item itemvalue="Application.Lab3.2" />
       <item itemvalue="Application.Lab4" />
       <item itemvalue="Application.Lab5" />
+      <item itemvalue="Application.Lab7pt1" />
+      <item itemvalue="Application.Lab7pt2" />
+      <item itemvalue="Application.Lab7pt3" />
+      <item itemvalue="Application.Lab6pt1" />
+      <item itemvalue="Application.Lab6pt2" />
+      <item itemvalue="Application.Lab6pt3" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -253,7 +308,79 @@
       <option name="project" value="LOCAL" />
       <updated>1711987629497</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add Programming Lab5 solution">
+      <option name="closed" value="true" />
+      <created>1712007908625</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712007908625</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add Programming Lab6pt1 solution">
+      <option name="closed" value="true" />
+      <created>1712917931777</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712917931777</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add Programming Lab6pt2 solution">
+      <option name="closed" value="true" />
+      <created>1712921348888</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712921348888</updated>
+    </task>
+    <task id="LOCAL-00016" summary="edit Programming Lab6pt1">
+      <option name="closed" value="true" />
+      <created>1712921366661</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712921366661</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add Programming Lab6pt3 solution">
+      <option name="closed" value="true" />
+      <created>1712923727206</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712923727206</updated>
+    </task>
+    <task id="LOCAL-00018" summary="edit Programming Lab6 pt3 and pt2">
+      <option name="closed" value="true" />
+      <created>1712923784415</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712923784415</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add Programming Lab7pt1 solution">
+      <option name="closed" value="true" />
+      <created>1714382876613</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714382876613</updated>
+    </task>
+    <task id="LOCAL-00020" summary="edit Programming Lab7pt1 solution">
+      <option name="closed" value="true" />
+      <created>1714383242199</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714383242199</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add Programming Lab7pt2 solution">
+      <option name="closed" value="true" />
+      <created>1714384365621</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1714384365621</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +413,15 @@
     <MESSAGE value="add Probability Theory Lab 1 solution" />
     <MESSAGE value="add Programming Lab4 solution" />
     <MESSAGE value="add Programming Lab5 solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Programming Lab5 solution" />
+    <MESSAGE value="add Programming Lab6pt1 solution" />
+    <MESSAGE value="add Programming Lab6pt2 solution" />
+    <MESSAGE value="edit Programming Lab6pt1" />
+    <MESSAGE value="add Programming Lab6pt3 solution" />
+    <MESSAGE value="edit Programming Lab6 pt3 and pt2" />
+    <MESSAGE value="add Programming Lab7pt1 solution" />
+    <MESSAGE value="edit Programming Lab7pt1 solution" />
+    <MESSAGE value="add Programming Lab7pt2 solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Programming Lab7pt2 solution" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LabWorks$Lab1.ic" NAME="Lab1 Coverage Results" MODIFIED="1709481658025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
