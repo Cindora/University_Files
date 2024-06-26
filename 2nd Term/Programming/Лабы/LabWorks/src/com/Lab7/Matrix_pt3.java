@@ -43,14 +43,13 @@ public class Matrix_pt3 {
         /*
          Заменяем все четные элементы, стоящие в нечетных строках, нулями
          */
-        for (int i = 0; i < n; i++) {
-            if (i % 2 != 0) {
+        for (int i = 1; i < n; i+=2) {
                 for (int j = 0; j < n; j++) {
                     if (matrix[i][j] % 2 == 0) {
                         matrix[i][j] = 0;
                     }
                 }
-            }
+
         }
 
         System.out.println("\nРезультирующая матрциа: ");

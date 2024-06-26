@@ -1,6 +1,5 @@
 package com.Lab9;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Func_pt2 {
@@ -13,39 +12,35 @@ public class Func_pt2 {
 
         // Ввод элементов массива Z
         int[] Z = new int[m];
+        int[] X = new int[m];
+
         System.out.println("Введите элементы массива Z:");
         for (int i = 0; i < m; i++) {
             Z[i] = scanner.nextInt();
         }
 
         // Формирование массива X из модулей отрицательных элементов массива Z
-        int[] X = createArrayFromNegativeModules(Z);
+        FillArray(X,Z);
 
         // Вывод результата
-        System.out.println("Массив X из модулей отрицательных элементов массива Z:");
-        for (int value : X) {
-            System.out.print(value + " ");
+        if (X.length == 0) {
+            System.out.println("В массиве Z нет отрицательных элементов.");
+        }
+        else {
+            System.out.println("Массив X из модулей отрицательных элементов массива Z:");
+            for (int value : X) {
+                System.out.print(value + " ");
+            }
         }
     }
 
-    public static int[] createArrayFromNegativeModules(int[] array) {
-        // Подсчет количества отрицательных элементов в массиве Z
-        int negativeCount = 0;
-        for (int value : array) {
-            if (value < 0) {
-                negativeCount++;
-            }
-        }
-
-        // Создание массива X для модулей отрицательных элементов
-        int[] X = new int[negativeCount];
+    // Процедура для заполнения массива X из массива Z
+    public static void FillArray(int[] X, int[] Z) {
         int index = 0;
-        for (int value : array) {
-            if (value < 0) {
-                X[index++] = Math.abs(value);
+        for (int el : Z) {
+            if (el < 0) {
+                X[index++] = Math.abs(el);
             }
         }
-
-        return X;
     }
 }

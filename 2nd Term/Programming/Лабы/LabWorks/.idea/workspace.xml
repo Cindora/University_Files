@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6bced60-ed88-4952-bfa5-1d62d474131d" name="Changes" comment="edit Programming solutions">
+    <list default="true" id="e6bced60-ed88-4952-bfa5-1d62d474131d" name="Changes" comment="add Programming Lab9pt2 solution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabWorks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LabWorks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Lab7/Matrix_pt1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab7/Matrix_pt1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Lab7/Matrix_pt3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab7/Matrix_pt3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Lab9/Func_pt2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab9/Func_pt2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -49,41 +53,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Lab1.executor": "Run",
-    "Application.Lab2.1.executor": "Run",
-    "Application.Lab2.2.executor": "Run",
-    "Application.Lab2.executor": "Run",
-    "Application.Lab3.1.executor": "Debug",
-    "Application.Lab3.2.executor": "Debug",
-    "Application.Lab4.executor": "Debug",
-    "Application.Lab5.executor": "Run",
-    "Application.Lab6pt1.executor": "Run",
-    "Application.Lab6pt2.executor": "Run",
-    "Application.Lab6pt3.executor": "Run",
-    "Application.Lab7pt1.executor": "Run",
-    "Application.Lab7pt2.executor": "Run",
-    "Application.Lab7pt3.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Programming/University Files/2nd Term/Programming/Лабы/LabWorks/src/com",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "settings.editor.splitter.proportion": "0.33095723"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Lab1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab2.1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab2.2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab3.1.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Lab3.2.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Lab4.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Lab5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab6pt1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab6pt2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab6pt3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab7pt1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab7pt2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab7pt3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab8pt1.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Lab8pt2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab9p1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lab9pt2.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.EquationSolverTest.solveEquationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/University Files/2nd Term/Programming/Лабы/LabWorks/src/com&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.33095723&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programming\University Files\2nd Term\Programming\Лабы\LabWorks\src\com" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.Lab1" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.Lab2pt2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lab7pt3">
+  <component name="RunManager" selected="Application.Lab9pt2">
     <configuration name="Lab1" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.Lab1.EquationSolver" />
       <module name="LabWorks" />
@@ -175,6 +197,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Lab8pt1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab8.String_pt1" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab8pt2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab8.String_pt2" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab9p1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab9.Func_pt1" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab9pt2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Lab9.Func_pt2" />
+      <module name="LabWorks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EquationSolverTest.solveEquationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabWorks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Lab1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Lab1" />
+      <option name="MAIN_CLASS_NAME" value="com.Lab1.EquationSolverTest" />
+      <option name="METHOD_NAME" value="solveEquationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Lab1" />
       <item itemvalue="Application.Lab2.1" />
@@ -183,13 +249,23 @@
       <item itemvalue="Application.Lab3.2" />
       <item itemvalue="Application.Lab4" />
       <item itemvalue="Application.Lab5" />
-      <item itemvalue="Application.Lab7pt1" />
-      <item itemvalue="Application.Lab7pt2" />
-      <item itemvalue="Application.Lab7pt3" />
       <item itemvalue="Application.Lab6pt1" />
       <item itemvalue="Application.Lab6pt2" />
       <item itemvalue="Application.Lab6pt3" />
+      <item itemvalue="Application.Lab7pt1" />
+      <item itemvalue="Application.Lab7pt2" />
+      <item itemvalue="Application.Lab7pt3" />
+      <item itemvalue="Application.Lab8pt1" />
+      <item itemvalue="Application.Lab8pt2" />
+      <item itemvalue="Application.Lab9p1" />
+      <item itemvalue="Application.Lab9pt2" />
+      <item itemvalue="JUnit.EquationSolverTest.solveEquationTest" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EquationSolverTest.solveEquationTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -399,7 +475,47 @@
       <option name="project" value="LOCAL" />
       <updated>1714385224153</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="edit Programming solutions">
+      <option name="closed" value="true" />
+      <created>1714395967871</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1714395967872</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add Programming Lab8pt1 solution">
+      <option name="closed" value="true" />
+      <created>1716835982201</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1716835982201</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add Programming Lab8pt2 solution">
+      <option name="closed" value="true" />
+      <created>1716838069773</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716838069773</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add Programming Lab9pt1 solution">
+      <option name="closed" value="true" />
+      <created>1716838786152</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716838786152</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add Programming Lab9pt2 solution">
+      <option name="closed" value="true" />
+      <created>1716838793844</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1716838793844</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -419,8 +535,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add Lab1 solution" />
-    <MESSAGE value="add Lab2.1 solution" />
     <MESSAGE value="add Lab2.2 solution" />
     <MESSAGE value="add comments" />
     <MESSAGE value="change vch root dir" />
@@ -442,7 +556,11 @@
     <MESSAGE value="add Programming Lab7pt2 solution" />
     <MESSAGE value="add Programming Lab7pt3 solution" />
     <MESSAGE value="edit Programming solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit Programming solutions" />
+    <MESSAGE value="add Programming Lab8pt1 solution" />
+    <MESSAGE value="add Programming Lab8pt2 solution" />
+    <MESSAGE value="add Programming Lab9pt1 solution" />
+    <MESSAGE value="add Programming Lab9pt2 solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Programming Lab9pt2 solution" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LabWorks$Lab1.ic" NAME="Lab1 Coverage Results" MODIFIED="1709481658025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
