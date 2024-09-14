@@ -18,16 +18,18 @@ public class ExecutorTest {
                 "AMD Ryzen 5", "Linux",
                 201, "01.01.2010");
         computers[2] = new Personal("Personal-2",
-                "Intel i5", "Windows",
+                "Intel i5", "Linux",
                 102, "User3");
         computers[3] = new Laptop("Laptop-2",
                 "Intel i7", "macOS",
                 202, "02.02.2012");
+        computers[4] = new Laptop("Laptop-3",
+                "Intel i7", "Windows",
+                203, "03.03.2013");
     }
 
     @Test
     public void executorTest() {
-
         displayByProcessor(computers, "Intel i7");
 
         countWindowsComputers(computers);
