@@ -4,7 +4,6 @@ package com.Lab1;
  * Базовый класс Компьютер.
  */
 public class Computers {
-    String type;
     String modelName;
     String processor;
     String operatingSystem;
@@ -18,7 +17,6 @@ public class Computers {
         this.processor = processor;
         this.operatingSystem = operatingSystem;
         this.serialNumber = serialNumber;
-        type = "-";
     }
 
     public String getModelName() {
@@ -34,10 +32,14 @@ public class Computers {
         return serialNumber;
     }
 
+    // Метод для переопределения в дочерних классах
+    public void displayType() {
+        System.out.println("Это общий тип компьютера.");
+    }
+
     // Вывести информацию о компьютере
     public void displayInfo() {
-        System.out.println("Тип: " + type +
-                ", Модель: " + modelName +
+        System.out.println("Модель: " + modelName +
                 ", Процессор: " + processor +
                 ", Операционная система: " + operatingSystem +
                 "Серийный номер: " + serialNumber);
@@ -55,7 +57,15 @@ class Personal extends Computers {
                     String userName) {
         super(modelName, processor, operatingSystem, serialNumber);
         this.userName = userName;
-        type = "ПК";
+    }
+
+    public void displayUserName() {
+        System.out.println("Пользователь ПК: " + userName);
+    }
+
+    @Override
+    public void displayType() {
+        System.out.println("Это персональный компьютер.");
     }
 }
 
@@ -70,6 +80,14 @@ class Laptop extends Computers {
                   String assemblyDate) {
         super(modelName, processor, operatingSystem, serialNumber);
         this.assemblyDate = assemblyDate;
-        type = "Ноутбук";
+    }
+
+    public void displayAssemblyDate() {
+        System.out.println("Дата выпуска: " + assemblyDate);
+    }
+
+    @Override
+    public void displayType() {
+        System.out.println("Это компьютер типа ноутбук.");
     }
 }
