@@ -1,4 +1,4 @@
-package com.Lab1;
+package com.Lab1.Interface;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,29 +8,34 @@ import java.util.Scanner;
 /**
  * Класс с функциональностью над классом Компьютер
  */
-public class Executor {
+public class ExecutorForInterface {
 
     /**
      * Вывести инфо о компьютерах с данным процессором
-     *
      * @param processorType Процессор
      */
-    public static void displayByProcessor(Computers[] computers, String processorType) {
+    public static void displayByProcessor(InComputer[] computers, String processorType) {
         System.out.println("Компьютеры с процессором: " + processorType);
-        for (Computers comp : computers) {
+
+        int count = 0;
+        for (InComputer comp : computers) {
             if (comp != null)
                 if (comp.processor.equals(processorType)) {
                     comp.displayInfo();
+
+                    count++;
                 }
         }
+
+        if (count == 0 ) System.out.println("Нет компьютеров с таким процессором.");
     }
 
     /**
      * Метод подсчёта числа компьютеров с ОС Windows
      */
-    public static void countWindowsComputers(Computers[] computers) {
+    public static void countWindowsComputers(InComputer[] computers) {
         int count = 0;
-        for (Computers comp : computers) {
+        for (InComputer comp : computers) {
             if (comp != null)
                 if (comp.getOperatingSystem().equals("Windows")) {
                     count++;
@@ -45,7 +50,7 @@ public class Executor {
         System.out.println("Введите количество компьютеров: ");
         int countComputers = Integer.parseInt(scanner.nextLine());
 
-        Computers[] computers = new Computers[countComputers];
+        InComputer[] computers = new InComputer[countComputers];
 
         for (int i = 0; i < countComputers; i++) {
             boolean isPersonal, isLaptop;
@@ -74,10 +79,10 @@ public class Executor {
             words.add(5, scanner.nextLine());
 
             if (isPersonal) {
-                computers[i] = new Personal(words.get(1), words.get(2),
+                computers[i] = new InPersonal(words.get(1), words.get(2),
                         words.get(3), Integer.parseInt(words.get(4)), words.get(5));
             } else {
-                computers[i] = new Laptop(words.get(1), words.get(2),
+                computers[i] = new InLaptop(words.get(1), words.get(2),
                         words.get(3), Integer.parseInt(words.get(4)), words.get(5));
             }
 
@@ -85,11 +90,8 @@ public class Executor {
 
         System.out.println("\nВведите процессор, для вывода информации о компьютерах с ним: ");
 
-        Executor.displayByProcessor(computers, scanner.nextLine());
+        ExecutorForInterface.displayByProcessor(computers, scanner.nextLine());
 
-        Executor.countWindowsComputers(computers);
+        ExecutorForInterface.countWindowsComputers(computers);
     }
-
-
 }
-

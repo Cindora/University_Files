@@ -1,9 +1,9 @@
-package com.Lab1.Abstract;
+package com.Lab1.Interface;
 
 /**
  * Абстрактный класс Компьютер.
  */
-public abstract class AComputer {
+public class InComputer implements iInComputer {
     String modelName;
     String processor;
     String operatingSystem;
@@ -26,8 +26,8 @@ public abstract class AComputer {
     }
 
     // Конструктор
-    public AComputer(String modelName, String processor,
-                     String operatingSystem, int serialNumber) {
+    public InComputer(String modelName, String processor,
+                      String operatingSystem, int serialNumber) {
         this.modelName = modelName;
         this.processor = processor;
         this.operatingSystem = operatingSystem;
@@ -47,12 +47,8 @@ public abstract class AComputer {
         return serialNumber;
     }
 
-    // Абстрактный метод (будет реализован в дочерних классах)
-    public abstract void displayType() ;
-
     // Вывести информацию о компьютере
     public void displayInfo() {
-        displayType();
         System.out.println("Модель: " + modelName +
                 ", Процессор: " + processor +
                 ", Операционная система: " + operatingSystem +

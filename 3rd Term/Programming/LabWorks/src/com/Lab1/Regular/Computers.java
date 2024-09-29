@@ -1,13 +1,22 @@
-package com.Lab1.Abstract;
+package com.Lab1.Regular;
 
 /**
- * Абстрактный класс Компьютер.
+ * Базовый класс Компьютер.
  */
-public abstract class AComputer {
+public class Computers {
+    String type;
     String modelName;
     String processor;
     String operatingSystem;
     int serialNumber;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     public void setModelName(String modelName) {
         this.modelName = modelName;
@@ -25,13 +34,14 @@ public abstract class AComputer {
         this.serialNumber = serialNumber;
     }
 
-    // Конструктор
-    public AComputer(String modelName, String processor,
+    // Constructor
+    public Computers(String modelName, String processor,
                      String operatingSystem, int serialNumber) {
         this.modelName = modelName;
         this.processor = processor;
         this.operatingSystem = operatingSystem;
         this.serialNumber = serialNumber;
+        type = "Computer";
     }
 
     public String getModelName() {
@@ -47,8 +57,10 @@ public abstract class AComputer {
         return serialNumber;
     }
 
-    // Абстрактный метод (будет реализован в дочерних классах)
-    public abstract void displayType() ;
+    // Метод для переопределения в дочерних классах
+    public void displayType() {
+        System.out.println("Это общий тип компьютера.");
+    }
 
     // Вывести информацию о компьютере
     public void displayInfo() {
@@ -59,3 +71,4 @@ public abstract class AComputer {
                 ", Серийный номер: " + serialNumber);
     }
 }
+

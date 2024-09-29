@@ -1,10 +1,10 @@
-package com.Lab1.Abstract;
+package com.Lab1.Interface;
 
 /**
  * Подкласс Ноутбук, наследуемый от класса Компьютер.
  * Доп. поле: assemblyDate
  */
-public class ALaptop extends AComputer {
+public class InLaptop extends InComputer {
     String assemblyDate;
 
     public String getAssemblyDate() {
@@ -15,20 +15,14 @@ public class ALaptop extends AComputer {
         this.assemblyDate = assemblyDate;
     }
 
-    public ALaptop(String modelName, String processor,
-                   String operatingSystem, int serialNumber,
-                   String assemblyDate) {
+    public InLaptop(String modelName, String processor,
+                    String operatingSystem, int serialNumber,
+                    String assemblyDate) {
         super(modelName, processor, operatingSystem, serialNumber);
         this.assemblyDate = assemblyDate;
     }
 
     public void displayAssemblyDate() {
         System.out.println("Дата выпуска: " + assemblyDate);
-    }
-
-    // Реализация метода displayType из интерфейса
-    @Override
-    public void displayType() {
-        System.out.println("Это ноутбук.");
     }
 }

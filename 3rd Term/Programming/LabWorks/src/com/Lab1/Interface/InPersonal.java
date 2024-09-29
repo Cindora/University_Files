@@ -1,10 +1,10 @@
-package com.Lab1.Abstract;
+package com.Lab1.Interface;
 
 /**
  * Подкласс Персональный компьютер, наследуемый от класса Компьютер.
  * Доп. поле: userName
  */
-public class APersonal extends AComputer {
+public class InPersonal extends InComputer {
     String userName;
 
     public String getUserName() {
@@ -15,20 +15,14 @@ public class APersonal extends AComputer {
         this.userName = userName;
     }
 
-    public APersonal(String modelName, String processor,
-                     String operatingSystem, int serialNumber,
-                     String userName) {
+    public InPersonal(String modelName, String processor,
+                      String operatingSystem, int serialNumber,
+                      String userName) {
         super(modelName, processor, operatingSystem, serialNumber);
         this.userName = userName;
     }
 
     public void displayUserName() {
         System.out.println("Пользователь ПК: " + userName);
-    }
-
-    // Реализация метода displayType из интерфейса
-    @Override
-    public void displayType() {
-        System.out.println("Это персональный компьютер.");
     }
 }

@@ -1,4 +1,4 @@
-package com.Lab1.Abstract;
+package com.Lab1.Regular;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,25 +8,23 @@ import java.util.Scanner;
 /**
  * Класс с функциональностью над классом Компьютер
  */
-public class ExecutorForAbstract {
+public class Executor {
 
     /**
      * Вывести инфо о компьютерах с данным процессором
+     *
      * @param processorType Процессор
      */
-    public static void displayByProcessor(AComputer[] computers, String processorType) {
+    public static void displayByProcessor(Computers[] computers, String processorType) {
         System.out.println("Компьютеры с процессором: " + processorType);
-
         int count = 0;
-        for (AComputer comp : computers) {
+        for (Computers comp : computers) {
             if (comp != null)
                 if (comp.processor.equals(processorType)) {
                     comp.displayInfo();
-
                     count++;
                 }
         }
-
 
         if (count == 0 ) System.out.println("Нет компьютеров с таким процессором.");
     }
@@ -34,9 +32,9 @@ public class ExecutorForAbstract {
     /**
      * Метод подсчёта числа компьютеров с ОС Windows
      */
-    public static void countWindowsComputers(AComputer[] computers) {
+    public static void countWindowsComputers(Computers[] computers) {
         int count = 0;
-        for (AComputer comp : computers) {
+        for (Computers comp : computers) {
             if (comp != null)
                 if (comp.getOperatingSystem().equals("Windows")) {
                     count++;
@@ -51,7 +49,7 @@ public class ExecutorForAbstract {
         System.out.println("Введите количество компьютеров: ");
         int countComputers = Integer.parseInt(scanner.nextLine());
 
-        AComputer[] computers = new AComputer[countComputers];
+        Computers[] computers = new Computers[countComputers];
 
         for (int i = 0; i < countComputers; i++) {
             boolean isPersonal, isLaptop;
@@ -80,10 +78,10 @@ public class ExecutorForAbstract {
             words.add(5, scanner.nextLine());
 
             if (isPersonal) {
-                computers[i] = new APersonal(words.get(1), words.get(2),
+                computers[i] = new Personal(words.get(1), words.get(2),
                         words.get(3), Integer.parseInt(words.get(4)), words.get(5));
             } else {
-                computers[i] = new ALaptop(words.get(1), words.get(2),
+                computers[i] = new Laptop(words.get(1), words.get(2),
                         words.get(3), Integer.parseInt(words.get(4)), words.get(5));
             }
 
@@ -91,8 +89,11 @@ public class ExecutorForAbstract {
 
         System.out.println("\nВведите процессор, для вывода информации о компьютерах с ним: ");
 
-        ExecutorForAbstract.displayByProcessor(computers, scanner.nextLine());
+        Executor.displayByProcessor(computers, scanner.nextLine());
 
-        ExecutorForAbstract.countWindowsComputers(computers);
+        Executor.countWindowsComputers(computers);
     }
+
+
 }
+
