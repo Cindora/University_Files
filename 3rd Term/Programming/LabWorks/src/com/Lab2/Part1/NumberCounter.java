@@ -5,18 +5,22 @@ import java.io.*;
 import java.util.Scanner;
 
 public class NumberCounter {
-    private static final String INPUT_FILE = "src/com/Lab2/Part1/input.txt";   // Имя входного файла
-    private static final String OUTPUT_FILE = "src/com/Lab2/Part1/output.txt"; // Имя выходного файла
+    private static final String INPUT_FILE_PATH =
+            "src/com/Lab2/Part1/input.txt";   // Путь входного файла
+    private static final String OUTPUT_FILE_NAME =
+            "output.txt"; // Имя выходного файла
+    private static final String OUTPUT_FILE_PATH =
+            "src/com/Lab2/Part1/" + OUTPUT_FILE_NAME; // Путь выходного файла
 
 
     /**
-     * Читает числа из указанного файла и обновляет статистику.
+     * Читает числа из указанного файла и обновляет данные хэш-таблицы.
      *
-     * @param fileName Имя файла для чтения.
-     * @param stats    Объект NumberStatistics для обновления подсчетов.
-     * @return true - если найдены числовые значения; false - иначе.
+     * @param fileName      Имя файла для чтения.
+     * @param hashMapStats  Объект NumberStatistics для обновления подсчетов.
+     * @return true - получены числовые значения; false - иначе.
      */
-    private static boolean readNumbersFromFile(String fileName, HashMapOperations stats) {
+    private static boolean readFileAndUpdateHashMap(String fileName, HashMapOperations hashMapStats) {
         File inputFile = new File(fileName);
         if (!inputFile.exists()) {
             System.out.println("Входной файл не найден: " + fileName);
@@ -30,14 +34,14 @@ public class NumberCounter {
                 if (scanner.hasNextInt()) {
                     hasNumbers = true;
                     int number = scanner.nextInt();
-                    stats.addNumber(number);
+                    hashMapStats.addNumber(number);
                 } else {
                     // Пропуск нечисловых значений
                     scanner.next();
                 }
             }
         } catch (FileNotFoundException e) {
-            System.out.println("Ошибка при чтении файла: " + e.getMessage());
+            System.out.println(e.getMessage());
         }
 
         return hasNumbers;
@@ -61,22 +65,21 @@ public class NumberCounter {
         HashMapOperations hashMapStats = new HashMapOperations();
 
         // Чтение чисел из файла и подсчет
-        boolean hasNumbers = readNumbersFromFile(INPUT_FILE, hashMapStats);
+        boolean hasNumbers = readFileAndUpdateHashMap(INPUT_FILE_PATH, hashMapStats);
 
         // Формирование результата
         String result = hashMapStats.getFormattedCounts();
 
-        // Вывод на экран
-        System.out.println(result);
-
-        // Запись в файл
-        writeResultToFile(OUTPUT_FILE, result);
 
         if (!hasNumbers) {
-            System.out.println("Файл пуст или не содержит числовых значений.");
+            System.out.println("Входной файл пуст или не содержит числовых значений.");
         } else {
-            System.out.println("Результат записан в файл: " + OUTPUT_FILE);
+            // Вывод результата на экран
+            System.out.println(result);
         }
-    }
 
+        // Запись в файл
+        writeResultToFile(OUTPUT_FILE_PATH, result);
+        System.out.println("Результат записан в файл: " + OUTPUT_FILE_NAME);
+    }
 }
