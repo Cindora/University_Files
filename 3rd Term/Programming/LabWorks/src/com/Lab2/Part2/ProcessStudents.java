@@ -31,26 +31,16 @@ public class ProcessStudents {
 
                 String[] parts = line.split(",");
                 if (parts.length != 2) {
-                    System.out.println("Неверный формат строки: \"" + line + "\". Ожидалось: \"Фамилия, Рост\".");
                     continue; // Пропуск некорректных строк
                 }
 
                 String surname = parts[0].trim();
-                String heightStr = parts[1].trim();
+                int height = Integer.parseInt(parts[1].trim());
 
-                try {
-                    int height = Integer.parseInt(heightStr);
-                    if (height <= 0) {
-                        System.out.println("Некорректный рост для студента \"" + surname + "\": " + height);
-                        continue; // Пропуск некорректных значений роста
-                    }
-                    students.add(new Student(surname, height));
-                } catch (NumberFormatException e) {
-                    System.out.println("Неверное числовое значение роста для студента \"" + surname + "\": " + heightStr);
-                }
+                students.add(new Student(surname, height));
             }
         } catch (FileNotFoundException e) {
-            System.out.println("Ошибка при чтении файла: " + e.getMessage());
+            System.out.println(e.getMessage());
         }
 
         return students;
