@@ -2,7 +2,6 @@ package com.Lab2.Part2;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -26,12 +25,12 @@ public class ProcessStudents {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine().trim();
                 if (line.isEmpty()) {
-                    continue; // Пропуск пустых строк
+                    continue;
                 }
 
                 String[] parts = line.split(",");
                 if (parts.length != 2) {
-                    continue; // Пропуск некорректных строк
+                    continue;
                 }
 
                 String surname = parts[0].trim();
@@ -61,7 +60,7 @@ public class ProcessStudents {
         System.out.printf("%-20s | %-5s%n", "Фамилия", "Рост");
         System.out.println("-------------------------------------------------");
         for (Student student : students) {
-            System.out.println(student.toString());
+            System.out.println(student.getStudentInfo());
         }
         System.out.println("-------------------------------------------------");
     }
@@ -139,7 +138,7 @@ public class ProcessStudents {
             writer.write(String.format("%-20s | %-5s%n", "Фамилия", "Рост"));
             writer.write("---------------------|-------\n");
             for (Student student : students) {
-                writer.write(student.toString() + "\n");
+                writer.write(student.getStudentInfo() + "\n");
             }
             System.out.println("Результат записан в файл: " + fileName);
         } catch (IOException e) {

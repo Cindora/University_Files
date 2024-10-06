@@ -17,8 +17,7 @@ public class Student {
         return height;
     }
 
-    @Override
-    public String toString() {
+    public String getStudentInfo() {
         return String.format("%-20s | %-5d", surname, height);
     }
 }
