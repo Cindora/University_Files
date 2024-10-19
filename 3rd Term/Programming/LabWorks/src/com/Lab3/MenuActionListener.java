@@ -13,9 +13,9 @@ public class MenuActionListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         String menuItemName = e.getActionCommand();
-        // Обновляем текст метки
+        // Обновление текста метки
         label.setText(menuItemName);
-        // Выводим в консоль
+        // Вывод в консоль
         System.out.println("Вы выбрали: " + menuItemName);
     }
 }

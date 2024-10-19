@@ -9,22 +9,21 @@ public class Frame extends JFrame {
     public Frame(String title) {
         super(title);
 
-        // Устанавливаем размеры и поведение по закрытию
+        // Параметры окна
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // Центрируем окно
+        setLocationRelativeTo(null);
 
-        // Создаем панель и метку
+        // Создание панели и метки
         JPanel panel = new JPanel();
         label = new JLabel("Выберите пункт меню");
         panel.add(label);
         add(panel, BorderLayout.CENTER);
 
-        // Создаем меню
+        // Создание меню
         JMenuBar menuBar = new JMenuBar();
         JMenu menu = new JMenu("Меню");
 
-        // Создаем пункты меню
         String[] menuItems = {"Пункт 1", "Пункт 2", "Пункт 3", "Пункт 4"};
         for (String itemName : menuItems) {
             JMenuItem item = new JMenuItem(itemName);
@@ -35,7 +34,6 @@ public class Frame extends JFrame {
         menuBar.add(menu);
         setJMenuBar(menuBar);
 
-        // Делаем окно видимым
         setVisible(true);
     }
 }
