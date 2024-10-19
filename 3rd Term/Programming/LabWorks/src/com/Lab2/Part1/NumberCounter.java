@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class NumberCounter {
     private static final String INPUT_FILE_PATH =
-            "src/com/Lab2/Part1/input.txt.txt";   // Путь входного файла
+            "src/com/Lab2/Part1/input.txt";   // Путь входного файла
     private static final String OUTPUT_FILE_NAME =
             "output.txt"; // Имя выходного файла
     private static final String OUTPUT_FILE_PATH =
