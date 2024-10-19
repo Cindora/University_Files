@@ -20,10 +20,11 @@ public class ComputerApp {
 
     public ComputerApp() {
         setupInterface();
+        setupFirstInterface();
     }
 
     private void setupInterface() {
-        JFrame frame = new JFrame("Computer Manager");
+        JFrame frame = new JFrame("Таблица Компьютеры");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
@@ -159,6 +160,26 @@ public class ComputerApp {
         frame.add(scrollPane, BorderLayout.CENTER);
         frame.add(inputPanel, BorderLayout.NORTH);
         frame.add(buttonPanel, BorderLayout.SOUTH);
+
+        frame.setSize(700, 400);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+
+    private void setupSecondInterface() {
+        JFrame frame = new JFrame("Таблица Компьютеры (FlowLayout)");
+        frame.setLayout(new FlowLayout());
+
+        JLabel label = new JLabel("Информация о компьютерах:");
+        frame.add(label);
+
+        String[] columns = {"Тип", "Название", "Процессор", "Серийный номер", "Доступ в интернет"};
+        tableModel.setColumnIdentifiers(columns);
+        JTable table = new JTable(tableModel);
+
+        JScrollPane scrollPane = new JScrollPane(table);
+        scrollPane.setPreferredSize(new Dimension(600, 300));
+        frame.add(scrollPane);
 
         frame.setSize(700, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
