@@ -5,6 +5,10 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.*;
+import java.util.Arrays;
+import java.util.Comparator;
+import javax.swing.table.TableRowSorter;
 
 public class ComputerApp {
     private ComputerManager manager = new ComputerManager();
@@ -20,7 +24,6 @@ public class ComputerApp {
 
     public ComputerApp() {
         setupInterface();
-        setupFirstInterface();
     }
 
     private void setupInterface() {
@@ -65,6 +68,41 @@ public class ComputerApp {
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         //
+
+        table.setDefaultRenderer(Object.class, new Renderer());
+
+        table.getTableHeader().addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int column = table.columnAtPoint(e.getPoint());
+
+                if (column == 1) {
+                    tableModel.setRowCount(0); // Очистить таблицу
+
+                    manager.sortByName();
+                    for (Computer computer : manager.getComputers()) {
+                        tableModel.addRow(new Object[] {
+                                computer.getType(), computer.getName(), computer.getProcessor(),
+                                computer.getSerialNumber(), computer.hasInternetAccess()
+                        } );
+                    }
+                }
+                else if (column == 3) {
+                    tableModel.setRowCount(0); // Очистить таблицу
+
+                    manager.sortBySerial();
+                    for (Computer computer : manager.getComputers()) {
+                        tableModel.addRow(new Object[] {
+                                computer.getType(), computer.getName(), computer.getProcessor(),
+                                computer.getSerialNumber(), computer.hasInternetAccess()
+                        } );
+                    }
+                }
+
+            }
+        });
+
+
 
         // Пример данных
         manager.addComputer(new Computer("Персональный", "CompOne",
@@ -160,26 +198,6 @@ public class ComputerApp {
         frame.add(scrollPane, BorderLayout.CENTER);
         frame.add(inputPanel, BorderLayout.NORTH);
         frame.add(buttonPanel, BorderLayout.SOUTH);
-
-        frame.setSize(700, 400);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-    }
-
-    private void setupSecondInterface() {
-        JFrame frame = new JFrame("Таблица Компьютеры (FlowLayout)");
-        frame.setLayout(new FlowLayout());
-
-        JLabel label = new JLabel("Информация о компьютерах:");
-        frame.add(label);
-
-        String[] columns = {"Тип", "Название", "Процессор", "Серийный номер", "Доступ в интернет"};
-        tableModel.setColumnIdentifiers(columns);
-        JTable table = new JTable(tableModel);
-
-        JScrollPane scrollPane = new JScrollPane(table);
-        scrollPane.setPreferredSize(new Dimension(600, 300));
-        frame.add(scrollPane);
 
         frame.setSize(700, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
