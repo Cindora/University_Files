@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6bced60-ed88-4952-bfa5-1d62d474131d" name="Changes" comment="add Programming Lab9pt2 solution">
+      <change afterPath="$PROJECT_DIR$/../../../../3rd Term/Programming/LabWorks/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../3rd Term/Programming/LabWorks/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../3rd Term/Programming/LabWorks/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../3rd Term/Programming/LabWorks/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../3rd Term/Programming/LabWorks/LabWorks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Practice/IntegrationTestExample" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Practice/IntegrationTestExample" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabWorks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LabWorks.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Lab7/Matrix_pt1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab7/Matrix_pt1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Lab7/Matrix_pt3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab7/Matrix_pt3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Lab9/Func_pt2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Lab9/Func_pt2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3rd Term/Programming/LabWorks/src/com/Lab1/Computers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../3rd Term/Programming/LabWorks/src/com/Lab1/Computers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,44 +56,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Lab1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab2.1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab2.2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab3.1.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Lab3.2.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Lab4.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Lab5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab6pt1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab6pt2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab6pt3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab7pt1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab7pt2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab7pt3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab8pt1.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Lab8pt2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab9p1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lab9pt2.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.EquationSolverTest.solveEquationTest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Programming/University Files/2nd Term/Programming/Лабы/LabWorks/src/com&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.33095723&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Lab1.executor": "Run",
+    "Application.Lab2.1.executor": "Run",
+    "Application.Lab2.2.executor": "Run",
+    "Application.Lab2.executor": "Run",
+    "Application.Lab3.1.executor": "Debug",
+    "Application.Lab3.2.executor": "Debug",
+    "Application.Lab4.executor": "Debug",
+    "Application.Lab5.executor": "Run",
+    "Application.Lab6pt1.executor": "Run",
+    "Application.Lab6pt2.executor": "Run",
+    "Application.Lab6pt3.executor": "Run",
+    "Application.Lab7pt1.executor": "Run",
+    "Application.Lab7pt2.executor": "Run",
+    "Application.Lab7pt3.executor": "Run",
+    "Application.Lab8pt1.executor": "Debug",
+    "Application.Lab8pt2.executor": "Run",
+    "Application.Lab9p1.executor": "Run",
+    "Application.Lab9pt2.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.EquationSolverTest.solveEquationTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Programming/University Files/2nd Term/Practice/IntegrationTestExample",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.splitter.proportion": "0.33095723"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programming\University Files\2nd Term\Programming\Лабы\LabWorks\src\com" />
