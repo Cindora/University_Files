@@ -16,6 +16,8 @@ mu_norm = 30; % математическое ожидание
 sigma_norm = 9; % стандартное отклонение
 X_norm = normrnd(mu_norm, sigma_norm, [570, 1]);
 
+X_lognorm = lognrnd(mu_norm, sigma_norm, [570, 1]);
+
 %% 3.
 mean_X = mean(X_norm); % математическое ожидание
 fprintf('Математическое ожидание: %.4f\n', mean_X);
