@@ -1,0 +1,15 @@
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\bin\Debug\net8.0\Lab1_1.exe
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\bin\Debug\net8.0\Lab1_1.deps.json
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\bin\Debug\net8.0\Lab1_1.runtimeconfig.json
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\bin\Debug\net8.0\Lab1_1.dll
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\bin\Debug\net8.0\Lab1_1.pdb
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\obj\Debug\net8.0\Lab1_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\obj\Debug\net8.0\Lab1_1.AssemblyInfoInputs.cache
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\obj\Debug\net8.0\Lab1_1.AssemblyInfo.cs
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\obj\Debug\net8.0\Lab1_1.csproj.CoreCompileInputs.cache
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\obj\Debug\net8.0\Lab1_1.sourcelink.json
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\obj\Debug\net8.0\Lab1_1.dll
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\obj\Debug\net8.0\refint\Lab1_1.dll
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\obj\Debug\net8.0\Lab1_1.pdb
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\obj\Debug\net8.0\Lab1_1.genruntimeconfig.cache
+D:\Programming\University Files\5th Term\Information systems and DB\Lab1\Lab1_1\obj\Debug\net8.0\ref\Lab1_1.dll
