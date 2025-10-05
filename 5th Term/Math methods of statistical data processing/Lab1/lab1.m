@@ -35,10 +35,21 @@ iqrY = iqr(Y);
 A = 3; B = -5; C = 7;
 Z = C.*(Y.^2) + B.*Y + A;
 
+ZnoA = C.*(Y.^2) + B.*Y;
+ZnoB = C.*(Y.^2) + 1.*Y + A;
+ZnoC = 1.*(Y.^2) + B.*Y + A;
+
+
 % Задание 5
 corrYZ = corr(Y,Z);
+corrYZnoA = corr(Y,ZnoA);
+corrYZnoB = corr(Y,ZnoB);
+corrYZnoC = corr(Y,ZnoC);
 
-fprintf('Коэф. корреляции: %f\n', r);
+fprintf('Коэф. корреляции: %f\n', corrYZ);
+fprintf('Коэф. корреляции без А: %f\n', corrYZnoA);
+fprintf('Коэф. корреляции без В: %f\n', corrYZnoB);
+fprintf('Коэф. корреляции без С: %f\n', corrYZnoC);
 
 T = table((1:N)', X, 'VariableNames', {'Index','X'});
 writetable(T, 'sample_X.xlsx');

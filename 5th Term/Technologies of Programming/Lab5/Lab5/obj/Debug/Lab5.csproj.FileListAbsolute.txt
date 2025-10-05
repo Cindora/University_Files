@@ -1,0 +1,10 @@
+D:\Programming\University Files\5th Term\Technologies of Programming\Lab5\Lab5\obj\Debug\Lab5.csproj.AssemblyReference.cache
+D:\Programming\University Files\5th Term\Technologies of Programming\Lab5\Lab5\obj\Debug\Lab5.MainForm.resources
+D:\Programming\University Files\5th Term\Technologies of Programming\Lab5\Lab5\obj\Debug\Lab5.Properties.Resources.resources
+D:\Programming\University Files\5th Term\Technologies of Programming\Lab5\Lab5\obj\Debug\Lab5.csproj.GenerateResource.cache
+D:\Programming\University Files\5th Term\Technologies of Programming\Lab5\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache
+D:\Programming\University Files\5th Term\Technologies of Programming\Lab5\Lab5\bin\Debug\Lab5.exe.config
+D:\Programming\University Files\5th Term\Technologies of Programming\Lab5\Lab5\bin\Debug\Lab5.exe
+D:\Programming\University Files\5th Term\Technologies of Programming\Lab5\Lab5\bin\Debug\Lab5.pdb
+D:\Programming\University Files\5th Term\Technologies of Programming\Lab5\Lab5\obj\Debug\Lab5.exe
+D:\Programming\University Files\5th Term\Technologies of Programming\Lab5\Lab5\obj\Debug\Lab5.pdb
