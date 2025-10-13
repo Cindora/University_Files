@@ -20,76 +20,114 @@ using System.Windows.Forms;
 
 namespace Lab2
 {
+    
+    // Основная форма приложения
     public partial class Form1 : Form
     {
-        Tea[] arrTea;
-        int numTea = 0;
-        bool[] isFilled = {false, false };
+        List<TeaBags> teaBagsList = new List<TeaBags>();
+        List<TeaJar> teaJarList = new List<TeaJar>();
+
         public Form1()
         {
             InitializeComponent();
-            LoadTeaTable();
-        }
 
-        private void LoadTeaTable()
-        {
-            TeaBagged[] teaArr = new TeaBagged[] // Массив объектов Tea
+            // Инициализация данных
+            teaBagsList.Add(new TeaBags("Ахмад", "Чёрный", 150, 25));
+            teaBagsList.Add(new TeaBags("Lipton", "Зелёный", 180, 20));
+            teaBagsList.Add(new TeaBags("Greenfield", "Фруктовый", 120, 30));
+
+            teaJarList.Add(new TeaJar("Dilmah", "Чёрный", 600, 100));
+            teaJarList.Add(new TeaJar("Tess", "Зелёный", 450, 80));
+            teaJarList.Add(new TeaJar("Akbar", "Чёрный", 700, 120));
+
+            dataGridView1.DataSource = teaBagsList;
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn()
             {
-            new TeaBagged("Черный", "Цейлон", 110),
-            new TeaBagged("Черный", "Санрайз", 150),
-            new TeaBagged("Зелёный", "Драгон", 220),
-            };
+                Name = "Discount",
+                HeaderText = "Discount",
+                ReadOnly = true
+            });
 
-            tableTea.DataSource = teaArr;
-
-            tableTea.Columns["Name"].HeaderText = "Название";
-            tableTea.Columns["Sort"].HeaderText = "Сорт";
-            tableTea.Columns["Price"].HeaderText = "Цена";
+            dataGridView2.DataSource = teaJarList;
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "Discount",
+                HeaderText = "Discount",
+                ReadOnly = true
+            });
         }
 
-        public class Tea // Класс Чай
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+    
+            for (int i = 0; i < teaBagsList.Count; i++)
+            {
+                decimal discount = teaBagsList[i].CalculateDiscount();
+                dataGridView1.Rows[i].Cells["Discount"].Value = discount.ToString("C");
+            }
+
+            for (int i = 0; i < teaJarList.Count; i++)
+            {
+                decimal discount = teaJarList[i].CalculateDiscount();
+                dataGridView2.Rows[i].Cells["Discount"].Value = discount.ToString("C");
+            }
+        }
+    }
+
+    // Базовый класс Чай
+    public class Tea
     {
         public string Name { get; set; }
         public string Sort { get; set; }
-        public int Price { get; set; }
+        public decimal Price { get; set; }
 
-        public Tea(string name, string sort, int price)
+        public Tea(string name, string sort, decimal price)
         {
             Name = name;
             Sort = sort;
             Price = price;
         }
 
-        public virtual int CalculatePriceWithDiscount(int discount)
+        public virtual decimal CalculateDiscount()
         {
-            return Price * (100 - discount) / 100;
+            return Price * 0.05m;
         }
     }
 
-    public class TeaBagged : Tea // Пакетированный
+    // Класс Чай в пакетиках
+    public class TeaBags : Tea
     {
-        public int PacketCount { get; set; }
+        public int BagCount { get; set; }
 
-        public TeaBagged(string name, string sort, int price, int packetCount)
+        public TeaBags(string name, string sort, decimal price, int bagCount)
             : base(name, sort, price)
         {
-            PacketCount = packetCount;
+            BagCount = bagCount;
         }
+
     }
 
-    public class TeaJar : Tea // Чай в банке
+    // Класс Чай в банке с переопределённым расчётом скидки
+    public class TeaJar : Tea
     {
-        public int WeightGrams { get; set; } // Вес в граммах
+        public int Weight { get; set; }
 
-        public TeaJar(string name, string sort, int price, int weightGrams)
+        public TeaJar(string name, string sort, decimal price, int weight)
             : base(name, sort, price)
         {
-            WeightGrams = weightGrams;
+            Weight = weight;
         }
 
-        public override int CalculatePriceWithDiscount(int discount)
+        public override decimal CalculateDiscount()
         {
-            return Price * (100 - discount - (WeightGrams/100)) / 100 - WeightGrams / 50;
+            // Высокая скидка для дорогих позиций
+            if (Price > 500)
+                return Price * 0.15m; // 15% скидка
+            else
+                return Price * 0.1m;  // 10% скидка
         }
     }
+
+
 }
