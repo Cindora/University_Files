@@ -201,11 +201,11 @@
     <Compile Include="FormAudit.Designer.cs">
       <DependentUpon>FormAudit.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBook.cs">
+    <Compile Include="FormClass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBook.Designer.cs">
-      <DependentUpon>FormBook.cs</DependentUpon>
+    <Compile Include="FormClass.Designer.cs">
+      <DependentUpon>FormClass.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEdAudit.cs">
       <SubType>Form</SubType>
@@ -230,8 +230,8 @@
     <EmbeddedResource Include="FormAudit.resx">
       <DependentUpon>FormAudit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBook.resx">
-      <DependentUpon>FormBook.cs</DependentUpon>
+    <EmbeddedResource Include="FormClass.resx">
+      <DependentUpon>FormClass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEdAudit.resx">
       <DependentUpon>FormEdAudit.cs</DependentUpon>

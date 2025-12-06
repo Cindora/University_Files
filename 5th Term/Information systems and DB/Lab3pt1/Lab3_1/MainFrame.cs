@@ -71,5 +71,18 @@ namespace Lab3_1
                 frm.Dispose();
             }
         }
+
+        private void ClassMenuItem_Click(object sender, EventArgs e)
+        {
+            FormClass frm = new FormClass();
+            try
+            {
+                frm.ShowDialog();
+            }
+            finally
+            {
+                frm.Dispose();
+            }
+        }
     }
 }
