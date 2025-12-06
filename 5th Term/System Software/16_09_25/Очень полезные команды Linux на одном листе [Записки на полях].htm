@@ -1,0 +1,1492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" dir="ltr" lang="ru"><head><script src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/cbgapi.loaded_1" async=""></script><script src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/cbgapi.loaded_0" async=""></script>
+	<title>Очень полезные команды Linux на одном листе [Записки на полях]</title>
+	<meta name="Author" content="Vladislav A Soukharev (aka -Vlad-)">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="yandex-verification" content="704c0766a23cfaf5">
+	<meta name="Description" content="Очень полезные команды Linux на одном листе">
+	<meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;">
+<meta name="robots" content="index,follow">
+<meta name="date" content="2015-08-07T13:14:04+0300">
+<meta name="keywords" content="linux,linux_command">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.f-notes.info/lib/exe/opensearch.php" title="Записки на полях">
+<link rel="start" href="http://www.f-notes.info/">
+<link rel="contents" href="http://www.f-notes.info/linux:linux_command?do=index" title="Все страницы">
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.f-notes.info/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.f-notes.info/feed.php?mode=list&amp;ns=linux">
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.f-notes.info/_export/xhtml/linux:linux_command">
+<link rel="canonical" href="http://www.f-notes.info/linux:linux_command">
+<link rel="stylesheet" media="all" type="text/css" href="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/css_002.css">
+<link rel="stylesheet" media="screen" type="text/css" href="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/css_003.css">
+<link rel="stylesheet" media="print" type="text/css" href="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/css.css">
+<script type="text/javascript" async="" src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+var NS='linux';var JSINFO = {"id":"linux:linux_command","namespace":"linux"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/js.php"></script>
+	<link rel="stylesheet" media="handheld" type="text/css" href="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/handheld.htm">
+	<link rel="icon" type="image/png" href="http://www.f-notes.info/lib/tpl/f-notes/images/favicon.png">
+	<style type="text/css" id="ya_share_style">.b-share-popup-wrap{z-index:1073741823;position:absolute;width:500px}.b-share-popup{position:absolute;z-index:1073741823;border:1px solid #888;background:#FFF;color:#000}.b-share-popup-wrap .b-share-popup_down{top:0}.b-share-popup-wrap .b-share-popup_up{bottom:0}.b-share-popup-wrap_state_hidden{position:absolute!important;top:-9999px!important;right:auto!important;bottom:auto!important;left:-9999px!important;visibility:hidden!important}.b-share-popup,x:nth-child(1){border:0;padding:1px!important}@media all and (resolution=0){.b-share-popup,x:nth-child(1),x:-o-prefocus{padding:0!important;border:1px solid #888}}.b-share-popup__i{display:-moz-inline-box;display:inline-block;padding:5px 0!important;overflow:hidden;vertical-align:top;white-space:nowrap;visibility:visible;background:#FFF;-webkit-box-shadow:0 2px 9px rgba(0,0,0,.6);-moz-box-shadow:0 2px 9px rgba(0,0,0,.6);box-shadow:0 2px 9px rgba(0,0,0,.6)}.b-share-popup__item{font:1em/1.25em Arial,sans-serif;display:block;padding:5px 15px!important;white-space:nowrap;background:#FFF}.b-share-popup__item,a.b-share-popup__item:link,a.b-share-popup__item:visited{text-decoration:none!important;border:0!important}a.b-share-popup__item{cursor:pointer}a.b-share-popup__item .b-share-popup__item__text{display:inline;text-decoration:underline;color:#1A3DC1}a.b-share-popup__item:hover{word-spacing:0}a.b-share-popup__item:hover .b-share-popup__item__text{color:red;cursor:pointer}.b-share-popup__icon{display:-moz-inline-box;display:inline-block;margin:-3px 0 0;padding:0 5px 0 0!important;vertical-align:middle}.b-share-popup__icon_input{width:21px;height:16px;margin-top:-6px;padding:0!important}.b-share-popup__icon__input{margin-right:0;margin-left:2px;vertical-align:top}.b-share-popup__spacer{display:block;padding-top:10px!important}.b-share-popup__header{font:86%/1em Verdana,sans-serif;display:block;padding:10px 15px 5px!important;color:#999}.b-share-popup__header_first{padding-top:5px!important}.b-share-popup__input{font:86%/1em Verdana,sans-serif;display:block;padding:5px 15px!important;color:#999;text-align:left}.b-share-popup__input__input{font:1em/1em Verdana,sans-serif;display:block;width:10px;margin:5px 0 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;resize:none;text-align:left;direction:ltr}.b-share-popup_down .b-share-popup_with-link .b-share-popup__input_link{position:absolute;top:5px;right:0;left:0}.b-share-popup_up .b-share-popup_with-link .b-share-popup__input_link{position:absolute;right:0;bottom:5px;left:0}.b-share-popup_down .b-share-popup_with-link{padding-top:55px!important}.b-share-popup_up .b-share-popup_with-link{padding-bottom:55px!important}.b-share-popup_down .b-share-popup_expandable .b-share-popup__main{padding-bottom:25px!important}.b-share-popup_up .b-share-popup_expandable .b-share-popup__main{padding-top:25px!important}.b-share-popup_down .b-share-popup_yandexed{padding-bottom:10px!important}.b-share-popup_up .b-share-popup_yandexed{padding-top:10px!important}.b-share-popup__yandex{position:absolute;right:4px;bottom:2px;font:78.125%/1em Verdana,sans-serif;padding:3px!important;background:0 0}a.b-share-popup__yandex:link,a.b-share-popup__yandex:visited{color:#C6C5C5;text-decoration:none}a.b-share-popup__yandex:link:hover,a.b-share-popup__yandex:visited:hover{color:red;text-decoration:underline}.b-share-popup_up .b-share-popup__yandex{top:2px;bottom:auto}.b-share-popup_expandable .b-share-popup__yandex{right:auto;left:4px}.b-share-popup_to-right .b-share-popup_expandable .b-share-popup__yandex{right:4px;left:auto}.b-share-popup__expander .b-share-popup__item{position:absolute;bottom:5px;font:86%/1em Verdana,sans-serif;margin:10px 0 0;padding:5px 10px!important;cursor:pointer;color:#999;background:0 0}.b-share-popup_to-right,.b-share-popup_to-right .b-share-popup__expander{direction:rtl}.b-share-popup_to-right .b-share-popup__expander .b-share-popup__icon{padding:0 0 0 5px!important}.b-share-popup_up .b-share-popup__expander .b-share-popup__item{top:-5px;bottom:auto}.b-share-popup__expander .b-share-popup__item:hover .b-share-popup__item__text{text-decoration:underline}.b-share-popup__expander .b-ico_action_rarr,.b-share-popup_to-right .b-share-popup__expander .b-ico_action_larr,.b-share-popup_full .b-share-popup__expander .b-ico_action_larr,.b-share-popup_to-right .b-share-popup_full .b-share-popup__expander .b-ico_action_rarr,.b-share-popup__expander .b-share-popup__item__text_collapse,.b-share-popup_full .b-share-popup__item__text_expand{display:none}.b-share-popup_to-right .b-share-popup__expander .b-ico_action_rarr,.b-share-popup_full .b-share-popup__item__text_collapse,.b-share-popup_full .b-share-popup__expander .b-ico_action_rarr,.b-share-popup_to-right .b-share-popup_full .b-share-popup__expander .b-ico_action_larr{display:inline}.b-ico_action_rarr,.b-ico_action_larr{width:8px;height:7px;border:0}.b-share-popup__main,.b-share-popup__extra{direction:ltr;vertical-align:bottom;text-align:left}.b-share-popup_down .b-share-popup__main,.b-share-popup_down .b-share-popup__extra{vertical-align:top}.b-share-popup__main{display:-moz-inline-stack;display:inline-block}.b-share-popup__extra{display:none;margin:0 -10px 0 0}.b-share-popup_full .b-share-popup__extra{display:-moz-inline-stack;display:inline-block}.b-share-popup_to-right .b-share-popup__extra{margin:0 0 0 -10px}.b-share-popup__tail{position:absolute;width:21px;height:10px;margin:0 0 0 -11px}.b-share-popup_down .b-share-popup__tail{top:-10px;background:url("//yastatic.net/share/static/b-share-popup_down__tail.gif") 0 0 no-repeat}.b-share-popup_up .b-share-popup__tail{bottom:-10px;background:url("//yastatic.net/share/static/b-share-popup_up__tail.gif") 0 0 no-repeat}.b-share-popup_down .b-share-popup__tail,x:nth-child(1){top:-9px;background-image:url("//yastatic.net/share/static/b-share-popup_down__tail.png")}.b-share-popup_up .b-share-popup__tail,x:nth-child(1){bottom:-9px;background-image:url("//yastatic.net/share/static/b-share-popup_up__tail.png")}@media all and (resolution=0){.b-share-popup_down .b-share-popup__tail,x:nth-child(1),x:-o-prefocus{top:-10px;background-image:url("//yastatic.net/share/static/b-share-popup_down__tail.gif")}.b-share-popup_up .b-share-popup__tail,x:nth-child(1),x:-o-prefocus{bottom:-10px;background-image:url("//yastatic.net/share/static/b-share-popup_up__tail.gif")}}.b-share-popup .b-share-popup_show_form_mail,.b-share-popup .b-share-popup_show_form_html{padding:0!important}.b-share-popup .b-share-popup_show_form_mail .b-share-popup__main,.b-share-popup .b-share-popup_show_form_html .b-share-popup__main,.b-share-popup .b-share-popup_show_form .b-share-popup__main,.b-share-popup .b-share-popup_show_form_mail .b-share-popup__extra,.b-share-popup .b-share-popup_show_form_html .b-share-popup__extra,.b-share-popup .b-share-popup_show_form .b-share-popup__extra{height:15px;padding:0!important;overflow:hidden;visibility:hidden}.b-share-popup_show_form_mail .b-share-popup__expander,.b-share-popup_show_form_html .b-share-popup__expander,.b-share-popup_show_form .b-share-popup__expander,.b-share-popup_show_form_mail .b-share-popup__input_link,.b-share-popup_show_form_html .b-share-popup__input_link,.b-share-popup_show_form .b-share-popup__input_link{display:none}.b-share-popup__form{position:relative;display:none;overflow:hidden;padding:5px 0 0!important;margin:0 0 -15px;white-space:normal}.b-share-popup_show_form_mail .b-share-popup__form_mail,.b-share-popup_show_form_html .b-share-popup__form_html,.b-share-popup_show_form .b-share-popup__form{display:block}.b-share-popup__form__link{padding:5px!important;margin:0 0 5px 10px;text-decoration:underline;cursor:pointer;color:#1A3DC1}.b-share-popup__form__link,.b-share-popup__form__button{font:86%/1.4545em Verdana,sans-serif;float:left;display:inline}.b-share-popup__form__button{margin:5px 0 0 15px}.b-share-popup__form__close{font:86%/1.4545em Verdana,sans-serif;float:right;display:inline;padding:5px!important;margin:0 10px 5px 0;cursor:pointer;color:#999}a.b-share-popup__form__link:hover,a.b-share-popup__form__close:hover{text-decoration:underline;color:red}.b-share-popup_font_fixed .b-share-popup__item{font-size:12.8px}.b-share-popup_font_fixed .b-share-popup__header,.b-share-popup_font_fixed .b-share-popup__input,.b-share-popup_font_fixed .b-share-popup__expander .b-share-popup__item,.b-share-popup_font_fixed .b-share-popup__form__link,.b-share-popup_font_fixed .b-share-popup__form__button,.b-share-popup_font_fixed .b-share-popup__form__close{font-size:11px}.b-share-popup_font_fixed .b-share-popup__yandex{font-size:10px}.b-share-form-button{font:86%/17px Verdana,Arial,sans-serif;display:-moz-inline-box;display:inline-block;position:relative;height:19px;margin:0 3px;padding:0 4px;cursor:default;white-space:nowrap;text-decoration:none!important;color:#000!important;border:none;outline:none;background:url("//yastatic.net/share/static/b-share-form-button.png") 0 -20px repeat-x}.b-share-form-button:link:hover,.b-share-form-button:visited:hover{color:#000!important}.b-share-form-button__before,.b-share-form-button__after{position:absolute;width:3px;height:19px;background:url("//yastatic.net/share/static/b-share-form-button.png")}.b-share-form-button__before{margin-left:-7px}.b-share-form-button__after{margin-left:4px;background-position:-3px 0}.b-share-form-button::-moz-focus-inner{border:none}button.b-share-form-button .b-share-form-button__before,button.b-share-form-button .b-share-form-button__after{margin-top:-1px}@-moz-document url-prefix(){button.b-share-form-button .b-share-form-button__after{margin-top:-2px;margin-left:6px}button.b-share-form-button .b-share-form-button__before{margin-top:-2px;margin-left:-9px}}SPAN.b-share-form-button:hover,.b-share-form-button_state_hover{background-position:0 -60px}SPAN.b-share-form-button:hover .b-share-form-button__before,.b-share-form-button_state_hover .b-share-form-button__before{background-position:0 -40px}SPAN.b-share-form-button:hover .b-share-form-button__after,.b-share-form-button_state_hover .b-share-form-button__after{background-position:-3px -40px}.b-share-form-button_state_pressed,.b-share-form-button_state_pressed .b-share-form-button_share{background-position:0 -100px!important}.b-share-form-button_state_pressed .b-share-form-button__before{background-position:0 -80px!important}.b-share-form-button_state_pressed .b-share-form-button__after{background-position:-3px -80px!important}button.b-share-form-button_state_pressed{overflow:visible}.b-share-form-button_icons{position:relative;padding:0;background-position:0 -20px!important}.b-share-form-button_icons .b-share-form-button__before{left:0;margin-left:-3px;background-position:0 0!important}.b-share-form-button_icons .b-share-form-button__after{z-index:-1;margin-left:0;background-position:-3px 0!important}.b-share-form-button_icons .b-share__handle{padding:2px!important}.b-share-form-button_icons .b-share__handle_more{position:relative;padding-right:6px!important;margin-right:-4px}.b-share-form-button_icons .b-share-icon{opacity:.5;background-image:url("//yastatic.net/share/static/b-share-icon_size_14.png")}.b-share-form-button_icons A.b-share__handle:hover .b-share-icon{opacity:1}.b-share{font:86%/1.4545em Arial,sans-serif;display:-moz-inline-box;display:inline-block;padding:1px 3px 1px 4px!important;vertical-align:middle}.b-share .b-share-form-button{font-size:1em}.b-share__text .b-share-icon{margin:0 5px 0 0;border:none}.b-share__text{margin-right:5px}.b-share__handle{float:left;height:16px;padding:5px 3px 5px 2px!important;cursor:pointer;text-align:left;text-decoration:none!important}.b-share__handle_cursor_default{cursor:default}.b-share__handle .b-share-form-button{margin-top:-2px}.b-share__hr{display:none;float:left;width:1px;height:26px;margin:0 3px 0 2px}a.b-share__handle:hover .b-share__text{text-decoration:underline;color:red}.b-share_bordered{padding:0 2px 0 3px!important;border:1px solid #E4E4E4;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.b-share_bordered .b-share__hr{display:inline;background:#E4E4E4}.b-share_link{margin:-8px 0}a.b-share_link{margin:0}.b-share_link .b-share__text{text-decoration:underline;color:#1A3DC1}.b-share-form-button_share{padding-left:26px!important;vertical-align:top}.b-share-form-button_share .b-share-form-button__before{margin-left:-29px}.b-share-form-button_share .b-share-form-button__icon{position:absolute;width:20px;height:17px;margin:1px 0 0 -23px;background:url("//yastatic.net/share/static/b-share-form-button_share__icon.png") 0 0 no-repeat}.b-share-pseudo-link{border-bottom:1px dotted;cursor:pointer;text-decoration:none!important}.b-share_font_fixed{font-size:11px}.b-share__handle_more{font-size:9px;margin-top:-1px;color:#7B7B7B}A.b-share__handle_more:hover{color:#000}.b-share__group{float:left}.b-share-icon{float:left;display:inline;overflow:hidden;width:16px;height:16px;padding:0!important;vertical-align:top;border:0;background:url("//yastatic.net/share/static/b-share-icon.png") 0 99px no-repeat}.b-share-icon_vkontakte,.b-share-icon_custom{background-position:0 0}.b-share-icon_yaru,.b-share-icon_yaru_photo,.b-share-icon_yaru_wishlist{background-position:0 -17px}.b-share-icon_lj{background-position:0 -34px}.b-share-icon_twitter{background-position:0 -51px}.b-share-icon_facebook{background-position:0 -68px}.b-share-icon_moimir{background-position:0 -85px}.b-share-icon_friendfeed{background-position:0 -102px}.b-share-icon_mail{background-position:0 -119px}.b-share-icon_html{background-position:0 -136px}.b-share-icon_postcard{background-position:0 -153px}.b-share-icon_odnoklassniki{background-position:0 -170px}.b-share-icon_blogger{background-position:0 -187px}.b-share-icon_delicious{background-position:0 -221px}.b-share-icon_gbuzz{background-position:0 -238px}.b-share-icon_linkedin{background-position:0 -255px}.b-share-icon_myspace{background-position:0 -272px}.b-share-icon_evernote{background-position:0 -289px}.b-share-icon_digg{background-position:0 -306px}.b-share-icon_juick{background-position:0 -324px}.b-share-icon_moikrug{background-position:0 -341px}.b-share-icon_yazakladki{background-position:0 -358px}.b-share-icon_liveinternet{background-position:0 -375px}.b-share-icon_tutby{background-position:0 -392px}.b-share-icon_diary{background-position:0 -409px}.b-share-icon_gplus{background-position:0 -426px}.b-share-icon_pocket{background-position:0 -443px}.b-share-icon_surfingbird{background-position:0 -460px}.b-share-icon_pinterest{background-position:0 -477px}.b-share-icon_renren{background-position:0 0}.b-share-icon_renren,.b-share-icon_sina_weibo{background:url("//yastatic.net/share/static/b-share-icon__china.png") no-repeat}.b-share-icon_sina_weibo{background-position:-18px 0}.b-share-icon_qzone{background-position:-36px 0}.b-share-icon_qzone,.b-share-icon_tencent_weibo{background:url("//yastatic.net/share/static/b-share-icon__china.png") no-repeat}.b-share-icon_tencent_weibo{background-position:-54px 0}.b-share_theme_dark .b-share-icon{background:url("//yastatic.net/share/static/b-share-icons__theme_dark.png") 99px 0 no-repeat}.b-share_theme_dark .b-share-icon_odnoklassniki{background-position:-4px -3px}.b-share_theme_dark .b-share-icon_vkontakte{background-position:-24px -3px}.b-share_theme_dark .b-share-icon_twitter{background-position:-44px -3px}.b-share_theme_dark .b-share-icon_facebook{background-position:-64px -3px}.b-share_theme_dark .b-share-icon_lj{background-position:-85px -3px}.b-share_theme_dark .b-share-icon_yaru{background-position:-105px -3px}.b-share_theme_dark .b-share-popup .b-share-icon_odnoklassniki,.b-share_theme_dark .b-share-icon_odnoklassniki:hover{background-position:-4px -28px}.b-share_theme_dark .b-share-popup .b-share-icon_vkontakte,.b-share_theme_dark .b-share-icon_vkontakte:hover{background-position:-24px -28px}.b-share_theme_dark .b-share-popup .b-share-icon_twitter,.b-share_theme_dark .b-share-icon_twitter:hover{background-position:-44px -28px}.b-share_theme_dark .b-share-popup .b-share-icon_facebook,.b-share_theme_dark .b-share-icon_facebook:hover{background-position:-64px -28px}.b-share_theme_dark .b-share-popup .b-share-icon_lj,.b-share_theme_dark .b-share-icon_lj:hover{background-position:-85px -28px}.b-share_theme_dark .b-share-popup .b-share-icon_yaru,.b-share_theme_dark .b-share-icon_yaru:hover{background-position:-105px -28px}.b-share_theme_dark .b-share-form-button_share .b-share-form-button__icon{background-image:url("//yastatic.net/share/static/b-share-form-button_share__icon_dark.png")}.b-share_theme_dark .b-share-form-button{color:#fff!important;opacity:.8}.b-share_theme_dark .b-share__handle:hover .b-share-form-button,.b-share_theme_dark .b-share-form-button:hover{opacity:1;cursor:pointer}.b-share_theme_dark .b-share-form-button,.b-share_theme_dark .b-share-form-button__before,.b-share_theme_dark .b-share-form-button__after{background:0 0}.b-share_theme_dark .b-share-popup__i{background-color:#333;border-radius:10px;-webkit-box-shadow:0 2px 9px rgba(255,255,255,.6);-moz-box-shadow:0 2px 9px rgba(255,255,255,.6);box-shadow:0 2px 9px rgba(255,255,255,.6)}.b-share_theme_dark .b-share__text{color:#AAA}.b-share_theme_dark .b-share-popup{color:#AAA;border-radius:10px;background-color:#333;background-color:rgba(50,50,50,.3)}.b-share_theme_dark .b-share-popup__item{background:0 0;color:#ccc}.b-share_theme_dark .b-share-popup .b-share-popup__item__text{color:#ccc}.b-share_theme_counter .b-share{display:inline-block;vertical-align:middle;white-space:nowrap}.b-share-counter{font:14px Arial,sans-serif;line-height:18px;display:none;float:left;margin:3px 6px 3px 3px;color:#fff}.b-share_theme_counter .b-share_type_small .b-share-counter{font-size:11px;line-height:14px;margin:2px 6px 2px 1px}.b-share_theme_counter .b-share-btn__counter .b-share-counter{display:block}.b-share-btn__counter{text-decoration:none}.b-share_theme_counter .b-share-btn__wrap{position:relative;float:left;margin-left:5px}.b-share_theme_counter .b-share_type_small .b-share-btn__wrap{margin-left:4px}.b-share_theme_counter .b-share-btn__wrap:first-child{margin-left:0}.b-share_theme_counter .b-share__link{display:inline-block;cursor:pointer;-webkit-border-radius:3px;border-radius:3px}.b-share_theme_counter .b-share_type_small .b-share__link{-webkit-border-radius:2px;border-radius:2px}.b-share_theme_counter .b-share-icon{display:block;float:left;width:24px;height:24px;background-image:url("//yastatic.net/share/static/b-share_counter_large.png");background-position:-20px 0}.b-share_theme_counter .b-share_type_small .b-share-icon{width:18px;height:18px;background-image:url("//yastatic.net/share/static/b-share_counter_small.png")}.b-share_theme_counter .b-share-icon_facebook{background-position:0 0}.b-share_theme_counter .b-share-btn__facebook{background-color:#3c5a98}.b-share_theme_counter .b-share-btn__facebook:hover{background-color:#30487a}.b-share_theme_counter .b-share-btn__facebook:active{border-top:2px solid #24365a;background-color:#334d81}.b-share_theme_counter .b-share-icon_moimir{background-position:0 -29px}.b-share_theme_counter .b-share-btn__moimir{background-color:#226eb7}.b-share_theme_counter .b-share-btn__moimir:hover{background-color:#1b5892}.b-share_theme_counter .b-share-btn__moimir:active{border-top:2px solid #14426d;background-color:#1d5e9c}.b-share_theme_counter .b-share-icon_vkontakte{background-position:0 -58px}.b-share_theme_counter .b-share-btn__vkontakte{background-color:#48729e}.b-share_theme_counter .b-share-btn__vkontakte:hover{background-color:#3a5b7e}.b-share_theme_counter .b-share-btn__vkontakte:active{border-top:2px solid #2b445e;background-color:#3d6186}.b-share_theme_counter .b-share-icon_twitter{background-position:0 -87px}.b-share_theme_counter .b-share-btn__twitter{background-color:#00aced}.b-share_theme_counter .b-share-btn__twitter:hover{background-color:#008abe}.b-share_theme_counter .b-share-btn__twitter:active{border-top:2px solid #00668d;background-color:#0092ca}.b-share_theme_counter .b-share-icon_odnoklassniki{background-position:0 -116px}.b-share_theme_counter .b-share-btn__odnoklassniki{background-color:#ff9f4d}.b-share_theme_counter .b-share-btn__odnoklassniki:hover{background-color:#cc7f3e}.b-share_theme_counter .b-share-btn__odnoklassniki:active{border-top:2px solid #975e2e;background-color:#d98742}.b-share_theme_counter .b-share-icon_gplus{background-position:0 -145px}.b-share_theme_counter .b-share-btn__gplus{background-color:#c25234}.b-share_theme_counter .b-share-btn__gplus:hover{background-color:#9b422a}.b-share_theme_counter .b-share-btn__gplus:active{border-top:2px solid #73311f;background-color:#a5462c}.b-share_theme_counter .b-share-icon_yaru{background-position:0 -174px}.b-share_theme_counter .b-share-btn__yaru{background-color:#d83933}.b-share_theme_counter .b-share-btn__yaru:hover{background-color:#ad2e29}.b-share_theme_counter .b-share-btn__yaru:active{border-top:2px solid #80221e;background-color:#b8312b}.b-share_theme_counter .b-share-icon_pinterest{background-position:0 -203px}.b-share_theme_counter .b-share-btn__pinterest{background-color:#cd1e27}.b-share_theme_counter .b-share-btn__pinterest:hover{background-color:#a4181f}.b-share_theme_counter .b-share-btn__pinterest:active{border-top:2px solid #7b1217;background-color:#ae1921}.b-share_theme_counter .b-share__link:active{height:22px}.b-share_theme_counter .b-share_type_small .b-share__link:active{height:16px}.b-share_theme_counter .b-share__link:active .b-share-icon,.b-share_theme_counter .b-share__link:active .b-share-counter{position:relative;top:-1px}.b-share_theme_counter .b-share__link::after{position:absolute;top:0;right:0;bottom:0;left:0;content:"";background-image:url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}.b-share_theme_counter .b-share__handle{height:auto;padding:0!important}</style></head>
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+
+    <div class="header">
+      <div class="logo">
+        <a href="http://www.f-notes.info/" name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">Записки на полях</a>      </div>
+      <div class="meta">
+        <div class="doc">
+                                                  <a href="http://www.f-notes.info/linux:linux_command?do=login&amp;sectok=45410c89316cce5e98fc2aef377b4302" class="action login" rel="nofollow">Войти</a>        </div>
+        <div class="user">
+                  </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    <div class="bar" id="bar__top">
+      <div class="topmenu">
+        <ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/start" class="wikilink1" title="start">Главная</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/linux" class="wikilink1" title="linux">Linux</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/solaris" class="wikilink1" title="solaris">Solaris</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/oracle" class="wikilink1" title="oracle">Oracle</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/db2" class="wikilink1" title="db2">DB2</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/mysql" class="wikilink1" title="mysql">MySQL</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/ip" class="wikilink1" title="ip">IP(TCP/IP)</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/vim" class="wikilink1" title="vim">VIM</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/tomcat" class="wikilink1" title="tomcat">Tomcat</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/nginx" class="wikilink1" title="nginx">NGINX</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/apex" class="wikilink1" title="apex">APEX</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.f-notes.info/jri" class="wikilink1" title="jri">Jasper Reports Integration</a></div>
+</li>
+</ul>
+<ul><li>&nbsp;</li></ul>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form action="/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input name="do" value="search" type="hidden"><input id="qsearch__in" accesskey="f" name="id" class="edit" title="[F]" type="text"><input value="Поиск" class="button" title="Поиск" type="submit"><div id="qsearch__out" class="ajax_qsearch JSpopup" style="display: none;"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+                        
+  </div>
+  
+  
+  <div class="page">
+            <div class="breadcrumbs">
+        <span class="bchead">Вы находитесь здесь: </span><a href="http://www.f-notes.info/start" title="start">О чём здесь?</a> » <a href="http://www.f-notes.info/linux" title="linux">Linux</a> » <a href="http://www.f-notes.info/linux:linux_command" title="linux:linux_command">Очень полезные команды Linux на одном листе</a>        </div>
+    
+    <div class="meta">
+        <div class="doc">
+        Документ создан: 11.02.2010        </div>
+    </div>
+    
+
+
+<h1><a name="очень_полезные_команды_linux_на_одном_листе" id="очень_полезные_команды_linux_на_одном_листе">Очень полезные команды Linux на одном листе</a></h1>
+<div class="level1">
+<table class="inline">
+	<tbody><tr class="row0">
+		<th class="col0"> Команда </th><th class="col1"> Описание </th>
+	</tr>
+	<tr class="row1">
+		<th class="col0" colspan="2"> Системная информация </th>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> arch </td><td class="col1" rowspan="2"> отобразить архитектуру компьютера </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> uname -m </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> uname -r </td><td class="col1"> отобразить используемую версию ядра </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> dmidecode -q </td><td class="col1"> показать аппаратные системные компоненты - (SMBIOS / DMI) </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> hdparm -i /dev/hda </td><td class="col1"> вывести характеристики жесткого диска </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> hdparm -tT /dev/sda </td><td class="col1"> протестировать производительность чтения данных с жесткого диска </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> cat /proc/cpuinfo </td><td class="col1"> отобразить информацию о процессоре </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> cat /proc/interrupts </td><td class="col1"> показать прерывания </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> cat /proc/meminfo </td><td class="col1"> проверить использование памяти </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> cat /proc/swaps </td><td class="col1"> показать файл(ы) подкачки </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> cat /proc/version </td><td class="col1"> вывести версию ядра </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> cat /proc/net/dev </td><td class="col1"> показать сетевые интерфейсы и статистику по ним </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> cat /proc/mounts </td><td class="col1"> отобразить смонтированные файловые системы </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> lspci -tv </td><td class="col1"> показать в виде дерева PCI устройства </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> lsusb -tv </td><td class="col1"> показать в виде дерева USB устройства </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> date </td><td class="col1"> вывести системную дату </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> cal 2007 </td><td class="col1"> вывести таблицу-календарь 2007-го года </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> date 041217002007.00 </td><td class="col1"> установить системные дату и время ММДДЧЧммГГГГ.СС (МесяцДеньЧасМинутыГод.Секунды) </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"> clock -w<br>
+</td><td class="col1"> сохранить системное время в BIOS </td>
+	</tr>
+	<tr class="row21">
+		<th class="col0" colspan="2"> Остановка системы </th>
+	</tr>
+	<tr class="row22">
+		<td class="col0"> shutdown -h now </td><td class="col1" rowspan="3"> Остановить систему </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"> init 0 </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"> telinit 0 </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"> shutdown -h hours:minutes &amp; </td><td class="col1"> запланировать остановку системы на указанное время </td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"> shutdown -c </td><td class="col1"> отменить запланированную по расписанию остановку системы </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"> shutdown -r now </td><td class="col1" rowspan="2"> перегрузить систему </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"> reboot </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"> logout </td><td class="col1"> выйти из системы </td>
+	</tr>
+	<tr class="row30">
+		<th class="col0" colspan="2"> Файлы и директории </th>
+	</tr>
+	<tr class="row31">
+		<td class="col0"> cd /home </td><td class="col1"> перейти в директорию '/home' </td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"> cd .. </td><td class="col1"> перейти в директорию уровнем выше </td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"> cd ../.. </td><td class="col1"> перейти в директорию двумя уровнями выше </td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"> cd </td><td class="col1"> перейти в домашнюю директорию </td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"> cd ~user </td><td class="col1"> перейти в домашнюю директорию пользователя user </td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"> cd - </td><td class="col1"> перейти в директорию, в которой находились до перехода в текущую директорию </td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"> pwd </td><td class="col1"> показать текущую директорию </td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"> ls </td><td class="col1"> отобразить содержимое текущей директории </td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"> ls -F </td><td class="col1"> отобразить содержимое текущей директории с добавлением к именам символов, храктеризующих тип </td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"> ls -l </td><td class="col1"> показать детализированое представление файлов и директорий в текущей директории </td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"> ls -a </td><td class="col1"> показать скрытые файлы и директории в текущей директории </td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"> ls *[0-9]* </td><td class="col1"> показать файлы и директории содержащие в имени цифры </td>
+	</tr>
+	<tr class="row43">
+		<td class="col0"> tree </td><td class="col1" rowspan="2"> показать дерево файлов и директорий, начиная от корня (/) </td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"> lstree </td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"> mkdir dir1 </td><td class="col1"> создать директорию с именем 'dir1' </td>
+	</tr>
+	<tr class="row46">
+		<td class="col0"> mkdir dir1 dir2 </td><td class="col1"> создать две директории одновременно </td>
+	</tr>
+	<tr class="row47">
+		<td class="col0"> mkdir -p /tmp/dir1/dir2 </td><td class="col1"> создать дерево директорий </td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"> rm -f file1 </td><td class="col1"> удалить файл с именем 'file1' </td>
+	</tr>
+	<tr class="row49">
+		<td class="col0"> rmdir dir1 </td><td class="col1"> удалить директорию с именем 'dir1' </td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"> rm -rf dir1 </td><td class="col1"> удалить директорию с именем 'dir1' и рекурсивно всё её содержимое </td>
+	</tr>
+	<tr class="row51">
+		<td class="col0"> rm -rf dir1 dir2 </td><td class="col1"> удалить две директории и рекурсивно их содержимое </td>
+	</tr>
+	<tr class="row52">
+		<td class="col0"> mv dir1 new_dir </td><td class="col1"> переименовать или переместить файл или директорию </td>
+	</tr>
+	<tr class="row53">
+		<td class="col0"> cp file1 file2 </td><td class="col1"> сопировать файл file1 в файл file2 </td>
+	</tr>
+	<tr class="row54">
+		<td class="col0"> cp dir/* . </td><td class="col1"> копировать все файлы директории dir в текущую директорию </td>
+	</tr>
+	<tr class="row55">
+		<td class="col0"> cp -a /tmp/dir1 . </td><td class="col1"> копировать директорию dir1 со всем содержимым в текущую директорию </td>
+	</tr>
+	<tr class="row56">
+		<td class="col0"> cp -a dir1 dir2 </td><td class="col1"> копировать директорию dir1 в директорию dir2 </td>
+	</tr>
+	<tr class="row57">
+		<td class="col0"> ln -s file1 lnk1 </td><td class="col1"> создать символическую ссылку на файл или директорию </td>
+	</tr>
+	<tr class="row58">
+		<td class="col0"> ln file1 lnk1 </td><td class="col1"> создать "жёсткую" (физическую) ссылку на файл или директорию </td>
+	</tr>
+	<tr class="row59">
+		<td class="col0"> touch -t 0712250000 fileditest </td><td class="col1"> модифицировать дату и время создания файла, при его отсутствии, создать файл с указанными датой и временем (YYMMDDhhmm) </td>
+	</tr>
+	<tr class="row60">
+		<th class="col0" colspan="2"> Поиск файлов </th>
+	</tr>
+	<tr class="row61">
+		<td class="col0"> find / -name file1 </td><td class="col1"> найти файлы и директории с именем file1. Поиск начать с корня (/) </td>
+	</tr>
+	<tr class="row62">
+		<td class="col0"> find / -user user1 </td><td class="col1"> найти файл и директорию принадлежащие пользователю user1. Поиск начать с корня (/) </td>
+	</tr>
+	<tr class="row63">
+		<td class="col0"> find /home/user1 -name "*.bin" </td><td class="col1"> Найти все файлы и директории, имена которых оканчиваются на '. bin'. Поиск начать с '/ home/user1' </td>
+	</tr>
+	<tr class="row64">
+		<td class="col0"> find /usr/bin -type f -atime +100 </td><td class="col1"> найти все файлы в '/usr/bin', время последнего обращения к которым более 100 дней </td>
+	</tr>
+	<tr class="row65">
+		<td class="col0"> find /usr/bin -type f -mtime -10 </td><td class="col1"> найти все файлы в '/usr/bin', созданные или изменённые в течении последних 10 дней </td>
+	</tr>
+	<tr class="row66">
+		<td class="col0"> find / -name *.rpm -exec chmod 755 '{}' \; </td><td class="col1"> найти все фалы и директории, имена которых оканчиваются на '.rpm', и изменить права доступа к ним </td>
+	</tr>
+	<tr class="row67">
+		<td class="col0"> find / -xdev -name "*.rpm" </td><td class="col1"> найти все фалы и директории, имена которых оканчиваются на '.rpm', игнорируя съёмные носители, такие как cdrom, floppy и т.п. </td>
+	</tr>
+	<tr class="row68">
+		<td class="col0"> locate "*.ps" </td><td class="col1"> найти все файлы, сожержащие в имени '.ps'. Предварительно рекомендуется выполнить команду 'updatedb' </td>
+	</tr>
+	<tr class="row69">
+		<td class="col0"> whereis halt </td><td class="col1"> показывает размещение бинарных файлов, исходных кодов и руководств, относящихся к файлу 'halt' </td>
+	</tr>
+	<tr class="row70">
+		<td class="col0"> which halt </td><td class="col1"> отображает полный путь к файлу 'halt' </td>
+	</tr>
+	<tr class="row71">
+		<th class="col0" colspan="2"> Монтирование файловых систем </th>
+	</tr>
+	<tr class="row72">
+		<td class="col0"> mount /dev/hda2 /mnt/hda2 </td><td class="col1"> монтирует раздел 'hda2' в точку монтирования '/mnt/hda2'. Убедитесь в наличии директории-точки монтирования '/mnt/hda2' </td>
+	</tr>
+	<tr class="row73">
+		<td class="col0"> umount /dev/hda2 </td><td class="col1"> размонтирует раздел 'hda2'. Перед выполнением, покиньте '/mnt/hda2' </td>
+	</tr>
+	<tr class="row74">
+		<td class="col0"> fuser -km /mnt/hda2 </td><td class="col1"> принудительное размонтирование раздела. Применяется в случае, когда раздел занят каким-либо пользователем </td>
+	</tr>
+	<tr class="row75">
+		<td class="col0"> umount -n /mnt/hda2 </td><td class="col1"> выполнить
+ размонитрование без занесения информации в /etc/mtab. Полезно когда 
+файл имеет атрибуты "только чтение" или недостаточно места на диске </td>
+	</tr>
+	<tr class="row76">
+		<td class="col0"> mount /dev/fd0 /mnt/floppy </td><td class="col1"> монтировать флоппи-диск </td>
+	</tr>
+	<tr class="row77">
+		<td class="col0"> mount /dev/cdrom /mnt/cdrom </td><td class="col1"> монтировать CD или DVD </td>
+	</tr>
+	<tr class="row78">
+		<td class="col0"> mount /dev/hdc /mnt/cdrecorder </td><td class="col1"> монтировать CD-R/CD-RW или DVD-R/DVD-RW(+-) </td>
+	</tr>
+	<tr class="row79">
+		<td class="col0"> mount -o loop file.iso /mnt/cdrom </td><td class="col1"> смонтировать <acronym title="International Organization for Standardization">ISO</acronym>-образ </td>
+	</tr>
+	<tr class="row80">
+		<td class="col0"> mount -t vfat /dev/hda5 /mnt/hda5 </td><td class="col1"> монтировать файловую систему Windows FAT32 </td>
+	</tr>
+	<tr class="row81">
+		<td class="col0"> mount -t smbfs -o username=user,password=pass <code>/</code><code>/</code>winclient<code>/</code>share  <code>/</code>mnt<code>/</code>share </td><td class="col1"> монтировать сетевую файловую систему Windows (SMB/CIFS) </td>
+	</tr>
+	<tr class="row82">
+		<td class="col0"> mount -o bind /home/user/prg /var/ftp/user </td><td class="col1">
+ "монтирует" директорию в директорию (binding). Доступна с версии ядра 
+2.4.0. Полезна, например, для предоставления содержимого 
+пользовательской директории через ftp при работе ftp-сервера в 
+"песочнице" (chroot), когда симлинки сделать невозможно.</td>
+	</tr>
+	<tr class="row83">
+		<th class="col0" colspan="2"> Дисковое пространство </th>
+	</tr>
+	<tr class="row84">
+		<td class="col0"> df -h </td><td class="col1"> отображает информацию о смонтированных разделах с отображением общего, доступного и используемого пространства <em>(Прим.переводчика. ключ -h работает не во всех *nix системах)</em> </td>
+	</tr>
+	<tr class="row85">
+		<td class="col0"> ls -lSr <code>|</code>more </td><td class="col1"> 
+выдаёт список файлов и директорий рекурсивно с сортировкой по 
+возрастанию размера и позволяет осуществлять постраничный просмотр </td>
+	</tr>
+	<tr class="row86">
+		<td class="col0"> du -sh dir1 </td><td class="col1"> подсчитывает и выводит размер, занимаемый директорией 'dir1' <em>(Прим.переводчика. ключ -h работает не во всех *nix системах)</em> </td>
+	</tr>
+	<tr class="row87">
+		<td class="col0"> du -sk * <code>|</code> sort -rn </td><td class="col1"> отображает размер и имена файлов и директорий, с соритровкой по размеру </td>
+	</tr>
+	<tr class="row88">
+		<td class="col0"> rpm -q -a <code>-</code><code>-</code>qf '%10{SIZE}\t%{NAME}\n' <code>|</code> sort -k1,1n </td><td class="col1">
+ показывает размер используемого дискового пространства, занимаемое 
+файлами rpm-пакета, с сортировкой по размеру (fedora, redhat и т.п.) </td>
+	</tr>
+	<tr class="row89">
+		<td class="col0"> dpkg-query -W -f='${Installed-Size;10}\t${Package}\n' <code>|</code> sort -k1,1n </td><td class="col1">
+ показывает размер используемого дискового пространства, занимаемое 
+файлами deb-пакета, с сортировкой по размеру (ubuntu, debian т.п.) </td>
+	</tr>
+	<tr class="row90">
+		<th class="col0" colspan="2"> Пользователи и группы </th>
+	</tr>
+	<tr class="row91">
+		<td class="col0"> groupadd group_name </td><td class="col1"> создать новую группу с именем group_name </td>
+	</tr>
+	<tr class="row92">
+		<td class="col0"> groupdel group_name </td><td class="col1"> удалить группу group_name </td>
+	</tr>
+	<tr class="row93">
+		<td class="col0"> groupmod -n new_group_name old_group_name </td><td class="col1"> переименовать группу old_group_name в new_group_name </td>
+	</tr>
+	<tr class="row94">
+		<td class="col0"> useradd -c "Nome Cognome" -g admin -d /home/user1 -s /bin/bash user1 </td><td class="col1">
+ создать пользователя user1, назначить ему в качестве домашнего каталога
+ /home/user1, в качестве shell'а /bin/bash, включить его в группу admin и
+ добавить комментарий Nome Cognome </td>
+	</tr>
+	<tr class="row95">
+		<td class="col0"> useradd user1 </td><td class="col1"> создать пользователя user1 </td>
+	</tr>
+	<tr class="row96">
+		<td class="col0"> userdel -r user1 </td><td class="col1"> удалить пользователя user1 и его домашний каталог </td>
+	</tr>
+	<tr class="row97">
+		<td class="col0"> usermod -c "User <acronym title="File Transfer Protocol">FTP</acronym>" -g system -d /ftp/user1 -s /bin/nologin user1 </td><td class="col1"> изменить атрибуты пользователя </td>
+	</tr>
+	<tr class="row98">
+		<td class="col0"> passwd </td><td class="col1"> сменить пароль </td>
+	</tr>
+	<tr class="row99">
+		<td class="col0"> passwd user1 </td><td class="col1"> сменить пароль пользователя user1 (только root) </td>
+	</tr>
+	<tr class="row100">
+		<td class="col0"> chage -E 2005-12-31 user1 </td><td class="col1"> установить дату окончания действия учётной записи пользователя user1 </td>
+	</tr>
+	<tr class="row101">
+		<td class="col0"> pwck </td><td class="col1"> проверить корректность системных файлов учётных записей. Проверяются файлы /etc/passwd и /etc/shadow </td>
+	</tr>
+	<tr class="row102">
+		<td class="col0"> grpck </td><td class="col1"> проверяет корректность системных файлов учётных записей. Проверяется файл/etc/group </td>
+	</tr>
+	<tr class="row103">
+		<td class="col0"> newgrp [-] group_name </td><td class="col1"> 
+изменяет первичную группу текущего пользователя. Если указать "-", 
+ситуация будет идентичной той, в которой пользователь вышил из системы и
+ снова вошёл. Если не указывать группу, первичная группа будет назначена
+ из /etc/passwd </td>
+	</tr>
+	<tr class="row104">
+		<th class="col0" colspan="2"> Выставление/изменение полномочий на файлы </th>
+	</tr>
+	<tr class="row105">
+		<td class="col0"> ls -lh </td><td class="col1"> просмотр полномочий на файлы и директории в текущей директории </td>
+	</tr>
+	<tr class="row106">
+		<td class="col0"> ls /tmp <code>|</code> pr -T5 -W$COLUMNS </td><td class="col1"> вывести содержимое директории /tmp и разделить вывод на пять колонок </td>
+	</tr>
+	<tr class="row107">
+		<td class="col0"> chmod ugo+rwx directory1 </td><td class="col1"> 
+добавить полномочия на директорию directory1 ugo(User Group 
+Other)+rwx(Read Write eXecute) - всем полные права. Аналогичное можно 
+сделать таким образом "chmod 777 directory1" </td>
+	</tr>
+	<tr class="row108">
+		<td class="col0"> chmod go-rwx directory1 </td><td class="col1"> отобрать у группы и всех остальных все полномочия на директорию directory1. </td>
+	</tr>
+	<tr class="row109">
+		<td class="col0"> chown user1 file1 </td><td class="col1"> назначить владельцем файла file1 пользователя user1 </td>
+	</tr>
+	<tr class="row110">
+		<td class="col0"> chown -R user1 directory1 </td><td class="col1"> назначить рекурсивно владельцем директории directory1 пользователя user1 </td>
+	</tr>
+	<tr class="row111">
+		<td class="col0"> chgrp group1 file1 </td><td class="col1"> сменить группу-владельца файла file1 на group1 </td>
+	</tr>
+	<tr class="row112">
+		<td class="col0"> chown user1:group1 file1 </td><td class="col1"> сменить владельца и группу владельца файла file1 </td>
+	</tr>
+	<tr class="row113">
+		<td class="col0"> find / -perm -u+s </td><td class="col1"> найти, начиная от корня, все файлы с выставленным SUID </td>
+	</tr>
+	<tr class="row114">
+		<td class="col0"> chmod u+s /bin/binary_file </td><td class="col1"> 
+назначить SUID-бит файлу /bin/binary_file. Это даёт возможность любому 
+пользователю запускать на выполнение файл с полномочиями владельца 
+файла. </td>
+	</tr>
+	<tr class="row115">
+		<td class="col0"> chmod u-s /bin/binary_file </td><td class="col1"> снять SUID-бит с файла /bin/binary_file. </td>
+	</tr>
+	<tr class="row116">
+		<td class="col0"> chmod g+s /home/public </td><td class="col1"> назначить SGID-бит директории /home/public. </td>
+	</tr>
+	<tr class="row117">
+		<td class="col0"> chmod g-s /home/public </td><td class="col1"> снять SGID-бит с директории /home/public. </td>
+	</tr>
+	<tr class="row118">
+		<td class="col0"> chmod o+t /home/public </td><td class="col1"> назначить STIKY-бит директории /home/public. Позволяет удалять файлы только владельцам </td>
+	</tr>
+	<tr class="row119">
+		<td class="col0"> chmod o-t /home/public </td><td class="col1"> снять STIKY-бит с директории /home/public </td>
+	</tr>
+	<tr class="row120">
+		<th class="col0" colspan="2"> Специальные атрибуты файлов </th>
+	</tr>
+	<tr class="row121">
+		<td class="col0"> chattr +a file1 </td><td class="col1"> позволить открывать файл на запись только в режиме добавления </td>
+	</tr>
+	<tr class="row122">
+		<td class="col0"> chattr +c file1 </td><td class="col1"> позволяет ядру автоматически сжимать/разжимать содержимое файла. </td>
+	</tr>
+	<tr class="row123">
+		<td class="col0"> chattr +d file1 </td><td class="col1"> указавет утилите dump игнорировать данный файл во время выполнения backup'а </td>
+	</tr>
+	<tr class="row124">
+		<td class="col0"> chattr +i file1 </td><td class="col1"> делает файл недоступным для любых изменений: редактирование, удаление, перемещение, создание линков на него. </td>
+	</tr>
+	<tr class="row125">
+		<td class="col0"> chattr +s file1 </td><td class="col1"> позволяет 
+сделать удаление файла безопасным, т.е. выставленный атрибут s говорит о
+ том, что при удалении файла, место, занимаемое файлом на диске 
+заполняется нулями, что предотвращяет возможность восстановления данных.
+ </td>
+	</tr>
+	<tr class="row126">
+		<td class="col0"> chattr +S file1 </td><td class="col1"> указывает, что, при сохранении изменений, будет произведена синхронизация, как при выполнении команды sync </td>
+	</tr>
+	<tr class="row127">
+		<td class="col0"> chattr +u file1 </td><td class="col1"> данный 
+атрибут указывает, что при удалении файла содержимое его будет сохранено
+ и при необходимости пользователь сможет его восстановить </td>
+	</tr>
+	<tr class="row128">
+		<td class="col0"> lsattr </td><td class="col1"> показать атрибуты файлов </td>
+	</tr>
+	<tr class="row129">
+		<th class="col0" colspan="2"> Архивирование и сжатие файлов </th>
+	</tr>
+	<tr class="row130">
+		<td class="col0"> bunzip2 file1.bz2 </td><td class="col1" rowspan="2"> разжимает файл 'file1.gz' </td>
+	</tr>
+	<tr class="row131">
+		<td class="col0"> gunzip file1.gz </td>
+	</tr>
+	<tr class="row132">
+		<td class="col0"> gzip file1 </td><td class="col1" rowspan="2"> сжимает файл 'file1' </td>
+	</tr>
+	<tr class="row133">
+		<td class="col0"> bzip2 file1 </td>
+	</tr>
+	<tr class="row134">
+		<td class="col0"> gzip -9 file1 </td><td class="col1"> сжать файл file1 с максимальным сжатием </td>
+	</tr>
+	<tr class="row135">
+		<td class="col0"> rar a file1.rar test_file </td><td class="col1"> создать rar-архив 'file1.rar' и включить в него файл test_file </td>
+	</tr>
+	<tr class="row136">
+		<td class="col0"> rar a file1.rar file1 file2 dir1 </td><td class="col1"> создать rar-архив 'file1.rar' и включить в него file1, file2 и dir1 </td>
+	</tr>
+	<tr class="row137">
+		<td class="col0"> unrar x file1.rar </td><td class="col1">распаковать rar-архив </td>
+	</tr>
+	<tr class="row138">
+		<td class="col0"> tar -cvf archive.tar file1 </td><td class="col1"> создать tar-архив archive.tar, содержащий файл file1 </td>
+	</tr>
+	<tr class="row139">
+		<td class="col0"> tar -cvf archive.tar file1 file2 dir1 </td><td class="col1"> создать tar-архив archive.tar, содержащий файл file1, file2 и dir1 </td>
+	</tr>
+	<tr class="row140">
+		<td class="col0"> tar -tf archive.tar </td><td class="col1"> показать содержимое архива </td>
+	</tr>
+	<tr class="row141">
+		<td class="col0"> tar -xvf archive.tar </td><td class="col1"> распаковать архив </td>
+	</tr>
+	<tr class="row142">
+		<td class="col0"> tar -xvf archive.tar -C /tmp </td><td class="col1"> распаковать архив в /tmp </td>
+	</tr>
+	<tr class="row143">
+		<td class="col0"> tar -cvfj archive.tar.bz2 dir1 </td><td class="col1"> создать архив и сжать его с помощью bzip2<em>(Прим.переводчика. ключ -j работает не во всех *nix системах)</em> </td>
+	</tr>
+	<tr class="row144">
+		<td class="col0"> tar -xvfj archive.tar.bz2 </td><td class="col1"> разжать архив и распаковать его<em>(Прим.переводчика. ключ -j работает не во всех *nix системах)</em> </td>
+	</tr>
+	<tr class="row145">
+		<td class="col0"> tar -cvfz archive.tar.gz dir1 </td><td class="col1"> создать архив и сжать его с помощью gzip </td>
+	</tr>
+	<tr class="row146">
+		<td class="col0"> tar -xvfz archive.tar.gz </td><td class="col1"> разжать архив и распаковать его </td>
+	</tr>
+	<tr class="row147">
+		<td class="col0"> zip file1.zip file1 </td><td class="col1"> создать сжатый zip-архив </td>
+	</tr>
+	<tr class="row148">
+		<td class="col0"> zip -r file1.zip file1 file2 dir1 </td><td class="col1"> создать сжатый zip-архив и со включением в него нескольких файлов и/или директорий </td>
+	</tr>
+	<tr class="row149">
+		<td class="col0"> unzip file1.zip </td><td class="col1"> разжать и распаковать zip-архив </td>
+	</tr>
+	<tr class="row150">
+		<th class="col0" colspan="2"> RPM пакеты (Fedora, Red Hat и тому подобное) </th>
+	</tr>
+	<tr class="row151">
+		<td class="col0"> rpm -ivh package.rpm </td><td class="col1"> установить пакет с выводом сообщений и прогресс-бара </td>
+	</tr>
+	<tr class="row152">
+		<td class="col0"> rpm -ivh <code>-</code><code>-</code>nodeps package.rpm </td><td class="col1"> установить пакет с выводом сообщений и прогресс-бара без контроля зависимостей </td>
+	</tr>
+	<tr class="row153">
+		<td class="col0"> rpm -U package.rpm </td><td class="col1"> обновить пакет без изменений конфигурационных файлов, в случае отсутствия пакета, он будет установлен </td>
+	</tr>
+	<tr class="row154">
+		<td class="col0"> rpm -F package.rpm </td><td class="col1"> обновить пакет только если он установлен </td>
+	</tr>
+	<tr class="row155">
+		<td class="col0"> rpm -e package_name.rpm </td><td class="col1"> удалить пакет </td>
+	</tr>
+	<tr class="row156">
+		<td class="col0"> rpm -qa </td><td class="col1"> отобразить список всех пакетов, установленных в системе </td>
+	</tr>
+	<tr class="row157">
+		<td class="col0"> rpm -qa <code>|</code> grep httpd </td><td class="col1"> среди всех пакетов, установленных в системе, найти пакет содержащий в своём имени "httpd" </td>
+	</tr>
+	<tr class="row158">
+		<td class="col0"> rpm -qi package_name </td><td class="col1"> вывести информацию о конкрентном пакете </td>
+	</tr>
+	<tr class="row159">
+		<td class="col0"> rpm -qg "System Environment/Daemons" </td><td class="col1"> отобразить пакеты входящие в группу пакетов </td>
+	</tr>
+	<tr class="row160">
+		<td class="col0"> rpm -ql package_name </td><td class="col1"> вывести список файлов, входящих в пакет </td>
+	</tr>
+	<tr class="row161">
+		<td class="col0"> rpm -qc package_name </td><td class="col1"> вывести список конфигурационных файлов, входящих в пакет </td>
+	</tr>
+	<tr class="row162">
+		<td class="col0"> rpm -q package_name <code>-</code><code>-</code>whatrequires </td><td class="col1"> вывести список пакетов, необходимых для установки конкретного пакета по зависимостям </td>
+	</tr>
+	<tr class="row163">
+		<td class="col0"> rpm -q package_name <code>-</code><code>-</code>whatprovides </td><td class="col1"> show capability provided by a rpm package </td>
+	</tr>
+	<tr class="row164">
+		<td class="col0"> rpm -q package_name <code>-</code><code>-</code>scripts </td><td class="col1"> отобразит скрипты, запускаемые при установке/удалении пакета </td>
+	</tr>
+	<tr class="row165">
+		<td class="col0"> rpm -q package_name <code>-</code><code>-</code>changelog </td><td class="col1"> вывести историю ревизий пакета </td>
+	</tr>
+	<tr class="row166">
+		<td class="col0"> rpm -qf /etc/httpd/conf/httpd.conf </td><td class="col1"> проверить какому пакету принадлежит указанный файл. Указывать следует полный путь и имя файла. </td>
+	</tr>
+	<tr class="row167">
+		<td class="col0"> rpm -qp package.rpm -l </td><td class="col1"> отображает список файлов, входящих в пакет, но ещё не установленных в систему </td>
+	</tr>
+	<tr class="row168">
+		<td class="col0"> rpm <code>-</code><code>-</code>import /media/cdrom/RPM-GPG-KEY </td><td class="col1"> ипортировать публичный ключ цифровой подписи </td>
+	</tr>
+	<tr class="row169">
+		<td class="col0"> rpm <code>-</code><code>-</code>checksig package.rpm </td><td class="col1"> проверит подпись пакета </td>
+	</tr>
+	<tr class="row170">
+		<td class="col0"> rpm -qa gpg-pubkey </td><td class="col1"> проверить целостность установленного содержимого пакета </td>
+	</tr>
+	<tr class="row171">
+		<td class="col0"> rpm -V package_name </td><td class="col1"> проверить размер, полномочия, тип, владельца, группу, MD5-сумму и дату последнего изменеия пакета </td>
+	</tr>
+	<tr class="row172">
+		<td class="col0"> rpm -Va </td><td class="col1"> проверить содержимое всех пакеты установленные в систему. Выполняйте с осторожностью! </td>
+	</tr>
+	<tr class="row173">
+		<td class="col0"> rpm -Vp package.rpm </td><td class="col1"> проверить пакет, который ещё не установлен в систему </td>
+	</tr>
+	<tr class="row174">
+		<td class="col0"> rpm2cpio package.rpm <code>|</code> cpio <code>-</code><code>-</code>extract <code>-</code><code>-</code>make-directories *bin* </td><td class="col1"> извлечь из пакета файлы содержащие в своём имени bin </td>
+	</tr>
+	<tr class="row175">
+		<td class="col0"> rpm -ivh /usr/src/redhat/RPMS/`arch`/package.rpm </td><td class="col1"> установить пакет, собранный из исходных кодов </td>
+	</tr>
+	<tr class="row176">
+		<td class="col0"> rpmbuild <code>-</code><code>-</code>rebuild package_name.src.rpm </td><td class="col1"> собрать пакет из исходных кодов </td>
+	</tr>
+	<tr class="row177">
+		<th class="col0" colspan="2"> YUM - средство обновления пакетов(Fedora, RedHat и тому подобное) </th>
+	</tr>
+	<tr class="row178">
+		<td class="col0"> yum install package_name </td><td class="col1"> закачать и установать пакет </td>
+	</tr>
+	<tr class="row179">
+		<td class="col0"> yum update </td><td class="col1"> обновить все пакеты, установленные в систему </td>
+	</tr>
+	<tr class="row180">
+		<td class="col0"> yum update package_name </td><td class="col1"> обновить пакет </td>
+	</tr>
+	<tr class="row181">
+		<td class="col0"> yum remove package_name </td><td class="col1"> удалить пакет </td>
+	</tr>
+	<tr class="row182">
+		<td class="col0"> yum list </td><td class="col1"> вывести список всех пакетов, установленных в систему </td>
+	</tr>
+	<tr class="row183">
+		<td class="col0"> yum search package_name </td><td class="col1"> найти пакет в репозитории </td>
+	</tr>
+	<tr class="row184">
+		<td class="col0"> yum clean packages </td><td class="col1"> очисть rpm-кэш, удалив закачанные пакеты </td>
+	</tr>
+	<tr class="row185">
+		<td class="col0"> yum clean headers </td><td class="col1"> удалить все заголовки файлов, которые система использует для разрешения зависимостей </td>
+	</tr>
+	<tr class="row186">
+		<td class="col0"> yum clean all </td><td class="col1"> очисть rpm-кэш, удалив закачанные пакеты и заголовки </td>
+	</tr>
+	<tr class="row187">
+		<th class="col0" colspan="2"> DEB пакеты (Debian, Ubuntu и тому подобное) </th>
+	</tr>
+	<tr class="row188">
+		<td class="col0"> dpkg -i package.deb </td><td class="col1"> установить / обновить пакет </td>
+	</tr>
+	<tr class="row189">
+		<td class="col0"> dpkg -r package_name </td><td class="col1"> удалить пакет из системы </td>
+	</tr>
+	<tr class="row190">
+		<td class="col0"> dpkg -l </td><td class="col1"> показать все пакеты, установленные в систему </td>
+	</tr>
+	<tr class="row191">
+		<td class="col0"> dpkg -l <code>|</code> grep httpd </td><td class="col1"> среди всех пакетов, установленных в системе, найти пакет содержащий в своём имени "httpd" </td>
+	</tr>
+	<tr class="row192">
+		<td class="col0"> dpkg -s package_name </td><td class="col1"> отобразить инфрмацию о конкретном пакете </td>
+	</tr>
+	<tr class="row193">
+		<td class="col0"> dpkg -L package_name </td><td class="col1"> вывести список файлов, входящих в пакет, установленный в систему </td>
+	</tr>
+	<tr class="row194">
+		<td class="col0"> dpkg <code>-</code><code>-</code>contents package.deb </td><td class="col1"> отобразить список файлов, входящих в пакет, который ешё не установлен в систему </td>
+	</tr>
+	<tr class="row195">
+		<td class="col0"> dpkg -S /bin/ping </td><td class="col1"> найти пакет, в который входит указанный файл. </td>
+	</tr>
+	<tr class="row196">
+		<th class="col0" colspan="2"> APT - средство управление пакетами (Debian, Ubuntu и тому подобное) </th>
+	</tr>
+	<tr class="row197">
+		<td class="col0"> apt-get install package_name </td><td class="col1"> установить / обновить пакет </td>
+	</tr>
+	<tr class="row198">
+		<td class="col0"> apt-cdrom install package_name </td><td class="col1"> установить / обновить пакет с cdrom'а </td>
+	</tr>
+	<tr class="row199">
+		<td class="col0"> apt-get update </td><td class="col1"> получить обновлённые списки пакетов </td>
+	</tr>
+	<tr class="row200">
+		<td class="col0"> apt-get upgrade </td><td class="col1"> обновить пакеты, установленные в систему </td>
+	</tr>
+	<tr class="row201">
+		<td class="col0"> apt-get remove package_name </td><td class="col1"> удалить пакет, установленный в систему с сохранением файлов конфигурации </td>
+	</tr>
+	<tr class="row202">
+		<td class="col0"> apt-get purge package_name </td><td class="col1"> удалить пакет, установленный в систему с удалением файлов конфигурации </td>
+	</tr>
+	<tr class="row203">
+		<td class="col0"> apt-get check </td><td class="col1"> проверить целостность зависимостей </td>
+	</tr>
+	<tr class="row204">
+		<td class="col0"> apt-get clean </td><td class="col1"> удалить загруженные архивные файлы пакетов </td>
+	</tr>
+	<tr class="row205">
+		<td class="col0"> apt-get autoclean </td><td class="col1"> удалить старые загруженные архивные файлы пакетов </td>
+	</tr>
+	<tr class="row206">
+		<th class="col0" colspan="2"> Просмотр содержимого файлов </th>
+	</tr>
+	<tr class="row207">
+		<td class="col0"> cat file1 </td><td class="col1"> вывести содержимое файла file1 на стандартное устройсво вывода </td>
+	</tr>
+	<tr class="row208">
+		<td class="col0"> tac file1 </td><td class="col1"> вывести содержимое файла file1 на стандартное устройсво вывода в обратном порядке (последняя строка становиться первой и т.д.) </td>
+	</tr>
+	<tr class="row209">
+		<td class="col0"> more file1 </td><td class="col1"> постраничный вывод содержимого файла file1 на стандартное устройство вывода </td>
+	</tr>
+	<tr class="row210">
+		<td class="col0"> less file1 </td><td class="col1"> постраничный вывод
+ содержимого файла file1 на стандартное устройство вывода, но с 
+возможностью пролистывания в обе стороны (вверх-вниз), поиска по 
+содержимому и т.п. </td>
+	</tr>
+	<tr class="row211">
+		<td class="col0"> head -2 file1 </td><td class="col1"> вывести первые две строки файла file1 на стандартное устройство вывода. По-умолчанию выводится десять строк </td>
+	</tr>
+	<tr class="row212">
+		<td class="col0"> tail -2 file1 </td><td class="col1"> вывести последние две строки файла file1 на стандартное устройство вывода. По-умолчанию выводится десять строк </td>
+	</tr>
+	<tr class="row213">
+		<td class="col0"> tail -f /var/log/messages </td><td class="col1"> выводить содержимое файла /var/log/messages на стандартное устройство вывода по мере появления в нём текста. </td>
+	</tr>
+	<tr class="row214">
+		<th class="col0" colspan="2"> Манипуляции с текстом </th>
+	</tr>
+	<tr class="row215">
+		<td class="col0"> cat file <code>|</code> grep -i "Criteria" &gt; result.txt </td><td class="col1"> общий синтаксис выполнения действий по обработке содержимого файла и вывода результата в новый </td>
+	</tr>
+	<tr class="row216">
+		<td class="col0"> cat file <code>|</code> grep -i "Criteria" <code>&gt;</code><code>&gt;</code> result.txt </td><td class="col1">
+ общий синтаксис выполнения действий по обработке содержимого файла и 
+вывода результата в существующий файл. Если файл не существует, он будет
+ создан </td>
+	</tr>
+	<tr class="row217">
+		<td class="col0"> grep Aug /var/log/messages </td><td class="col1"> из файла '/var/log/messages' отобрать и вывести на стандартное устройство вывода строки, содержащие "Aug" </td>
+	</tr>
+	<tr class="row218">
+		<td class="col0"> grep <code>^</code>Aug /var/log/messages </td><td class="col1"> из файла '/var/log/messages' отобрать и вывести на стандартное устройство вывода строки, начинающиеся на "Aug" </td>
+	</tr>
+	<tr class="row219">
+		<td class="col0"> grep [0-9] /var/log/messages </td><td class="col1"> из файла '/var/log/messages' отобрать и вывести на стандартное устройство вывода строки, содержащие цифры </td>
+	</tr>
+	<tr class="row220">
+		<td class="col0"> grep Aug -R /var/log/* </td><td class="col1"> 
+отобрать и вывести на стандартное устройство вывода строки, содержащие 
+"Aug", во всех файлах, находящихся в директории /var/log и ниже </td>
+	</tr>
+	<tr class="row221">
+		<td class="col0"> sed 's/stringa1/stringa2/g' example.txt </td><td class="col1"> в файле example.txt заменить "string1" на "string2", результат вывести на стандартное устройство вывода. </td>
+	</tr>
+	<tr class="row222">
+		<td class="col0"> sed <code>'/^$/</code>d' example.txt </td><td class="col1"> удалить пустые строки из файла example.txt </td>
+	</tr>
+	<tr class="row223">
+		<td class="col0"> sed <code>'/ *#/</code>d; <code>/^$/</code>d' example.txt </td><td class="col1"> удалить пустые строки и комментарии из файла example.txt </td>
+	</tr>
+	<tr class="row224">
+		<td class="col0"> echo 'test' <code>|</code> tr '[:lower:]' '[:upper:]' </td><td class="col1"> преобразовать символы из нижнего регистра в верхний </td>
+	</tr>
+	<tr class="row225">
+		<td class="col0"> sed -e '1d' result.txt </td><td class="col1"> удалить первую строку из файла example.txt </td>
+	</tr>
+	<tr class="row226">
+		<td class="col0"> sed -n '/string1/p' </td><td class="col1"> отобразить только строки содержашие "string1" </td>
+	</tr>
+	<tr class="row227">
+		<td class="col0"> sed -e 's<code>/</code> *$<code>/</code><code>/</code>' example.txt </td><td class="col1"> удалить пустые символы в в конце каждой строки </td>
+	</tr>
+	<tr class="row228">
+		<td class="col0"> sed -e 's<code>/</code>string1<code>/</code><code>/</code>g' example.txt </td><td class="col1"> удалить строку "string1" из текста не изменяя всего остального </td>
+	</tr>
+	<tr class="row229">
+		<td class="col0"> sed -n '1,8p;5q' example.txt </td><td class="col1"> взять из файла с первой по восьмую строки и из них вывести первые пять </td>
+	</tr>
+	<tr class="row230">
+		<td class="col0"> sed -n '5p;5q' example.txt </td><td class="col1"> вывести пятую строку </td>
+	</tr>
+	<tr class="row231">
+		<td class="col0"> sed -e 's/0*/0/g' example.txt </td><td class="col1"> заменить последовательность из любого количества нулей одним нулём </td>
+	</tr>
+	<tr class="row232">
+		<td class="col0"> cat -n file1 </td><td class="col1"> пронумеровать строки при выводе содержимого файла </td>
+	</tr>
+	<tr class="row233">
+		<td class="col0"> cat example.txt <code>|</code> awk 'NR%2==1' </td><td class="col1"> при выводе содержимого файла, не выводить чётные строки файла </td>
+	</tr>
+	<tr class="row234">
+		<td class="col0"> echo a b c <code>|</code> awk '{print $1}' </td><td class="col1"> вывести первую колонку. Разделение, по-умолчанию, по проблелу/пробелам или символу/символам табуляции </td>
+	</tr>
+	<tr class="row235">
+		<td class="col0"> echo a b c <code>|</code> awk '{print $1,$3}' </td><td class="col1"> вывести первую и треью колонки. Разделение, по-умолчанию, по проблелу/пробелам или символу/символам табуляции </td>
+	</tr>
+	<tr class="row236">
+		<td class="col0"> paste file1 file2 </td><td class="col1"> объединить 
+содержимое file1 и file2 в виде таблицы: строка 1 из file1 = строка 1 
+колонка 1-n, строка 1 из file2 = строка 1 колонка n+1-m </td>
+	</tr>
+	<tr class="row237">
+		<td class="col0"> paste -d '+' file1 file2 </td><td class="col1"> объединить содержимое file1 и file2 в виде таблицы с разделителем "+" </td>
+	</tr>
+	<tr class="row238">
+		<td class="col0"> sort file1 file2 </td><td class="col1"> отсортировать содержимое двух файлов </td>
+	</tr>
+	<tr class="row239">
+		<td class="col0"> sort file1 file2 <code>|</code> uniq </td><td class="col1"> отсортировать содержимое двух файлов, не отображая повторов </td>
+	</tr>
+	<tr class="row240">
+		<td class="col0"> sort file1 file2 <code>|</code> uniq -u </td><td class="col1">
+ отсортировать содержимое двух файлов, отображая только уникальные 
+строки (строки, встречающиеся в обоих файлах, не выводятся на 
+стандартное устройство вывода) </td>
+	</tr>
+	<tr class="row241">
+		<td class="col0"> sort file1 file2 <code>|</code> uniq -d </td><td class="col1"> отсортировать содержимое двух файлов, отображая только повторяющиеся строки </td>
+	</tr>
+	<tr class="row242">
+		<td class="col0"> comm -1 file1 file2 </td><td class="col1"> сравнить содержимое двух файлов, не отображая строки принадлежащие файлу 'file1' </td>
+	</tr>
+	<tr class="row243">
+		<td class="col0"> comm -2 file1 file2 </td><td class="col1"> сравнить содержимое двух файлов, не отображая строки принадлежащие файлу 'file2' </td>
+	</tr>
+	<tr class="row244">
+		<td class="col0"> comm -3 file1 file2 </td><td class="col1"> сравнить содержимое двух файлов, удаляя строки встречающиеся в обоих файлах </td>
+	</tr>
+	<tr class="row245">
+		<th class="col0" colspan="2"> Преобразование наборов символов и файловых форматов </th>
+	</tr>
+	<tr class="row246">
+		<td class="col0"> dos2unix filedos.txt fileunix.txt </td><td class="col1"> конвертировать файл текстового формата из MSDOS в UNIX (разница в символах возврата коретки) </td>
+	</tr>
+	<tr class="row247">
+		<td class="col0"> unix2dos fileunix.txt filedos.txt </td><td class="col1"> конвертировать файл текстового формата из UNIX в MSDOS (разница в символах возврата коретки) </td>
+	</tr>
+	<tr class="row248">
+		<td class="col0"> recode ..<acronym title="HyperText Markup Language">HTML</acronym> &lt; page.txt &gt; page.html </td><td class="col1"> конвертировать содержимое тестового файла page.txt в html-файл page.html </td>
+	</tr>
+	<tr class="row249">
+		<td class="col0"> recode -l <code>|</code> more </td><td class="col1"> вывести список доступных форматов </td>
+	</tr>
+	<tr class="row250">
+		<th class="col0" colspan="2"> Анализ файловых систем </th>
+	</tr>
+	<tr class="row251">
+		<td class="col0"> badblocks -v /dev/hda1 </td><td class="col1"> проверить раздел hda1 на наличие bad-блоков </td>
+	</tr>
+	<tr class="row252">
+		<td class="col0"> fsck /dev/hda1 </td><td class="col1"> проверить/восстановить целостность linux-файловой системы раздела hda1 </td>
+	</tr>
+	<tr class="row253">
+		<td class="col0"> fsck.ext2 /dev/hda1 </td><td class="col1"> проверить/восстановить целостность файловой системы ext2 раздела hda1 </td>
+	</tr>
+	<tr class="row254">
+		<td class="col0"> e2fsck /dev/hda1 </td>
+	</tr>
+	<tr class="row255">
+		<td class="col0"> e2fsck -j /dev/hda1 </td><td class="col1"> проверить/восстановить целостность файловой системы ext3 раздела hda1 с указанием, что журнал расположен там же </td>
+	</tr>
+	<tr class="row256">
+		<td class="col0"> fsck.ext3 /dev/hda1 </td><td class="col1"> проверить/восстановить целостность файловой системы ext3 раздела hda1 </td>
+	</tr>
+	<tr class="row257">
+		<td class="col0"> fsck.vfat /dev/hda1 </td><td class="col1" rowspan="3"> проверить/восстановить целостность файловой системы fat раздела hda1 </td>
+	</tr>
+	<tr class="row258">
+		<td class="col0"> fsck.msdos /dev/hda1 </td>
+	</tr>
+	<tr class="row259">
+		<td class="col0"> dosfsck /dev/hda1 </td>
+	</tr>
+	<tr class="row260">
+		<th class="col0" colspan="2"> Форматирование файловых систем </th>
+	</tr>
+	<tr class="row261">
+		<td class="col0"> mkfs /dev/hda1 </td><td class="col1"> создать linux-файловую систему на разделе hda1 </td>
+	</tr>
+	<tr class="row262">
+		<td class="col0"> mke2fs /dev/hda1 </td><td class="col1"> создать файловую систему ext2 на разделе hda1 </td>
+	</tr>
+	<tr class="row263">
+		<td class="col0"> mke2fs -j /dev/hda1 </td><td class="col1"> создать журналирующую файловую систему ext3 на разделе hda1 </td>
+	</tr>
+	<tr class="row264">
+		<td class="col0"> mkfs -t vfat 32 -F /dev/hda1 </td><td class="col1"> создать файловую систему FAT32 на разделе hda1 </td>
+	</tr>
+	<tr class="row265">
+		<td class="col0"> fdformat -n /dev/fd0 </td><td class="col1"> форматирование флоппи-диска без проверки </td>
+	</tr>
+	<tr class="row266">
+		<td class="col0"> mkswap /dev/hda3 </td><td class="col1"> создание swap-пространства на разделе hda3 </td>
+	</tr>
+	<tr class="row267">
+		<th class="col0" colspan="2"> swap-пространство </th>
+	</tr>
+	<tr class="row268">
+		<td class="col0"> mkswap /dev/hda3 </td><td class="col1"> создание swap-пространства на разделе hda3 </td>
+	</tr>
+	<tr class="row269">
+		<td class="col0"> swapon /dev/hda3 </td><td class="col1"> активировать swap-пространство, расположенное на разделе hda3 </td>
+	</tr>
+	<tr class="row270">
+		<td class="col0"> swapon /dev/hda2 /dev/hdb3 </td><td class="col1"> активировать swap-пространства, расположенные на разделах hda2 и hdb3 </td>
+	</tr>
+	<tr class="row271">
+		<th class="col0" colspan="2"> Создание резервных копий (backup) </th>
+	</tr>
+	<tr class="row272">
+		<td class="col0"> dump -0aj -f /tmp/home0.bak /home </td><td class="col1"> создать полную резервную копию директории /home в файл /tmp/home0.bak </td>
+	</tr>
+	<tr class="row273">
+		<td class="col0"> dump -1aj -f /tmp/home0.bak /home </td><td class="col1"> создать инкрементальную резервную копию директории /home в файл /tmp/home0.bak </td>
+	</tr>
+	<tr class="row274">
+		<td class="col0"> restore -if /tmp/home0.bak </td><td class="col1"> восстановить из резервной копии /tmp/home0.bak </td>
+	</tr>
+	<tr class="row275">
+		<td class="col0"> rsync -rogpav <code>-</code><code>-</code>delete /home /tmp </td><td class="col1"> синхронизировать /tmp с /home </td>
+	</tr>
+	<tr class="row276">
+		<td class="col0"> rsync -rogpav -e ssh <code>-</code><code>-</code>delete /home ip_address:/tmp </td><td class="col1"> синхронизировать через <acronym title="Secure Shell">SSH</acronym>-туннель </td>
+	</tr>
+	<tr class="row277">
+		<td class="col0"> rsync -az -e ssh <code>-</code><code>-</code>delete ip_addr:/home/public /home/local </td><td class="col1"> синхронизировать локальную директорию с удалённой директорией через ssh-туннель со сжатием </td>
+	</tr>
+	<tr class="row278">
+		<td class="col0"> rsync -az -e ssh <code>-</code><code>-</code>delete /home/local ip_addr:/home/public </td><td class="col1"> синхронизировать удалённую директорию с локальной директорией через ssh-туннель со сжатием </td>
+	</tr>
+	<tr class="row279">
+		<td class="col0"> dd bs=1M if=/dev/hda <code>|</code> gzip <code>|</code> ssh user@ip_addr 'dd of=hda.gz' </td><td class="col1"> сделать "слепок" локального диска в файл на удалённом компьютере через ssh-туннель </td>
+	</tr>
+	<tr class="row280">
+		<td class="col0"> tar -Puf backup.tar /home/user </td><td class="col1"> создать инкрементальную резервную копию директории '/home/user' в файл backup.tar с сохранением полномочий </td>
+	</tr>
+	<tr class="row281">
+		<td class="col0"> ( cd /tmp/local/ &amp;&amp; tar c . ) <code>|</code> ssh -C user@ip_addr 'cd /home/share/ &amp;&amp; tar x -p' </td><td class="col1"> копирование содержимого /tmp/local на удалённый компьютер через ssh-туннель в /home/share/ </td>
+	</tr>
+	<tr class="row282">
+		<td class="col0"> ( tar c /home ) <code>|</code> ssh -C user@ip_addr 'cd /home/backup-home &amp;&amp; tar x -p' </td><td class="col1"> копирование содержимого /home на удалённый компьютер через ssh-туннель в /home/backup-home </td>
+	</tr>
+	<tr class="row283">
+		<td class="col0"> tar cf - . <code>|</code> (cd /tmp/backup ; tar xf - ) </td><td class="col1"> копирование одной директории в другую с сохранением полномочий и линков </td>
+	</tr>
+	<tr class="row284">
+		<td class="col0"> find /home/user1 -name '*.txt' <code>|</code> \ <br>
+xargs cp -av <code>-</code><code>-</code>target-directory=/home/backup/ <code>-</code><code>-</code>parents </td><td class="col1"> поиск в /home/user1 всех файлов, имена которых оканчиваются на '.txt', и копирование их в другую директорию </td>
+	</tr>
+	<tr class="row285">
+		<td class="col0"> find /var/log -name '*.log' <code>|</code> tar cv <code>-</code><code>-</code>files-from=- <code>|</code> bzip2 &gt; log.tar.bz2 </td><td class="col1"> поиск в /var/log всех файлов, имена которых оканчиваются на '.log', и создание bzip-архива из них </td>
+	</tr>
+	<tr class="row286">
+		<td class="col0"> dd if=/dev/hda of=/dev/fd0 bs=512 count=1 </td><td class="col1"> создать копию MBR (Master Boot Record) с /dev/hda на флоппи-диск </td>
+	</tr>
+	<tr class="row287">
+		<td class="col0"> dd if=/dev/fd0 of=/dev/hda bs=512 count=1 </td><td class="col1"> восстановить MBR с флоппи-диска на /dev/hda </td>
+	</tr>
+	<tr class="row288">
+		<th class="col0" colspan="2"> CDROM </th>
+	</tr>
+	<tr class="row289">
+		<td class="col0"> cdrecord -v gracetime=2 dev=/dev/cdrom -eject blank=fast -force </td><td class="col1"> clean a rewritable cdrom </td>
+	</tr>
+	<tr class="row290">
+		<td class="col0"> mkisofs /dev/cdrom &gt; cd.iso </td><td class="col1"> create an iso image of cdrom on disk </td>
+	</tr>
+	<tr class="row291">
+		<td class="col0"> mkisofs /dev/cdrom <code>|</code> gzip &gt; cd_iso.gz </td><td class="col1"> create a compressed iso image of cdrom on disk </td>
+	</tr>
+	<tr class="row292">
+		<td class="col0"> mkisofs -J -allow-leading-dots -R -V "Label CD" -iso-level 4 -o ./cd.iso data_cd </td><td class="col1"> create an iso image of a directory </td>
+	</tr>
+	<tr class="row293">
+		<td class="col0"> cdrecord -v dev=/dev/cdrom cd.iso </td><td class="col1"> burn an <acronym title="International Organization for Standardization">ISO</acronym> image </td>
+	</tr>
+	<tr class="row294">
+		<td class="col0"> gzip -dc cd_iso.gz <code>|</code> cdrecord dev=/dev/cdrom - </td><td class="col1"> burn a compressed <acronym title="International Organization for Standardization">ISO</acronym> image </td>
+	</tr>
+	<tr class="row295">
+		<td class="col0"> mount -o loop cd.iso /mnt/iso </td><td class="col1"> mount an <acronym title="International Organization for Standardization">ISO</acronym> image </td>
+	</tr>
+	<tr class="row296">
+		<td class="col0"> cd-paranoia -B </td><td class="col1"> rip audio tracks from a CD to wav files </td>
+	</tr>
+	<tr class="row297">
+		<td class="col0"> cd-paranoia <code>-</code><code>-</code> "-3" </td><td class="col1"> rip first three audio tracks from a CD to wav files </td>
+	</tr>
+	<tr class="row298">
+		<td class="col0"> cdrecord <code>-</code><code>-</code>scanbus </td><td class="col1"> scan bus to identify the channel scsi </td>
+	</tr>
+	<tr class="row299">
+		<th class="col0" colspan="2"> Сеть (LAN и WiFi) </th>
+	</tr>
+	<tr class="row300">
+		<td class="col0"> ifconfig eth0 </td><td class="col1"> показать конфигурацию сетевого интерфейса eth0 </td>
+	</tr>
+	<tr class="row301">
+		<td class="col0"> ifup eth0 </td><td class="col1"> активировать (поднять) интерфейс eth0 </td>
+	</tr>
+	<tr class="row302">
+		<td class="col0"> ifdown eth0 </td><td class="col1"> деактивировать (опустить) интерфейс eth0 </td>
+	</tr>
+	<tr class="row303">
+		<td class="col0"> ifconfig eth0 192.168.1.1 netmask 255.255.255.0 </td><td class="col1"> выставить интерфейсу eth0 ip-адрес и маску подсети </td>
+	</tr>
+	<tr class="row304">
+		<td class="col0"> ifconfig eth0 promisc </td><td class="col1"> перевести интерфейс eth0 в promiscuous-режим для "отлова" пакетов (sniffing) </td>
+	</tr>
+	<tr class="row305">
+		<td class="col0"> ifconfig eth0 -promisc </td><td class="col1"> отключить promiscuous-режим на интерфейсе eth0 </td>
+	</tr>
+	<tr class="row306">
+		<td class="col0"> dhclient eth0 </td><td class="col1"> активировать интерфейс eth0 в dhcp-режиме. </td>
+	</tr>
+	<tr class="row307">
+		<td class="col0"> route -n </td><td class="col1" rowspan="2"> вывести локальную таблицу маршрутизации </td>
+	</tr>
+	<tr class="row308">
+		<td class="col0"> netstat -rn </td>
+	</tr>
+	<tr class="row309">
+		<td class="col0"> route add -net 0/0 gw IP_Gateway </td><td class="col1"> задать ip-адрес шлюза по умолчанию (default gateway) </td>
+	</tr>
+	<tr class="row310">
+		<td class="col0"> route add -net 192.168.0.0 netmask 255.255.0.0 gw 192.168.1.1 </td><td class="col1"> добавить статический маршрут в сеть 192.168.0.0/16 через шлюз с ip-адресом 192.168.1.1 </td>
+	</tr>
+	<tr class="row311">
+		<td class="col0"> route del 0/0 gw IP_gateway </td><td class="col1"> удалить ip-адрес шлюза по умолчанию (default gateway) </td>
+	</tr>
+	<tr class="row312">
+		<td class="col0"> echo "1" &gt; /proc/sys/net/ipv4/ip_forward </td><td class="col1"> разрешить пересылку пакетов (forwarding) </td>
+	</tr>
+	<tr class="row313">
+		<td class="col0"> hostname </td><td class="col1"> отобразить имя компьютера </td>
+	</tr>
+	<tr class="row314">
+		<td class="col0"> host www<code>.</code>yandex<code>.</code>ru </td><td class="col1" rowspan="2"> разрешить имя www<code>.</code>yandex<code>.</code>ru хоста в ip-адрес и наоборот </td>
+	</tr>
+	<tr class="row315">
+		<td class="col0"> host 93.158.134.3 </td>
+	</tr>
+	<tr class="row316">
+		<td class="col0"> ip link show </td><td class="col1"> отобразить состояние всех интерфейсов </td>
+	</tr>
+	<tr class="row317">
+		<td class="col0"> mii-tool eth0 </td><td class="col1"> отобразить статус и тип соединения для интерфейса eth0 </td>
+	</tr>
+	<tr class="row318">
+		<td class="col0"> ethtool eth0 </td><td class="col1"> отображает статистику интерфеса eth0 с выводом такой информации, как поддерживаемые и текущие режимы соединения </td>
+	</tr>
+	<tr class="row319">
+		<td class="col0"> netstat -tupn </td><td class="col1"> отображает все 
+установленные сетевые соединения по протоколам TCP и UDP без разрешения 
+имён в ip-адреса и PID'ы и имена процессов, обеспечивающих эти 
+соединения </td>
+	</tr>
+	<tr class="row320">
+		<td class="col0"> netstat -tupln </td><td class="col1"> отображает все
+ сетевые соединения по протоколам TCP и UDP без разрешения имён в 
+ip-адреса и PID'ы и имена процессов, слушающих порты </td>
+	</tr>
+	<tr class="row321">
+		<td class="col0"> tcpdump tcp port 80 </td><td class="col1"> отобразить весь трафик на TCP-порт 80 (обычно - <acronym title="Hyper Text Transfer Protocol">HTTP</acronym>) </td>
+	</tr>
+	<tr class="row322">
+		<td class="col0"> iwlist scan </td><td class="col1"> просканировать эфир на предмет, доступности беспроводных точек доступа </td>
+	</tr>
+	<tr class="row323">
+		<td class="col0"> iwconfig eth1 </td><td class="col1"> показать конфигурацию беспроводного сетевого интерфейса eth1 </td>
+	</tr>
+	<tr class="row324">
+		<td class="col0"> traceroute www<code>.</code>ya<code>.</code>ru</td><td class="col1"> Трассировка маршрута до указанного хоста (www<code>.</code>ya<code>.</code>ru),
+ аналог tracert в Windows. В некоторых дистрибутивах установлен 
+по-умолчанию только traceroute6 и придётся доустанавливать вручную. </td>
+	</tr>
+	<tr class="row325">
+		<th class="col0" colspan="2"> Microsoft Windows networks(SAMBA) </th>
+	</tr>
+	<tr class="row326">
+		<td class="col0"> nbtscan ip_addr </td><td class="col1" rowspan="2"> разрешить netbios-имя <em>nbtscan не во всех системах ставится по-умолчанию, возможно, придётся доустанавливать вручную. nmblookup включен в пакет samba.</em> </td>
+	</tr>
+	<tr class="row327">
+		<td class="col0"> nmblookup -A ip_addr </td>
+	</tr>
+	<tr class="row328">
+		<td class="col0"> smbclient -L ip_addr/hostname </td><td class="col1"> отобразить ресурсы, предоставленные в общий доступ на windows-машине </td>
+	</tr>
+	<tr class="row329">
+		<td class="col0"> smbget -Rr smb:<code>/</code><code>/</code>ip_addr<code>/</code>share </td><td class="col1"> подобно wget может получить файлы с windows-машин через smb-протокол </td>
+	</tr>
+	<tr class="row330">
+		<td class="col0"> mount -t smbfs -o username=user,password=pass <code>/</code><code>/</code>winclient<code>/</code>share <code>/</code>mnt<code>/</code>share </td><td class="col1"> смонтировать smb-ресурс, предоставленный на windows-машине, в локальную файловую систему </td>
+	</tr>
+	<tr class="row331">
+		<th class="col0" colspan="2"> IPTABLES (firewall) </th>
+	</tr>
+	<tr class="row332">
+		<td class="col0"> iptables -t filter -nL </td><td class="col1" rowspan="2"> отобразить все цепочки правил </td>
+	</tr>
+	<tr class="row333">
+		<td class="col0"> iptables -nL </td>
+	</tr>
+	<tr class="row334">
+		<td class="col0"> iptables -t nat -L </td><td class="col1"> отобразить все цепочки правил в NAT-таблице </td>
+	</tr>
+	<tr class="row335">
+		<td class="col0"> iptables -t filter -F </td><td class="col1" rowspan="2"> очистить все цепочки правил в filter-таблице </td>
+	</tr>
+	<tr class="row336">
+		<td class="col0"> iptables -F </td>
+	</tr>
+	<tr class="row337">
+		<td class="col0"> iptables -t nat -F </td><td class="col1"> очистить все цепочки правил в NAT-таблице </td>
+	</tr>
+	<tr class="row338">
+		<td class="col0"> iptables -t filter -X </td><td class="col1"> удалить все пользовательские цепочки правил в filter-таблице </td>
+	</tr>
+	<tr class="row339">
+		<td class="col0"> iptables -t filter -A INPUT -p tcp <code>-</code><code>-</code>dport telnet -j ACCEPT </td><td class="col1"> позволить входящее подключение telnet'ом </td>
+	</tr>
+	<tr class="row340">
+		<td class="col0"> iptables -t filter -A OUTPUT -p tcp <code>-</code><code>-</code>dport http -j DROP </td><td class="col1"> блокировать исходящие <acronym title="Hyper Text Transfer Protocol">HTTP</acronym>-соединения </td>
+	</tr>
+	<tr class="row341">
+		<td class="col0"> iptables -t filter -A FORWARD -p tcp <code>-</code><code>-</code>dport pop3 -j ACCEPT </td><td class="col1"> позволить "прокидывать" (forward) <acronym title="Post Office Protocol 3">POP3</acronym>-соединения </td>
+	</tr>
+	<tr class="row342">
+		<td class="col0"> iptables -t filter -A INPUT -j LOG <code>-</code><code>-</code>log-prefix "DROP INPUT" </td><td class="col1"> включить журналирование ядром пакетов, проходящих через цепочку INPUT, и добавлением к сообщению префикса "DROP INPUT" </td>
+	</tr>
+	<tr class="row343">
+		<td class="col0"> iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE </td><td class="col1">
+ включить NAT (Network Address Translate) исходящих пакетов на интерфейс
+ eth0. Допустимо при использовании с динамически выделяемыми 
+ip-адресами. </td>
+	</tr>
+	<tr class="row344">
+		<td class="col0"> iptables -t nat -A PREROUTING -d 192.168.0.1 -p tcp -m tcp <code>-</code><code>-</code>dport 22 \ <br>
+-j DNAT <code>-</code><code>-</code>to-destination 10.0.0.2:22 </td><td class="col1"> перенаправление пакетов, адресованных одному хосту, на другой хост </td>
+	</tr>
+	<tr class="row345">
+		<th class="col0" colspan="2"> Мониторинг и отладка </th>
+	</tr>
+	<tr class="row346">
+		<td class="col0"> top </td><td class="col1"> отобразить запущенные процессы, используемые ими ресурсы и другую полезную информацию (с автоматическим обновлением данных) </td>
+	</tr>
+	<tr class="row347">
+		<td class="col0"> ps -eafw </td><td class="col1"> отобразить запущенные процессы, используемые ими ресурсы и другую полезную информацию (единожды) </td>
+	</tr>
+	<tr class="row348">
+		<td class="col0"> ps -e -o pid,args <code>-</code><code>-</code>forest </td><td class="col1"> вывести PID'ы и процессы в виде дерева </td>
+	</tr>
+	<tr class="row349">
+		<td class="col0"> pstree </td><td class="col1"> отобразить дерево процессов </td>
+	</tr>
+	<tr class="row350">
+		<td class="col0"> kill -9 98989 </td><td class="col1" rowspan="2"> "убить" процесс с PID 98989 "на смерть" (без соблюдения целостности данных) </td>
+	</tr>
+	<tr class="row351">
+		<td class="col0"> kill -KILL 98989 </td>
+	</tr>
+	<tr class="row352">
+		<td class="col0"> kill -TERM 98989 </td><td class="col1"> Корректно завершить процесс с PID 98989 </td>
+	</tr>
+	<tr class="row353">
+		<td class="col0"> kill -1 98989 </td><td class="col1" rowspan="2"> заставить процесс с PID 98989 перепрочитать файл конфигурации </td>
+	</tr>
+	<tr class="row354">
+		<td class="col0"> kill -HUP 98989 </td>
+	</tr>
+	<tr class="row355">
+		<td class="col0"> lsof -p 98989 </td><td class="col1"> отобразить список файлов, открытых процессом с PID 98989 </td>
+	</tr>
+	<tr class="row356">
+		<td class="col0"> lsof /home/user1 </td><td class="col1"> отобразить список открытых файлов из директории /home/user1 </td>
+	</tr>
+	<tr class="row357">
+		<td class="col0"> strace -c ls &gt; /dev/null </td><td class="col1"> вывести список системных вызовов, созданных и полученных процессом ls </td>
+	</tr>
+	<tr class="row358">
+		<td class="col0"> strace -f -e open ls &gt; /dev/null </td><td class="col1"> вывести вызовы бибилотек </td>
+	</tr>
+	<tr class="row359">
+		<td class="col0"> watch -n1 'cat /proc/interrupts' </td><td class="col1"> отображать прерывания в режиме реального времени </td>
+	</tr>
+	<tr class="row360">
+		<td class="col0"> last reboot </td><td class="col1"> отобразить историю перезагрузок системы </td>
+	</tr>
+	<tr class="row361">
+		<td class="col0"> last user1 </td><td class="col1"> отобразить историю регистрации пользователя user1 в системе и время его нахождения в ней </td>
+	</tr>
+	<tr class="row362">
+		<td class="col0"> lsmod </td><td class="col1"> вывести загруженные модули ядра </td>
+	</tr>
+	<tr class="row363">
+		<td class="col0"> free -m </td><td class="col1"> показать состояние оперативной памяти в мегабайтах </td>
+	</tr>
+	<tr class="row364">
+		<td class="col0"> smartctl -A /dev/hda </td><td class="col1"> контроль состояния жёсткого диска /dev/hda через SMART </td>
+	</tr>
+	<tr class="row365">
+		<td class="col0"> smartctl -i /dev/hda </td><td class="col1"> проверить доступность SMART на жёстком диске /dev/hda </td>
+	</tr>
+	<tr class="row366">
+		<td class="col0"> tail /var/log/dmesg </td><td class="col1"> вывести десять последних записей из журнала загрузки ядра </td>
+	</tr>
+	<tr class="row367">
+		<td class="col0"> tail /var/log/messages </td><td class="col1"> вывести десять последних записей из системного журнала </td>
+	</tr>
+	<tr class="row368">
+		<th class="col0" colspan="2"> Другие полезные команды </th>
+	</tr>
+	<tr class="row369">
+		<td class="col0"> apropos <em>…keyword</em> </td><td class="col1"> 
+выводит список комманд, которые так или иначе относятся к ключевым 
+словам. Полезно, когда вы знаете что делает программа, но не помните 
+команду </td>
+	</tr>
+	<tr class="row370">
+		<td class="col0"> man ping </td><td class="col1"> вызов руководства по работе с программой, в данном случае, - ping </td>
+	</tr>
+	<tr class="row371">
+		<td class="col0"> whatis <em>…keyword </em> </td><td class="col1"> отображает описание действий указанной программы </td>
+	</tr>
+	<tr class="row372">
+		<td class="col0"> mkbootdisk <code>-</code><code>-</code>device /dev/fd0 `uname -r` </td><td class="col1"> создаёт загрузочный флоппи-диск </td>
+	</tr>
+	<tr class="row373">
+		<td class="col0"> gpg -c file1 </td><td class="col1"> шифрует файл file1 с помощью GNU Privacy Guard </td>
+	</tr>
+	<tr class="row374">
+		<td class="col0"> gpg file1.gpg </td><td class="col1"> дешифрует файл file1 с помощью GNU Privacy Guard </td>
+	</tr>
+	<tr class="row375">
+		<td class="col0"> wget -r www<code>.</code>example<code>.</code>com </td><td class="col1"> загружает рекурсивно содержимое сайта www<code>.</code>example<code>.</code>com </td>
+	</tr>
+	<tr class="row376">
+		<td class="col0"> wget -c www<code>.</code>example<code>.</code>com/file<code>.</code>iso </td><td class="col1"> загрузить файл www<code>.</code>example<code>.</code>com/file<code>.</code>iso с возможностью останова и продолжения в последствии </td>
+	</tr>
+	<tr class="row377">
+		<td class="col0"> echo 'wget -c www<code>.</code>example<code>.</code>com/files<code>.</code>iso' <code>|</code> at 09:00 </td><td class="col1"> начать закачку в указанное время </td>
+	</tr>
+	<tr class="row378">
+		<td class="col0"> ldd /usr/bin/ssh </td><td class="col1"> вывести список библиотек, необходимых для работы ssh </td>
+	</tr>
+	<tr class="row379">
+		<td class="col0"> alias hh='history' </td><td class="col1"> назначить алиас hh команде history </td>
+	</tr>
+</tbody></table>
+
+</div>
+
+                <div class="breadcrumbs">
+        <span class="bchead">Вы находитесь здесь: </span><a href="http://www.f-notes.info/start" title="start">О чём здесь?</a> » <a href="http://www.f-notes.info/linux" title="linux">Linux</a> » <a href="http://www.f-notes.info/linux:linux_command" title="linux:linux_command">Очень полезные команды Linux на одном листе</a>        </div>
+      </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+                        
+    <div class="meta">
+		<div class="doc">
+					</div>
+		<div class="inform" id="inform">
+			<script type="text/javascript" src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/share.js" charset="utf-8"></script>
+			<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharetype="button" data-yasharequickservices="yaru,vkontakte,facebook,twitter,odnoklassniki,lj,moikrug"><span class="b-share"><a class="b-share__handle" id="ya-share-0.034031549785178083-1476633338828" data-hdirection="" data-vdirection=""><span class="b-share-form-button b-share-form-button_share"><i class="b-share-form-button__before"></i><i class="b-share-form-button__icon"></i>Поделиться…<i class="b-share-form-button__after"></i></span></a><a rel="nofollow" target="_blank" title="ВКонтакте" class="b-share__handle b-share__link b-share-btn__vkontakte" href="https://share.yandex.net/go.xml?service=vkontakte&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" data-service="vkontakte"><span class="b-share-icon b-share-icon_vkontakte"></span></a><a rel="nofollow" target="_blank" title="Facebook" class="b-share__handle b-share__link b-share-btn__facebook" href="https://share.yandex.net/go.xml?service=facebook&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" data-service="facebook"><span class="b-share-icon b-share-icon_facebook"></span></a><a rel="nofollow" target="_blank" title="Twitter" class="b-share__handle b-share__link b-share-btn__twitter" href="https://share.yandex.net/go.xml?service=twitter&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" data-service="twitter"><span class="b-share-icon b-share-icon_twitter"></span></a><a rel="nofollow" target="_blank" title="Одноклассники" class="b-share__handle b-share__link b-share-btn__odnoklassniki" href="https://share.yandex.net/go.xml?service=odnoklassniki&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" data-service="odnoklassniki"><span class="b-share-icon b-share-icon_odnoklassniki"></span></a><a rel="nofollow" target="_blank" title="LiveJournal" class="b-share__handle b-share__link b-share-btn__lj" href="https://share.yandex.net/go.xml?service=lj&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" data-service="lj"><span class="b-share-icon b-share-icon_lj"></span></a></span></div>
+			<div id="plusone">
+				<div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 106px; height: 24px;" id="___plusone_0"><iframe hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 106px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" id="I0_1476633338863" name="I0_1476633338863" src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/fastbutton.htm" data-gapiattached="true" title="+1" frameborder="0" width="100%"></iframe></div>
+				<script type="text/javascript">
+					window.___gcfg = {lang: 'ru'}; 
+					(function() {
+						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+						po.src = 'https://apis.google.com/js/plusone.js';
+						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					})();
+				</script>
+			</div>
+            <div id="wm">
+                <form action="https://merchant.webmoney.ru/lmi/payment.asp" method="POST" target="_blank">
+                <input name="LMI_PAYMENT_AMOUNT" value="100.00" type="hidden">
+                <input name="LMI_PAYMENT_DESC_BASE64" value="0J7Qv9C70LDRgtCwINGF0L7RgdGC0LjQvdCz0LAg0LggZG5zLdC30L7QvdGL" type="hidden">
+                <input name="LMI_PAYEE_PURSE" value="R352705954544" type="hidden">
+                <input class="wm_button" value=" пожертвовать WebMoney " type="submit">
+                </form>
+            </div>
+			<div id="ymoney">
+                <iframe title="Оплата с помощью Яндекс.Деньги" allowtransparency="true" scrolling="no" src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/small.htm" height="31" frameborder="0" width="155"></iframe>
+                <iframe title="Оплата картами" allowtransparency="true" scrolling="no" src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/small_002.htm" height="31" frameborder="0" width="155"></iframe>
+
+			</div>
+		</div>
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+	    <a href="http://www.f-notes.info/linux?do=show" class="action back" accesskey="b" rel="nofollow">Назад</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+        <a href="#dokuwiki__top" class="action top" accesskey="x">Наверх</a>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+  
+</div>
+
+<div class="footerinc">
+  <div class="bar-left">
+	<!--Rating@Mail.ru counter-->
+	<script language="javascript" type="text/javascript"><!--
+	d=document;var a='';a+=';r='+escape(d.referrer);js=10;//--></script>
+	<script language="javascript1.1" type="text/javascript"><!--
+	a+=';j='+navigator.javaEnabled();js=11;//--></script>
+	<script language="javascript1.2" type="text/javascript"><!--
+	s=screen;a+=';s='+s.width+'*'+s.height;
+	a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);js=12;//--></script>
+	<script language="javascript1.3" type="text/javascript"><!--
+	js=13;//--></script><script language="javascript" type="text/javascript"><!--
+	d.write('<a href="http://top.mail.ru/jump?from=1395142" target="_top">'+
+	'<img src="http://d9.c4.b5.a1.top.mail.ru/counter?id=1395142;t=246;js='+js+
+	a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru" border="0" '+
+	'height="31" width="88"><\/a>');if(11<js)d.write('<'+'!-- ');//--></script><a href="http://top.mail.ru/jump?from=1395142" target="_top"><img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/counter.gif" alt="Рейтинг@Mail.ru" height="31" width="88" border="0"></a><!-- 
+	<noscript><a target="_top" href="http://top.mail.ru/jump?from=1395142">
+	<img src="http://d9.c4.b5.a1.top.mail.ru/counter?js=na;id=1395142;t=246" 
+	height="31" width="88" border="0" alt="Рейтинг@Mail.ru"></a></noscript>
+	<script language="javascript" type="text/javascript"><!--
+	if(11<js)d.write('--'+'>');//-->
+	<!--// Rating@Mail.ru counter-->
+
+    <!--LiveInternet counter--><script type="text/javascript"><!--
+    document.write("<a href='http://www.liveinternet.ru/click' "+
+    "target=_blank><img src='http://counter.yadro.ru/hit?t14.1;r"+
+    escape(document.referrer)+((typeof(screen)=="undefined")?"":
+    ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+    screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+    ";"+Math.random()+
+    "' alt='' title='LiveInternet: показано число просмотров за 24"+
+    " часа, посетителей за 24 часа и за сегодня' "+
+    "border='0' width='88' height='31'><\/a>")
+    //--></script><a href="http://www.liveinternet.ru/click" target="_blank"><img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/hit.gif" alt="" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" height="31" width="88" border="0"></a><!--/LiveInternet-->
+
+    <!-- begin of Top100 logo -->
+    <a href="http://top100.rambler.ru/navi/1776135/">
+    <img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/banner-88x31-rambler-gray2.gif" alt="Rambler's Top100" height="31" width="88" border="0"></a>
+    <!-- end of Top100 logo -->
+    <!-- begin of Top100 code -->
+
+    <script id="top100Counter" type="text/javascript" src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/top100.jcn"></script><a href="http://top100.rambler.ru/home?id=1776135" target="_blank"><img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/a.gif" title="Rambler's Top100" alt="Rambler's Top100" border="0"></a>
+    <noscript>
+    <img src="http://counter.rambler.ru/top100.cnt?1776135" alt="" width="1" height="1" border="0" />
+
+    </noscript>
+    <!-- end of Top100 code -->
+
+	<!-- counter.1gb.ru -->
+    <script language="javascript" type="text/javascript">
+    cgb_js="1.0"; cgb_r=""+Math.random()+"&r="+
+    escape(document.referrer)+"&pg="+
+    escape(window.location.href);
+    document.cookie="rqbct=1; path=/"; cgb_r+="&c="+
+    (document.cookie?"Y":"N");
+    </script><script language="javascript1.1" type="text/javascript">
+    cgb_js="1.1";cgb_r+="&j="+
+    (navigator.javaEnabled()?"Y":"N")</script>
+    <script language="javascript1.2" type="text/javascript">
+    cgb_js="1.2"; cgb_r+="&wh="+screen.width+
+    'x'+screen.height+"&px="+
+    (((navigator.appName.substring(0,3)=="Mic"))?
+    screen.colorDepth:screen.pixelDepth)</script>
+    <script language="javascript1.3" type="text/javascript">
+    cgb_js="1.3"</script>
+    <script language="javascript" type="text/javascript">cgb_r+="&js="+cgb_js;
+    document.write("<a href='http://www.1gb.ru?cnt=40008'>"+"<img src='http://counter.1gb.ru/cnt.aspx?"+
+    "u=40008&"+cgb_r+
+    "&' border=0 width=88 height=31 "+
+    "alt='1Gb.ru counter'><\/a>")</script><a href="http://www.1gb.ru/?cnt=40008"><img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/cnt.gif" alt="1Gb.ru counter" height="31" width="88" border="0"></a><noscript><a href='http://www.1gb.ru?cnt=40008'><img src="http://counter.1gb.ru/cnt.aspx?u=40008"
+    border=0 width="88" height="31" alt="1Gb.ru counter"></a>
+    </noscript>
+    <!-- /counter.1gb.ru -->
+
+	<a href="http://www.jetune.ru/us433902"><img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/logo_31_88.gif" alt="бесплатная музыка mp3" height="31" width="88" border="0"></a>
+
+  </div>
+  <div class="bar-center">
+  	<div>
+		<a href="http://www.f-notes.info/feed.php" title="Recent changes RSS feed">
+		<img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/button-rss.png" alt="Recent changes RSS feed" height="15" width="80"></a>
+				<a href="http://www.php.net/" title="Powered by PHP">
+		<img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/button-php.gif" alt="Powered by PHP" height="15" width="80"></a>
+		<a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0">
+		<img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/button-xhtml.png" alt="Valid XHTML 1.0" height="15" width="80"></a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS">
+		<img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/button-css.png" alt="Valid CSS" height="15" width="80"></a>
+		<a href="http://dokuwiki.org/" title="Driven by DokuWiki">
+		<img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/button-dw.png" alt="Driven by DokuWiki" height="15" width="80"></a>
+		<a href="http://www.dokuwiki.org/donate" title="Donate">
+		<img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/button-donate.gif" alt="Donate" height="15" width="80"></a>
+	</div>
+  </div>
+</div>
+<!-- Yandex.Metrika -->
+<script src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/watch.js" type="text/javascript"></script>
+<div style="display:none;"><script type="text/javascript">
+try { var yaCounter1075445 = new Ya.Metrika(1075445); } catch(e){}
+</script></div>
+<noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/1075445" alt="" /></div></noscript>
+<!-- /Yandex.Metrika -->
+
+<div class="no"><img src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/indexer.gif" alt="" height="1" width="1"></div>
+
+
+<div class="b-share-popup-wrap b-share-popup-wrap_state_hidden" id="ya-share-0.034031549785178083-1476633338828-popup"><div class="b-share-popup b-share-popup_down b-share-popup_to-right"><div class="b-share-popup__i"><div class="b-share-popup__main  b-share-popup_yandexed"><div class="b-share-popup__header b-share-popup__header_first">Поделитесь с друзьями</div><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=vkontakte&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" class="b-share-popup__item" data-service="vkontakte"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_vkontakte"></span></span><span class="b-share-popup__item__text">ВКонтакте</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=odnoklassniki&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" class="b-share-popup__item" data-service="odnoklassniki"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_odnoklassniki"></span></span><span class="b-share-popup__item__text">Одноклассники</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=twitter&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" class="b-share-popup__item" data-service="twitter"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_twitter"></span></span><span class="b-share-popup__item__text">Twitter</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=facebook&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" class="b-share-popup__item" data-service="facebook"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_facebook"></span></span><span class="b-share-popup__item__text">Facebook</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=moimir&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" class="b-share-popup__item" data-service="moimir"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_moimir"></span></span><span class="b-share-popup__item__text">Мой Мир</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=lj&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" class="b-share-popup__item" data-service="lj"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_lj"></span></span><span class="b-share-popup__item__text">LiveJournal</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=gplus&amp;url=http%3A%2F%2Fwww.f-notes.info%2Flinux%3Alinux_command&amp;title=%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20%5B%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85%5D" class="b-share-popup__item" data-service="gplus"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_gplus"></span></span><span class="b-share-popup__item__text">Google Plus</span></a><a href="http://api.yandex.ru/share/" class="b-share-popup__yandex">Яндекс</a></div></div><div class="b-share-popup__tail"></div></div></div><iframe name="oauth2relay788897562" id="oauth2relay788897562" src="%D0%9E%D1%87%D0%B5%D0%BD%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Linux%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D0%BB%D0%B8%D1%81%D1%82%D0%B5%20[%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%8F%D1%85]_files/postmessageRelay.htm" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1" aria-hidden="true"></iframe></body></html>

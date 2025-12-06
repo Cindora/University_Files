@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://se.ifmo.ru/~dima/unix/2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>СПО: Лабораторная работа #2</title>
+	<style>
+	OL>LI {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	</style>
+</head>
+<body>
+<h3 align="CENTER">Лабораторная работа #2</h3>
+
+Написать два скрипта на языке shell, которые выводят списки:
+
+<ol><li>
+<ul><li>
+имён файлов в текущем каталоге, являющихся прямыми ссылками на указанный файл. Список отсортировать по времени доступа;
+</li><li>
+пользователей, принадлежащих к более чем указанному количеству групп.
+</li></ul></li><li><ul><li>
+имён каталогов в указанном каталоге, имеющих не менее одного подкаталога. Список отсортировать по времени модификации;
+</li><li>
+групп, которым принадлежат более чем указанное количество пользователей.
+</li></ul></li><li><ul><li>
+имён файлов в текущем каталоге, являющихся косвенными ссылками на указанный файл. Список отсортировать по времени изменения метаинформации;
+</li><li>
+пользователей принадлежащих указанной группе.
+</li></ul></li><li><ul><li>
+исполняемых файлов, которые могут быть выполнены текущим пользователем без указания пути к ним. Список отсортировать по алфавиту в обратном порядке;
+</li><li>
+пользователей, которым принадлежит процессов более указанного количества.
+</li></ul></li><li><ul><li>
+имён процессов и их аргументов указанной группы;
+</li><li>
+имён каталогов в указанном каталоге, содержащих файлы, но не имеющих подкаталогов.
+</li></ul></li><li><ul><li>
+пользователей, заходивших в систему в течении текущего дня;
+</li><li>
+файлов в указанном каталоге, имена которых состоят не только из букв латинского алфавита. Список отсортировать по размеру файла.
+</li></ul></li>
+</ol><ol start="13">
+<li><ul><li>
+пользователей, которым запрещено заходить в систему;
+</li><li>
+файлов в указанном каталоге, являющихся pipe, открытых на запись каким-либо процессом.
+</li></ul></li></ol>
+
+Если не указано другого, все списки должны быть отсортированы по алфавиту.
+<br>
+Вся необходимая информация должна передаваться в скрипты через аргументы командной строки.
+
+<iframe src="./СПО_ Лабораторная работа #2_files/menu.html" width="100%" style="border:none"></iframe>
+
+
+
+</body><div id="sideDragRight" style="display: none;"><div class="side_search_box" id="side_google_search" data-allowed-type="text" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/webSearch.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_wikipedia_search" data-allowed-type="text" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/wikipedia.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_youtube_search" data-allowed-type="text" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/youtube.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_translate_search" data-allowed-type="text" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/translate.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_image_search" data-allowed-type="all" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/imageSearch.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div></div><div id="sideDragLeft" style="display: none;"><div class="side_search_box" id="side_facebook" data-allowed-type="images" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/facebook.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_twitter" data-allowed-type="images" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/twitter.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_googleplus" data-allowed-type="images" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/google+.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_pinterest" data-allowed-type="images" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/pinterest.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_linkedin" data-allowed-type="images" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/linkedin.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div></div></html>

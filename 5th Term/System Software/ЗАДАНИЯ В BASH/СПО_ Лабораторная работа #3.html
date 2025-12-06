@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://se.ifmo.ru/~dima/unix/3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>СПО: Лабораторная работа #3</title>
+</head>
+<body>
+<h4 align="CENTER">Лабораторная работа #3</h4>
+Написать программу, выдающую:
+<ol>
+	<li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список пользователей, имеющих право
+	записи в заданный файл. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список пользователей, имеющих право
+	чтения заданного файла. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список пользователей, имеющих право
+	исполнения заданного файла. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список пользователей, имеющих право
+	записи в заданный каталог. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список пользователей, имеющих право
+	чтения заданного каталога. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список пользователей, имеющих право
+	поиска в заданном каталоге. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список файлов, для которых заданный
+	пользователь имеет право записи. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список файлов, для которых заданный
+	пользователь имеет право чтения. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список каталогов, в которыe заданный
+	пользователь имеет право записи. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список каталогов, в которыx заданный
+	пользователь имеет право поиска. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список файлов, для которых заданный
+	пользователь имеет право исполнения. 
+	</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список каталогов, в которыx заданный
+	пользователь имеет право удаления файлов.</p>
+	</li><li><p class="western" style="margin-top: 0.19in; margin-bottom: 0.19in">
+	Список файлов, содержимое которых можно только дополнять, но не заменять.</p>
+</li></ol>
+Вся необходимая информация должна передаваться в скрипт через аргументы командной строки.<br>
+Все файлы выбирать из текущего каталога исключая его подкаталоги.
+<p>Для защиты на 4 и более баллов скрипт должен:
+</p><ol>
+<li>проверять права по UID и GID, а не по именам</li>
+<li>не использовать find/gfind/...</li>
+</ol>
+<p>Для защиты на 4.5 и более баллов скрипт должен:
+</p><ol>
+<li>учитывать ACL POSIX и NFSv4</li>
+</ol>
+
+
+</body><div id="sideDragRight" style="display: none;"><div class="side_search_box" id="side_google_search" data-allowed-type="text" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/webSearch.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_wikipedia_search" data-allowed-type="text" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/wikipedia.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_youtube_search" data-allowed-type="text" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/youtube.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_translate_search" data-allowed-type="text" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/translate.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_image_search" data-allowed-type="all" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/imageSearch.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div></div><div id="sideDragLeft" style="display: none;"><div class="side_search_box" id="side_facebook" data-allowed-type="images" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/facebook.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_twitter" data-allowed-type="images" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/twitter.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_googleplus" data-allowed-type="images" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/google+.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_pinterest" data-allowed-type="images" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/pinterest.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div><div class="side_search_box" id="side_linkedin" data-allowed-type="images" style="height: 20%; background-image: url(&quot;chrome-extension://aneodkojaglhnkkdbbdnmmmgimlcaogo/images/linkedin.png&quot;); background-color: rgb(255, 255, 255); background-size: cover; background-position: center center;"></div></div></html>

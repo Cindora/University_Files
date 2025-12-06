@@ -1,0 +1,2 @@
+function extraInit(){$(document).on('enlargerOpen',function(){var id=enlarger.flags.currentOffer;if(offers[id].abonement=="true"&&offers[id].abonement!=''){$('.offer-enlarger-name').addClass('before-text')}})
+$(document).on('enlargerClosed',function(){$(".offer-enlarger-name").removeClass('before-text')})}
