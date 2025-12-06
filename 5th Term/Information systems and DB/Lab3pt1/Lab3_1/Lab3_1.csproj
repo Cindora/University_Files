@@ -190,11 +190,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetClass.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetClass.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormAudit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAudit.Designer.cs">
       <DependentUpon>FormAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBook.Designer.cs">
+      <DependentUpon>FormBook.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEdAudit.cs">
       <SubType>Form</SubType>
@@ -218,6 +229,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAudit.resx">
       <DependentUpon>FormAudit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBook.resx">
+      <DependentUpon>FormBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEdAudit.resx">
       <DependentUpon>FormEdAudit.cs</DependentUpon>
@@ -247,6 +261,17 @@
     </None>
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetClass.xsc">
+      <DependentUpon>DataSetClass.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetClass.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetClass.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetClass.xss">
+      <DependentUpon>DataSetClass.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
