@@ -43,5 +43,40 @@ namespace Lab3_1
                 this.dgClass.DataSource = bs;
             }
         }
+
+        private void sbDel_Click(object sender, EventArgs e)
+        {
+            // Подтверждение удаления строки
+            DialogResult dr = MessageBox.Show("Удалить строку?",
+            "Confirmation", MessageBoxButtons.OKCancel,
+            MessageBoxIcon.Question);
+            if (dr != DialogResult.OK) return;
+            // Определение индекса выделенной строки
+            int ind = dgClass.CurrentCell.RowIndex;
+            // Определение ключа (в первой колонке таблицы)
+            string key = dgClass.Rows[ind].Cells[0].Value.ToString();
+            // Формирование оператора SQL удаления строки
+            string strSqlDel = "";
+            strSqlDel += "DELETE FROM shedule.audit ";
+            strSqlDel += " WHERE class_id=" + key;
+            // Используем объект установленного соединения
+            OdbcConnection con = MainFrame.odbcCon;
+            OdbcCommand cmd = new OdbcCommand(strSqlDel, con);
+            try
+            {
+                // Выполнение оператора SQL
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка удаления строки \n" + ex.Message);
+                return;
+            }
+            // Обновление источника данных
+            loadData();
+            // Делаем текущей предыдущую строку
+            if (ind > 0) ind--;
+            dgClass.CurrentCell = dgClass[1, ind];
+        }
     }
 }
