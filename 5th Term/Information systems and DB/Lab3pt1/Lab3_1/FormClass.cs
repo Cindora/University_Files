@@ -26,7 +26,7 @@ namespace Lab3_1
         }
         private void loadData()
         {
-            string strSql = "select * from shedule.audit";
+            string strSql = "select * from shedule.class";
 
             // Получение строки соединения из главной формы
             var con = MainFrame.connectionString;
@@ -77,6 +77,63 @@ namespace Lab3_1
             // Делаем текущей предыдущую строку
             if (ind > 0) ind--;
             dgClass.CurrentCell = dgClass[1, ind];
+        }
+
+        private void sbAdd_Click(object sender, EventArgs e)
+        {
+            FormEdClass frm = new FormEdClass(true, "");
+            // Заголовок формы в режиме добавления нового поставщика
+            frm.Text = "Добавление занятия";
+            frm.ShowDialog();
+            // Перегружаем данные в случае добавления новой строки
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                loadData();
+            }
+            frm.Dispose();
+        }
+
+        private void sbEdit_Click(object sender, EventArgs e)
+        {
+            // Запоминаем номер текущей строки
+            int ind = dgClass.CurrentCell.RowIndex;
+            // Создаем форму (второй параметр – ключ редактируемой строки)
+            var formEdClassID = "0";
+            if (dgClass.Rows[ind].Cells[0].Value != null)
+                formEdClassID = dgClass.Rows[ind].Cells[0].Value.ToString();
+            
+            FormEdClass frm = new FormEdClass(false, formEdClassID);
+            // Заголовок формы в режиме редактирования
+            frm.Text = "Редактирование занятия";
+            // Заполняем поля ввода текущими значениями
+            
+            // ----------------------   Доделать    ---------------------------------------------
+            
+
+
+            frm.cbWeekDay.Text = dgClass.Rows[ind].Cells[1].Value.ToString();
+            frm.edPairNumber.Text = dgClass.Rows[ind].Cells[2].Value.ToString();
+            frm.edGroupNum.Text = dgClass.Rows[ind].Cells[3].Value.ToString();
+            frm.edSubject.Text = dgClass.Rows[ind].Cells[4].Value.ToString();
+            frm.cbLessonType.Text = dgClass.Rows[ind].Cells[5].Value.ToString();
+            frm.edCapacity.Text = dgClass.Rows[ind].Cells[6].Value.ToString();
+            frm.edNumOfStudents.Text = dgClass.Rows[ind].Cells[7].Value.ToString();
+            frm.cbAudit.Text = dgClass.Rows[ind].Cells[8].Value.ToString();
+
+            
+            frm.ShowDialog();
+            // Перегружаем данные в случае сохранения изменений
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                loadData();
+                dgClass.CurrentCell = dgClass[0, ind];
+            }
+            frm.Dispose();
+        }
+
+        private void sbDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
