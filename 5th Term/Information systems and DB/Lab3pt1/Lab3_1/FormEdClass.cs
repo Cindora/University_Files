@@ -40,6 +40,7 @@ namespace Lab3_1
             {
                 DataTable table = new DataTable();
                 dadapter.Fill(table);
+                
                 cbAudit.DataSource = table;
                 cbAudit.DisplayMember = "audit_number";// столбец для отображения
                 cbAudit.ValueMember = "audit_number";
@@ -69,10 +70,10 @@ namespace Lab3_1
             else
             {
                 strSql += "UPDATE shedule.Class SET ";
-                strSql += ",week_day='" + cbWeekDay.Text + "'";
+                strSql += "week_day='" + cbWeekDay.Text + "'";
                 strSql += ",pair_number=" + edPairNumber.Text;
                 strSql += ",group_number='" + edGroupNum.Text + "'";
-                strSql += ",subject='" + edSubject + "'";
+                strSql += ",subject='" + edSubject.Text + "'";
                 strSql += ",lesson_type='" + cbLessonType.Text + "'";
                 strSql += ",capacity=" + edCapacity.Text;
                 strSql += ",students_number=" + edNumOfStudents.Text;

@@ -14,7 +14,10 @@ namespace Lab3_1
 {
     public partial class FormClass : Form
     {
-        private string strSql;
+        string strSql = "select class_id, week_day, " +
+            "pair_number, group_number," +
+            "subject, lesson_type, capacity, students_number, " +
+            "audit_number from shedule.classs";
         public FormClass()
         {
             InitializeComponent();
@@ -22,12 +25,10 @@ namespace Lab3_1
 
         private void FormClass_Load(object sender, EventArgs e)
         {
-            loadData();
+            loadData(strSql);
         }
-        private void loadData()
+        private void loadData(string strSql)
         {
-            string strSql = "select * from shedule.class";
-
             // Получение строки соединения из главной формы
             var con = MainFrame.connectionString;
             using (OdbcDataAdapter dadapter =
@@ -73,7 +74,7 @@ namespace Lab3_1
                 return;
             }
             // Обновление источника данных
-            loadData();
+            loadData(strSql);
             // Делаем текущей предыдущую строку
             if (ind > 0) ind--;
             dgClass.CurrentCell = dgClass[1, ind];
@@ -88,7 +89,7 @@ namespace Lab3_1
             // Перегружаем данные в случае добавления новой строки
             if (frm.DialogResult == DialogResult.OK)
             {
-                loadData();
+                loadData(strSql);
             }
             frm.Dispose();
         }
@@ -98,19 +99,11 @@ namespace Lab3_1
             // Запоминаем номер текущей строки
             int ind = dgClass.CurrentCell.RowIndex;
             // Создаем форму (второй параметр – ключ редактируемой строки)
-            var formEdClassID = "0";
-            if (dgClass.Rows[ind].Cells[0].Value != null)
-                formEdClassID = dgClass.Rows[ind].Cells[0].Value.ToString();
-            
-            FormEdClass frm = new FormEdClass(false, formEdClassID);
+            FormEdClass frm = new FormEdClass(false, dgClass.Rows[ind].Cells[0].Value.ToString());
             // Заголовок формы в режиме редактирования
             frm.Text = "Редактирование занятия";
             // Заполняем поля ввода текущими значениями
             
-            // ----------------------   Доделать    ---------------------------------------------
-            
-
-
             frm.cbWeekDay.Text = dgClass.Rows[ind].Cells[1].Value.ToString();
             frm.edPairNumber.Text = dgClass.Rows[ind].Cells[2].Value.ToString();
             frm.edGroupNum.Text = dgClass.Rows[ind].Cells[3].Value.ToString();
@@ -125,8 +118,8 @@ namespace Lab3_1
             // Перегружаем данные в случае сохранения изменений
             if (frm.DialogResult == DialogResult.OK)
             {
-                loadData();
-                dgClass.CurrentCell = dgClass[0, ind];
+                loadData(strSql);
+                dgClass.CurrentCell = dgClass[1, ind];
             }
             frm.Dispose();
         }
@@ -135,5 +128,74 @@ namespace Lab3_1
         {
 
         }
+        private void bFilter_Click(object sender, EventArgs e)
+        {
+            string where = "";
+            string str;
+
+            if (edDay.Text != string.Empty) 
+            {
+                where += " and week_day ilike '%" + edDay.Text + "%'"; 
+            }
+            if (edPair.Text != string.Empty)
+            {
+                where += " and pair_number ilike '%" + edPair.Text + "%'";
+            }
+            if (edGroup.Text != string.Empty)
+            {
+                where += " and group_number ilike '%" + edGroup.Text + "%'";
+            }
+            if (edSubject.Text != string.Empty)
+            {
+                where += " and subject ilike '%" + edSubject.Text + "%'";
+            }
+            if (edType.Text != string.Empty)
+            {
+                where += " and lesson_type ilike '%" + edType.Text + "%'";
+            }
+            if (edAudit.Text != string.Empty)
+            {
+                where += " and audit_number ilike '%" + edAudit.Text + "%'";
+            }
+            if (edCap1.Text != string.Empty)
+            {
+                where += " and capacity>= " + edCap1.Text;
+            }
+            if (edCap2.Text != string.Empty)
+            {
+                where += " and capacity<= " + edCap2.Text;
+            }
+            if (edNum1.Text != string.Empty)
+            {
+                where += " and students_number>= " + edNum1.Text;
+            }
+            if (edNum2.Text != string.Empty)
+            {
+                where += " and students_number<= " + edNum2.Text;
+            }
+
+            if (where == "")
+                str = "select * from shedule.classs";
+            else
+                str = "select * from shedule.classs WHERE 1 = 1 "
+                    + where + " ORDER BY audit_number desc";
+            loadData(str);
+        }
+
+        private void bClear_Click(object sender, EventArgs e)
+        {
+            edDay.Text = string.Empty;
+            edPair.Text = string.Empty;
+            edGroup.Text = string.Empty;
+            edSubject.Text = string.Empty;
+            edType.Text = string.Empty;
+            edCap1.Text = string.Empty;
+            edCap2.Text = string.Empty;
+            edNum1.Text = string.Empty;
+            edNum2.Text = string.Empty;
+            edAudit.Text = string.Empty;
+            loadData(strSql);
+        }
+
     }
 }

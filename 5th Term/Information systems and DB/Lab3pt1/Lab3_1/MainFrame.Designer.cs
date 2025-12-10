@@ -67,15 +67,15 @@
             // справочникToolStripMenuItem
             // 
             this.справочникToolStripMenuItem.Name = "справочникToolStripMenuItem";
-            this.справочникToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
-            this.справочникToolStripMenuItem.Text = "Справочник";
+            this.справочникToolStripMenuItem.Size = new System.Drawing.Size(99, 26);
+            this.справочникToolStripMenuItem.Text = "Аудитории";
             this.справочникToolStripMenuItem.Click += new System.EventHandler(this.mSprav_Click);
             // 
             // операцииToolStripMenuItem
             // 
-            this.операцииToolStripMenuItem.Name = "ClassMenuItem";
-            this.операцииToolStripMenuItem.Size = new System.Drawing.Size(95, 26);
-            this.операцииToolStripMenuItem.Text = "Операции";
+            this.операцииToolStripMenuItem.Name = "операцииToolStripMenuItem";
+            this.операцииToolStripMenuItem.Size = new System.Drawing.Size(79, 26);
+            this.операцииToolStripMenuItem.Text = "Занятия";
             this.операцииToolStripMenuItem.Click += new System.EventHandler(this.ClassMenuItem_Click);
             // 
             // miExit
