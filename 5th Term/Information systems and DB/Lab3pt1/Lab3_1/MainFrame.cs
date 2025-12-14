@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -83,6 +84,66 @@ namespace Lab3_1
             {
                 frm.Dispose();
             }
+        }
+
+        private void mReport_Click(object sender, EventArgs e)
+        {
+            String pair_beg, pair_end;
+            String corp_number;
+            String strSql = "";
+            // Создание объекта формы задания параметров
+            FrmParamRpt frm_par = new FrmParamRpt();
+            try
+            {
+                frm_par.ShowDialog();
+                if (frm_par.DialogResult == DialogResult.OK)
+                {
+                    pair_beg = frm_par.pair1.Text;
+                    pair_end = frm_par.pair2.Text;
+                    corp_number = frm_par.corpN.Text;
+                    // Оператор вызова функции БД
+                    strSql += "SELECT * FROM shedule.rpt_pairs(";
+                    strSql += pair_beg + ", ";
+                    strSql += pair_end + ", ";
+                    strSql += corp_number + ")";
+                    String con = connectionString;
+                    using (OdbcDataAdapter dadapter = new OdbcDataAdapter(strSql, con))
+                    {
+                        // Формирование источника данных для отчета
+                        DataTable table = new DataTable();
+                        dadapter.Fill(table);
+                        BindingSource bs = new BindingSource();
+                        bs.DataSource = table.DefaultView;
+                        // Создание объекта формы вывода отчета
+                        FrmRpt frmRpt = new FrmRpt();
+                        // Заполнение заголовка
+                        frmRpt.Head.Text = "Отчет о занятиях в промежуток с " +
+                        pair_beg + " по " + pair_end + " пару.";
+                        // Заполнение подзаголовка
+                        frmRpt.SubHead.Text = "Номер корпуса:" + corp_number;
+                        // Задание шаблона отчета
+                        frmRpt.reportViewer1.Reset();
+                        frmRpt.reportViewer1.ProcessingMode = ProcessingMode.Local;
+                        frmRpt.reportViewer1.LocalReport.ReportPath =
+                        AppDomain.CurrentDomain.BaseDirectory + "RptAudit.rdlc";
+                        // Задание источника данных отчета
+                        ReportDataSource reportDataSource = new ReportDataSource();
+                        reportDataSource.Name = "dsRptAudit"; // Имя должно совпадать
+                                                         // с именем источника шаблона отчета
+                        reportDataSource.Value = table;
+                        // вывод отчета
+                        frmRpt.reportViewer1.LocalReport.DataSources.Clear();
+                        frmRpt.reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+                        frmRpt.reportViewer1.RefreshReport();
+                        frmRpt.ShowDialog();
+                    } // using
+                } // if
+            } // try
+            finally
+            {
+                frm_par.Dispose();
+            }
+
         }
     }
 }

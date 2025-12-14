@@ -249,6 +249,18 @@
     <Compile Include="FrameConnect.Designer.cs">
       <DependentUpon>FrameConnect.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmParamRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParamRpt.Designer.cs">
+      <DependentUpon>FrmParamRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRpt.Designer.cs">
+      <DependentUpon>FrmRpt.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainFrame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +283,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrameConnect.resx">
       <DependentUpon>FrameConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParamRpt.resx">
+      <DependentUpon>FrmParamRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRpt.resx">
+      <DependentUpon>FrmRpt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFrame.resx">
       <DependentUpon>MainFrame.cs</DependentUpon>
