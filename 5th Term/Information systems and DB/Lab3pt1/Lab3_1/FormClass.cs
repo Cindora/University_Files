@@ -58,7 +58,7 @@ namespace Lab3_1
             string key = dgClass.Rows[ind].Cells[0].Value.ToString();
             // Формирование оператора SQL удаления строки
             string strSqlDel = "";
-            strSqlDel += "DELETE FROM shedule.audit ";
+            strSqlDel += "DELETE FROM shedule.class ";
             strSqlDel += " WHERE class_id=" + key;
             // Используем объект установленного соединения
             OdbcConnection con = MainFrame.odbcCon;
@@ -178,7 +178,7 @@ namespace Lab3_1
                 str = "select * from shedule.classs";
             else
                 str = "select * from shedule.classs WHERE 1 = 1 "
-                    + where + " ORDER BY audit_number desc";
+                    + where + " ORDER BY class_id";
             loadData(str);
         }
 

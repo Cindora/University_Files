@@ -56,7 +56,7 @@ namespace Lab3_1
             string strSql = "";
             if (isNew)
             {
-                strSql += "INSERT INTO shedule.Class(week_day,pair_number," +
+                strSql += "INSERT INTO shedule.Classs(week_day,pair_number," +
                     "group_number,subject,lesson_type,capacity,students_number,audit_number) values(";
                 strSql += "'" + cbWeekDay.Text + "'";
                 strSql += "," + edPairNumber.Text;
@@ -69,7 +69,7 @@ namespace Lab3_1
             }
             else
             {
-                strSql += "UPDATE shedule.Class SET ";
+                strSql += "UPDATE shedule.Classs SET ";
                 strSql += "week_day='" + cbWeekDay.Text + "'";
                 strSql += ",pair_number=" + edPairNumber.Text;
                 strSql += ",group_number='" + edGroupNum.Text + "'";
