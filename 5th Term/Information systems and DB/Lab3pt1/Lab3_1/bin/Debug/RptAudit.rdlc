@@ -12,16 +12,16 @@
               <Width>2.75063cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.4525cm</Width>
+              <Width>4.38984cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.12983cm</Width>
+              <Width>6.07716cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.43133cm</Width>
+              <Width>4.67752cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.389cm</Width>
+              <Width>4.51083cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -38,7 +38,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Занятия</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>13pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -70,7 +73,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Количество пар</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>13pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -100,7 +106,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Количество студентов</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>13pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -130,7 +139,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Свободных мест</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>13pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -160,7 +172,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Заполненность</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>13pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -195,7 +210,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>День денели:</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -227,7 +244,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!week_day.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -383,7 +402,9 @@
                             <TextRun>
                               <Label>Пара: </Label>
                               <Value>Пара:</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -415,7 +436,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!pair_number.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -606,7 +629,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!total_pairs.Value)</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -636,7 +661,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!total_students.Value)</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -666,7 +693,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!free_seats.Value)</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -767,7 +796,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!total_pairs.Value)</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -797,7 +828,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!total_students.Value)</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -827,7 +860,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!free_seats.Value)</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -934,7 +969,7 @@
         <Top>0.5207cm</Top>
         <Left>0.5207cm</Left>
         <Height>3cm</Height>
-        <Width>19.65329cm</Width>
+        <Width>24.90599cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -945,7 +980,7 @@
     <Height>1.71245in</Height>
     <Style />
   </Body>
-  <Width>8.71051in</Width>
+  <Width>10.30218in</Width>
   <Page>
     <PageFooter>
       <Height>1.82594cm</Height>

@@ -1,5 +1,6 @@
-clear; clc; close all;
+clc; clear; close all;
 
+%% === Исходные данные ===
 A  = -0.3;
 B  = 0.001;
 C  = -0.2;
@@ -8,81 +9,87 @@ U  = 24;
 f1 = 7;
 V  = 9;
 f2 = 19;
-w  = 0;                % сдвиг фазы
+w  = 0;
 Tm = 400;
-dt = 0.01;             % шаг
+dt = 0.01;
 
-t = (0:Tm)';           % индекс времени
-tt = t * dt;           % реальное время
+%% === 1. Генерация временного ряда x(t) ===
+t = 0:dt:Tm;               % временная шкала
+N = length(t);
 
-Z = -14 + (14 - (-14)) * rand(size(t));
+Z = normrnd(0, 1, 1, N);   % белый шум N(0,1)
+x = zeros(1, N);           % инициализация
 
-x = zeros(size(t));
-x(1) = 0;
-x(2) = 0;
+% Начальные условия
+x(1) = Z(1);
+x(2) = Z(2);
 
-%% Генерация временного ряда
-for k = 3:length(t)
-    x(k) = A*tt(k) + B*tt(k)^2 + ...
+% Формирование временного ряда по заданной модели
+for k = 3:N
+    x(k) = A*t(k) + B*t(k)^2 + ...
            C*x(k-1) + D*x(k-2) + ...
-           U*sin(2*pi*f1*tt(k)) + ...
-           V*sin(2*pi*f2*tt(k) - w) + ...
+           U*sin(2*pi*f1*t(k)) + ...
+           V*sin(2*pi*f2*t(k) - w) + ...
            Z(k);
 end
 
-%% Модель тренда
-poly_deg = 2;
-trend_coeff = polyfit(tt, x, poly_deg);
-trend = polyval(trend_coeff, tt);
+%% === 2. Модель тренда (полиномиальная аппроксимация) ===
+p = polyfit(t, x, 2);      % аппроксимация полиномом 2-й степени
+trend = polyval(p, t);
 
+% Остаточный процесс
 e = x - trend;
 
-% Графики
-figure;
+% --- Графики ---
+figure('Name', 'Временной ряд и тренд', 'NumberTitle', 'off');
 subplot(3,1,1);
-plot(tt,x); title('Временной ряд x(t)');
+plot(t, x, 'b'); grid on;
+title('Исходный временной ряд x(t)');
+xlabel('t'); ylabel('x(t)');
 
 subplot(3,1,2);
-plot(tt,trend,'LineWidth',2); title('Тренд');
+plot(t, trend, 'r', 'LineWidth', 1.5); grid on;
+title('Аппроксимированный тренд');
+xlabel('t'); ylabel('trend(t)');
 
 subplot(3,1,3);
-plot(tt,e); title('Остаточный ВР e(t)');
+plot(t, e, 'k'); grid on;
+title('Остаточный процесс e(t)');
+xlabel('t'); ylabel('e(t)');
 
-%% Автокорреляционная функция
+%% === 3. Автокорреляционная функция (АКФ) ===
+L = 200; % максимальный лаг
+[R, lags] = xcorr(e, L, 'coeff');
 
-[acf,lags] = xcorr(e,'coeff');
-
-figure;
-plot(lags,acf);
+figure('Name', 'Автокорреляционная функция', 'NumberTitle', 'off');
+stem(lags*dt, R, 'filled');
+grid on;
+xlabel('Лаг, с');
+ylabel('АКФ');
 title('Автокорреляционная функция e(t)');
-xlabel('Лаг'); ylabel('АКФ');
+
+%% === 4. Спектральная плотность (СП) ===
+Fs = 1/dt; % частота дискретизации
+[pxx, f] = pwelch(e, [], [], [], Fs);
+
+figure('Name', 'Оценка спектральной плотности', 'NumberTitle', 'off');
+plot(f, pxx);
+xlim([0, 50]); % частоты до 50 Гц
 grid on;
+xlabel('Частота, Гц');
+ylabel('СП, условные ед.');
+title('Оценка спектральной плотности e(t)');
 
-%% Спектральная плотность
+%% === 5. Оценка основных периодов ===
+[~, idx_peaks] = findpeaks(pxx, f, 'SortStr', 'descend');
+main_freqs = idx_peaks(1:3); % 3 наибольших пика
+main_periods = 1 ./ main_freqs;
 
-N = length(e);
-E = fft(e);
-P = abs(E).^2 / N;          
+disp('--- Основные гармоники ---');
+disp(table(main_freqs', main_periods', 'VariableNames', {'Частота (Гц)', 'Период (с)'}));
 
-freq = (0:N-1)/(N*dt);
-
-figure;
-plot(freq(1:N/2), P(1:N/2));
-title('Спектральная плотность остаточного ВР');
-xlabel('Частота'); ylabel('Плотность');
-grid on;
-
-%% Периоды основных волн ВР
-
-[pks, locs] = findpeaks(P(1:N/2), freq(1:N/2));
-
-[pks_sorted, idx] = sort(pks, 'descend');
-dominant_freqs = locs(idx(1:5)); 
-
-periods = 1 ./ dominant_freqs;
-
-disp('Основные частоты:');
-disp(dominant_freqs);
-
-disp('Соответствующие периоды:');
-disp(periods);
+%% === 6. Выводы ===
+% Тренд описывается квадратичным законом (соответствует A и B).
+% Остаточный процесс имеет выраженные периодические компоненты с частотами ~f1 и f2.
+% АКФ показывает затухающую синусоидальную зависимость, что указывает на наличие гармонических составляющих.
+% СП демонстрирует пики на частотах около f1 и f2.

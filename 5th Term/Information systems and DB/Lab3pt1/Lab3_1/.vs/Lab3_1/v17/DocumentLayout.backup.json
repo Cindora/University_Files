@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|c:\\files\\university_files\\5th term\\information systems and db\\lab3pt1\\lab3_1\\rptaudit.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:rptaudit.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|c:\\files\\university_files\\5th term\\information systems and db\\lab3pt1\\lab3_1\\mainframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:mainframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|c:\\files\\university_files\\5th term\\information systems and db\\lab3pt1\\lab3_1\\frmrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:frmrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|c:\\files\\university_files\\5th term\\information systems and db\\lab3pt1\\lab3_1\\frmrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:frmrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\rptaudit.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:rptaudit.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\dsrptaudit.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
       "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:dsrptaudit.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\mainframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:mainframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|c:\\files\\university_files\\5th term\\information systems and db\\lab3pt1\\lab3_1\\frmparamrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:frmparamrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|c:\\files\\university_files\\5th term\\information systems and db\\lab3pt1\\lab3_1\\frmparamrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:frmparamrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
       "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\mainframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:mainframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\mainframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:mainframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\formedclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:formedclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\frmparamrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:frmparamrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\frmparamrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:frmparamrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\frmrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|solutionrelative:frmrpt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D99563A6-A171-445A-A57C-5F4823981C0F}|Lab3_1.csproj|C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\formedclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,19 +78,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RptAudit.rdlc [\u041F\u0440\u043E\u0435\u043A\u0442]",
               "DocumentMoniker": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\RptAudit.rdlc",
               "RelativeDocumentMoniker": "RptAudit.rdlc",
               "ToolTip": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\RptAudit.rdlc [\u041F\u0440\u043E\u0435\u043A\u0442]",
               "RelativeToolTip": "RptAudit.rdlc [\u041F\u0440\u043E\u0435\u043A\u0442]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2025-12-14T16:56:33.106Z",
-              "EditorCaption": " [\u041F\u0440\u043E\u0435\u043A\u0442]"
+              "WhenOpened": "2025-12-14T16:56:33.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "FrmRpt.cs",
               "DocumentMoniker": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\FrmRpt.cs",
               "RelativeDocumentMoniker": "FrmRpt.cs",
@@ -103,20 +102,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainFrame.cs",
               "DocumentMoniker": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\MainFrame.cs",
               "RelativeDocumentMoniker": "MainFrame.cs",
               "ToolTip": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\MainFrame.cs",
               "RelativeToolTip": "MainFrame.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAA7wEAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAkwJIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:39:44.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T16:39:44.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "FrmRpt.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\FrmRpt.cs",
               "RelativeDocumentMoniker": "FrmRpt.cs",
@@ -128,15 +126,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "FrmParamRpt.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\FrmParamRpt.cs",
               "RelativeDocumentMoniker": "FrmParamRpt.cs",
               "ToolTip": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\FrmParamRpt.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "FrmParamRpt.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:19:34.697Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2025-12-14T16:19:34.697Z"
             },
             {
               "$type": "Document",
@@ -146,46 +143,42 @@
               "RelativeDocumentMoniker": "FrmParamRpt.cs",
               "ToolTip": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\FrmParamRpt.cs",
               "RelativeToolTip": "FrmParamRpt.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:30:19.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T16:30:19.04Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "FormEdClass.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\FormEdClass.cs",
               "RelativeDocumentMoniker": "FormEdClass.cs",
               "ToolTip": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\FormEdClass.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "FormEdClass.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T17:31:01.335Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2025-12-13T17:31:01.335Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "dsRptAudit.xsd",
               "DocumentMoniker": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\dsRptAudit.xsd",
               "RelativeDocumentMoniker": "dsRptAudit.xsd",
               "ToolTip": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\dsRptAudit.xsd",
               "RelativeToolTip": "dsRptAudit.xsd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-12-13T16:26:23.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T16:26:23.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "DataSet1.xsd",
               "DocumentMoniker": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\DataSet1.xsd",
               "RelativeDocumentMoniker": "DataSet1.xsd",
               "ToolTip": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\DataSet1.xsd",
               "RelativeToolTip": "DataSet1.xsd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-12-10T08:45:18.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T08:45:18.333Z"
             },
             {
               "$type": "Document",
@@ -208,8 +201,7 @@
               "RelativeToolTip": "FormEdClass.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T12:41:18.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T12:41:18.157Z"
             },
             {
               "$type": "Document",
@@ -220,8 +212,7 @@
               "ToolTip": "C:\\Files\\University_Files\\5th Term\\Information systems and DB\\Lab3pt1\\Lab3_1\\MainFrame.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "MainFrame.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T12:31:39.203Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2025-12-09T12:31:39.203Z"
             },
             {
               "$type": "Document",
