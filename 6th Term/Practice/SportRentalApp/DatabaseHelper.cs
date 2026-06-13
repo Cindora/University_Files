@@ -6,7 +6,7 @@ namespace SportRentalApp
     public static class DatabaseHelper
     {
         // Строка подключения (измените под свой пароль, порт, имя БД)
-        private static string connectionString = "Host=localhost;Port=5432;Database=sport_rental;Username=postgres;Password=12345";
+        public static string connectionString = "Host=localhost;Port=5432;Database=sport_rental;Username=admin;Password=admin";
 
         public static DataTable ExecuteQuery(string query, params NpgsqlParameter[] parameters)
         {
@@ -40,7 +40,5 @@ namespace SportRentalApp
                 }
             }
         }
-
-        // Для транзакций (выдача и возврат) можно реализовать отдельный метод с использованием NpgsqlTransaction
     }
 }
