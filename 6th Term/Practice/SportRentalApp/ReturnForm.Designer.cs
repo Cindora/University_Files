@@ -42,8 +42,9 @@
             this.cmbContract.FormattingEnabled = true;
             this.cmbContract.Location = new System.Drawing.Point(15, 12);
             this.cmbContract.Name = "cmbContract";
-            this.cmbContract.Size = new System.Drawing.Size(121, 24);
+            this.cmbContract.Size = new System.Drawing.Size(467, 24);
             this.cmbContract.TabIndex = 0;
+            this.cmbContract.SelectedIndexChanged += new System.EventHandler(this.CmbContract_SelectedIndexChanged);
             // 
             // dgvContractItems
             // 
@@ -54,7 +55,7 @@
             this.dgvContractItems.RowHeadersWidth = 51;
             this.dgvContractItems.RowTemplate.Height = 24;
             this.dgvContractItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvContractItems.Size = new System.Drawing.Size(240, 150);
+            this.dgvContractItems.Size = new System.Drawing.Size(765, 150);
             this.dgvContractItems.TabIndex = 1;
             // 
             // lblTotalCost
@@ -74,6 +75,7 @@
             this.btnCalculate.TabIndex = 3;
             this.btnCalculate.Text = "Рассчитать стоимость";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
             // 
             // btnReturn
             // 
@@ -83,6 +85,7 @@
             this.btnReturn.TabIndex = 4;
             this.btnReturn.Text = "Оформить возврат";
             this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.BtnReturn_Click);
             // 
             // btnCancel
             // 
@@ -105,7 +108,7 @@
             this.Controls.Add(this.dgvContractItems);
             this.Controls.Add(this.cmbContract);
             this.Name = "ReturnForm";
-            this.Text = "ReturnForm";
+            this.Text = "Возврат инвентаря";
             ((System.ComponentModel.ISupportInitialize)(this.dgvContractItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

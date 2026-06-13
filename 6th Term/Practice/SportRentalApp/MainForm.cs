@@ -17,19 +17,16 @@ namespace SportRentalApp
         public MainForm()
         {
             InitializeComponent();
-        }
-
-
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
+            LoadClients();              // загрузка клиентов (если есть DataGridView для клиентов)
+            LoadInventory();   // загрузка доступного инвентаря
+            txtClientSearch.TextChanged += TxtClientSearch_TextChanged;
 
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            LoadClients();
-        }
+        //private void MainForm_Load(object sender, EventArgs e)
+        //{
+        //    LoadClients();
+        //}
 
         private void LoadClients()
         {
@@ -37,6 +34,28 @@ namespace SportRentalApp
             DataTable dt = DatabaseHelper.ExecuteQuery(query);
             dgvClients.DataSource = dt;
             dgvClients.Columns["id"].Visible = false; // скрываем ID
+            // Настройка заголовков
+            dgvClients.Columns["last_name"].HeaderText = "Фамилия";
+            dgvClients.Columns["first_name"].HeaderText = "Имя";
+            dgvClients.Columns["middle_name"].HeaderText = "Отчество";
+            dgvClients.Columns["phone"].HeaderText = "Телефон";
+            dgvClients.Columns["passport_data"].HeaderText = "Номер паспорта";
+        }
+
+        private void LoadInventory()
+        {
+            string query = @"SELECT i.id, i.name, i.characteristics, i.price_per_hour, i.deposit_amount
+                             FROM Inventory i
+                             WHERE i.status = 'available'";
+            DataTable dt = DatabaseHelper.ExecuteQuery(query);
+            dgvInventory.DataSource = dt;
+            if (dgvInventory.Columns["id"] != null)
+                dgvInventory.Columns["id"].Visible = false;
+            // Настройка заголовков
+            dgvInventory.Columns["name"].HeaderText = "Наименование";
+            dgvInventory.Columns["characteristics"].HeaderText = "Характеристики";
+            dgvInventory.Columns["price_per_hour"].HeaderText = "Цена/час";
+            dgvInventory.Columns["deposit_amount"].HeaderText = "Залог";
         }
 
         private void btnAddClient_Click(object sender, EventArgs e)
@@ -60,7 +79,7 @@ namespace SportRentalApp
 
         private void btnShowAvailable_Click(object sender, EventArgs e)
         {
-            string selectedType = cmbEquipmentType.SelectedItem.ToString(); // "лыжи" или "велосипеды"
+            string selectedType = cmbEquipmentType.SelectedItem.ToString(); // "лыжи" или "велосипед"
             string query = @"SELECT i.id, i.name, i.characteristics, i.price_per_hour, i.deposit_amount
                      FROM Inventory i
                      JOIN EquipmentType et ON i.equipment_type_id = et.id
@@ -77,9 +96,8 @@ namespace SportRentalApp
             {
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    // Обновить таблицы, если нужно
-                    // LoadAvailableInventory();   // обновить доступный инвентарь
-                    // LoadActiveContracts();      // если есть такой метод
+                    // Обновить таблицы
+                    LoadInventory();
                 }
             }
         }
@@ -107,6 +125,40 @@ namespace SportRentalApp
                      WHERE rc.status = 'open' AND rc.planned_return_timestamp < NOW()";
             DataTable dt = DatabaseHelper.ExecuteQuery(query);
             // показать в отдельной DataGridView
+        }
+
+        private void btnRent_Click(object sender, EventArgs e)
+        {
+            using (var form = new RentForm())
+            {
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    // После успешной выдачи обновляем таблицы, если нужно
+                    LoadInventory(); // обновить список доступного инвентаря
+                }
+            }
+        }
+
+        private void TxtClientSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = txtClientSearch.Text.Trim();
+            if (string.IsNullOrEmpty(searchText))
+            {
+                // Если строка поиска пуста, загружаем всех клиентов
+                LoadClients();
+            }
+            else
+            {
+                // Ищем по телефону или паспорту (частичное совпадение)
+                string query = @"SELECT id, last_name, first_name, middle_name, phone, passport_data 
+                         FROM Client 
+                         WHERE phone LIKE @search OR passport_data LIKE @search";
+                var param = new NpgsqlParameter("search", "%" + searchText + "%");
+                DataTable dt = DatabaseHelper.ExecuteQuery(query, param);
+                dgvClients.DataSource = dt;
+                if (dgvClients.Columns["id"] != null)
+                    dgvClients.Columns["id"].Visible = false;
+            }
         }
     }
 }

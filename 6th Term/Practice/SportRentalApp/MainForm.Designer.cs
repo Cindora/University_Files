@@ -57,27 +57,26 @@
             this.groupBox1.Controls.Add(this.dgvClients);
             this.groupBox1.Controls.Add(this.btnAddClient);
             this.groupBox1.Controls.Add(this.txtClientSearch);
-            this.groupBox1.Location = new System.Drawing.Point(64, 46);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(629, 346);
+            this.groupBox1.Size = new System.Drawing.Size(859, 324);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Клиенты";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // dgvClients
             // 
             this.dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClients.Location = new System.Drawing.Point(25, 145);
+            this.dgvClients.Location = new System.Drawing.Point(25, 82);
             this.dgvClients.Name = "dgvClients";
             this.dgvClients.RowHeadersWidth = 51;
             this.dgvClients.RowTemplate.Height = 24;
-            this.dgvClients.Size = new System.Drawing.Size(598, 195);
+            this.dgvClients.Size = new System.Drawing.Size(816, 227);
             this.dgvClients.TabIndex = 2;
             // 
             // btnAddClient
             // 
-            this.btnAddClient.Location = new System.Drawing.Point(25, 76);
+            this.btnAddClient.Location = new System.Drawing.Point(25, 34);
             this.btnAddClient.Name = "btnAddClient";
             this.btnAddClient.Size = new System.Drawing.Size(222, 36);
             this.btnAddClient.TabIndex = 1;
@@ -87,7 +86,7 @@
             // 
             // txtClientSearch
             // 
-            this.txtClientSearch.Location = new System.Drawing.Point(25, 34);
+            this.txtClientSearch.Location = new System.Drawing.Point(575, 41);
             this.txtClientSearch.Name = "txtClientSearch";
             this.txtClientSearch.Size = new System.Drawing.Size(222, 22);
             this.txtClientSearch.TabIndex = 0;
@@ -98,9 +97,9 @@
             this.groupBox2.Controls.Add(this.dgvInventory);
             this.groupBox2.Controls.Add(this.btnShowAvailable);
             this.groupBox2.Controls.Add(this.cmbEquipmentType);
-            this.groupBox2.Location = new System.Drawing.Point(64, 419);
+            this.groupBox2.Location = new System.Drawing.Point(12, 342);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(629, 303);
+            this.groupBox2.Size = new System.Drawing.Size(683, 303);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Инвентарь";
@@ -108,16 +107,16 @@
             // dgvInventory
             // 
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInventory.Location = new System.Drawing.Point(19, 145);
+            this.dgvInventory.Location = new System.Drawing.Point(19, 80);
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.RowHeadersWidth = 51;
             this.dgvInventory.RowTemplate.Height = 24;
-            this.dgvInventory.Size = new System.Drawing.Size(604, 150);
+            this.dgvInventory.Size = new System.Drawing.Size(658, 204);
             this.dgvInventory.TabIndex = 2;
             // 
             // btnShowAvailable
             // 
-            this.btnShowAvailable.Location = new System.Drawing.Point(19, 76);
+            this.btnShowAvailable.Location = new System.Drawing.Point(177, 24);
             this.btnShowAvailable.Name = "btnShowAvailable";
             this.btnShowAvailable.Size = new System.Drawing.Size(233, 36);
             this.btnShowAvailable.TabIndex = 1;
@@ -130,7 +129,7 @@
             this.cmbEquipmentType.FormattingEnabled = true;
             this.cmbEquipmentType.Items.AddRange(new object[] {
             "лыжи",
-            "велосипеды"});
+            "велосипед"});
             this.cmbEquipmentType.Location = new System.Drawing.Point(19, 31);
             this.cmbEquipmentType.Name = "cmbEquipmentType";
             this.cmbEquipmentType.Size = new System.Drawing.Size(121, 24);
@@ -141,16 +140,16 @@
             // 
             this.groupBox3.Controls.Add(this.btnReturn);
             this.groupBox3.Controls.Add(this.btnRent);
-            this.groupBox3.Location = new System.Drawing.Point(725, 57);
+            this.groupBox3.Location = new System.Drawing.Point(12, 666);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(245, 125);
+            this.groupBox3.Size = new System.Drawing.Size(360, 86);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Операции";
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(19, 76);
+            this.btnReturn.Location = new System.Drawing.Point(177, 21);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(153, 43);
             this.btnReturn.TabIndex = 1;
@@ -166,6 +165,7 @@
             this.btnRent.TabIndex = 0;
             this.btnRent.Text = "Выдать";
             this.btnRent.UseVisualStyleBackColor = true;
+            this.btnRent.Click += new System.EventHandler(this.btnRent_Click);
             // 
             // groupBox4
             // 
@@ -173,18 +173,18 @@
             this.groupBox4.Controls.Add(this.btnRevenueReport);
             this.groupBox4.Controls.Add(this.dtpEnd);
             this.groupBox4.Controls.Add(this.dtpStart);
-            this.groupBox4.Location = new System.Drawing.Point(725, 419);
+            this.groupBox4.Location = new System.Drawing.Point(444, 663);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(245, 191);
+            this.groupBox4.Size = new System.Drawing.Size(245, 204);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Отчёты";
             // 
             // btnOverdueReport
             // 
-            this.btnOverdueReport.Location = new System.Drawing.Point(19, 148);
+            this.btnOverdueReport.Location = new System.Drawing.Point(19, 161);
             this.btnOverdueReport.Name = "btnOverdueReport";
-            this.btnOverdueReport.Size = new System.Drawing.Size(163, 37);
+            this.btnOverdueReport.Size = new System.Drawing.Size(200, 37);
             this.btnOverdueReport.TabIndex = 3;
             this.btnOverdueReport.Text = "Просроченные";
             this.btnOverdueReport.UseVisualStyleBackColor = true;
@@ -194,7 +194,7 @@
             // 
             this.btnRevenueReport.Location = new System.Drawing.Point(19, 115);
             this.btnRevenueReport.Name = "btnRevenueReport";
-            this.btnRevenueReport.Size = new System.Drawing.Size(163, 26);
+            this.btnRevenueReport.Size = new System.Drawing.Size(200, 36);
             this.btnRevenueReport.TabIndex = 2;
             this.btnRevenueReport.Text = "Выручка";
             this.btnRevenueReport.UseVisualStyleBackColor = true;
@@ -218,14 +218,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 953);
+            this.ClientSize = new System.Drawing.Size(891, 880);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "MainForm";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Text = "Аренда спортивного инвентаря";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).EndInit();

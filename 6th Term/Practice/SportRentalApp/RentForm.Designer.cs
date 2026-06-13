@@ -42,7 +42,7 @@
             this.cmbClient.FormattingEnabled = true;
             this.cmbClient.Location = new System.Drawing.Point(43, 30);
             this.cmbClient.Name = "cmbClient";
-            this.cmbClient.Size = new System.Drawing.Size(121, 24);
+            this.cmbClient.Size = new System.Drawing.Size(348, 24);
             this.cmbClient.TabIndex = 0;
             // 
             // labelAvailableInv
@@ -57,12 +57,13 @@
             // dgvAvailableInventory
             // 
             this.dgvAvailableInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAvailableInventory.Location = new System.Drawing.Point(43, 133);
+            this.dgvAvailableInventory.Location = new System.Drawing.Point(43, 117);
             this.dgvAvailableInventory.Name = "dgvAvailableInventory";
             this.dgvAvailableInventory.RowHeadersWidth = 51;
             this.dgvAvailableInventory.RowTemplate.Height = 24;
-            this.dgvAvailableInventory.Size = new System.Drawing.Size(240, 150);
+            this.dgvAvailableInventory.Size = new System.Drawing.Size(727, 177);
             this.dgvAvailableInventory.TabIndex = 2;
+            this.dgvAvailableInventory.SelectionChanged += new System.EventHandler(this.dgvAvailableInventory_SelectionChanged);
             // 
             // dtpPlannedReturn
             // 
@@ -76,22 +77,24 @@
             // 
             // btnRent
             // 
-            this.btnRent.Location = new System.Drawing.Point(43, 366);
+            this.btnRent.Location = new System.Drawing.Point(43, 353);
             this.btnRent.Name = "btnRent";
-            this.btnRent.Size = new System.Drawing.Size(75, 23);
+            this.btnRent.Size = new System.Drawing.Size(104, 55);
             this.btnRent.TabIndex = 4;
             this.btnRent.Text = "Оформить выдачу";
             this.btnRent.UseVisualStyleBackColor = true;
+            this.btnRent.Click += new System.EventHandler(this.btnRent_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(208, 353);
+            this.btnCancel.Location = new System.Drawing.Point(171, 353);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(112, 55);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Отмена";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // RentForm
             // 
@@ -105,7 +108,7 @@
             this.Controls.Add(this.labelAvailableInv);
             this.Controls.Add(this.cmbClient);
             this.Name = "RentForm";
-            this.Text = "RentForm";
+            this.Text = "Выдача инвентаря";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableInventory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

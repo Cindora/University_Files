@@ -96,21 +96,21 @@ namespace SportRentalApp
                     {
                         // 1. Создать договор
                         string insertContract = @"INSERT INTO RentalContract 
-                                                 (client_id, issue_timestamp, planned_return_timestamp, status) 
-                                                 VALUES (@cid, NOW(), @pr, 'open') RETURNING id";
-                        long contractId;
+                                         (client_id, issue_timestamp, planned_return_timestamp, status) 
+                                         VALUES (@cid, NOW(), @pr, 'open') RETURNING id";
+                        int contractId;  // изменили long на int
                         using (var cmd = new NpgsqlCommand(insertContract, conn, tran))
                         {
                             cmd.Parameters.AddWithValue("cid", clientId);
                             cmd.Parameters.AddWithValue("pr", plannedReturn);
-                            contractId = (long)cmd.ExecuteScalar();
+                            contractId = Convert.ToInt32(cmd.ExecuteScalar()); // безопасное приведение
                         }
 
                         // 2. Для каждого инвентаря – вставить позицию и изменить статус
                         foreach (int invId in inventoryIds)
                         {
                             string insertItem = @"INSERT INTO ContractItem (contract_id, inventory_id, condition_on_issue) 
-                                                  VALUES (@cid, @iid, 'Без замечаний')";
+                                          VALUES (@cid, @iid, 'Без замечаний')";
                             using (var cmd = new NpgsqlCommand(insertItem, conn, tran))
                             {
                                 cmd.Parameters.AddWithValue("cid", contractId);
