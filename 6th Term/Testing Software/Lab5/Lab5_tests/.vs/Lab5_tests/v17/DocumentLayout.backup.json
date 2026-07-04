@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Files\\University_Files\\6th Term\\Testing Software\\Lab5\\Lab5_tests\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{874CB568-967E-4FEC-88F7-52C9226C79AE}|Lab5_tests.csproj|c:\\files\\university_files\\6th term\\testing software\\lab5\\lab5_tests\\mytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{874CB568-967E-4FEC-88F7-52C9226C79AE}|Lab5_tests.csproj|solutionrelative:mytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{874CB568-967E-4FEC-88F7-52C9226C79AE}|Lab5_tests.csproj|c:\\files\\university_files\\6th term\\testing software\\lab5\\lab5_tests\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{874CB568-967E-4FEC-88F7-52C9226C79AE}|Lab5_tests.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Testing Software\\Lab5\\Lab5_tests\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Testing Software\\Lab5\\Lab5_tests\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T13:59:57.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyTests.cs",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Testing Software\\Lab5\\Lab5_tests\\MyTests.cs",
+              "RelativeDocumentMoniker": "MyTests.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Testing Software\\Lab5\\Lab5_tests\\MyTests.cs",
+              "RelativeToolTip": "MyTests.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T14:04:40.304Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

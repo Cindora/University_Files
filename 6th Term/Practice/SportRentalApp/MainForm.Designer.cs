@@ -40,7 +40,6 @@
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnRent = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnOverdueReport = new System.Windows.Forms.Button();
             this.btnRevenueReport = new System.Windows.Forms.Button();
             this.dtpEnd = new System.Windows.Forms.DateTimePicker();
             this.dtpStart = new System.Windows.Forms.DateTimePicker();
@@ -169,26 +168,15 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.btnOverdueReport);
             this.groupBox4.Controls.Add(this.btnRevenueReport);
             this.groupBox4.Controls.Add(this.dtpEnd);
             this.groupBox4.Controls.Add(this.dtpStart);
             this.groupBox4.Location = new System.Drawing.Point(444, 663);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(245, 204);
+            this.groupBox4.Size = new System.Drawing.Size(245, 164);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Отчёты";
-            // 
-            // btnOverdueReport
-            // 
-            this.btnOverdueReport.Location = new System.Drawing.Point(19, 161);
-            this.btnOverdueReport.Name = "btnOverdueReport";
-            this.btnOverdueReport.Size = new System.Drawing.Size(200, 37);
-            this.btnOverdueReport.TabIndex = 3;
-            this.btnOverdueReport.Text = "Просроченные";
-            this.btnOverdueReport.UseVisualStyleBackColor = true;
-            this.btnOverdueReport.Click += new System.EventHandler(this.btnOverdueReport_Click);
             // 
             // btnRevenueReport
             // 
@@ -218,7 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(891, 880);
+            this.ClientSize = new System.Drawing.Size(891, 837);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -250,7 +238,6 @@
         private System.Windows.Forms.Button btnShowAvailable;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnRent;
-        private System.Windows.Forms.Button btnOverdueReport;
         private System.Windows.Forms.Button btnRevenueReport;
         private System.Windows.Forms.DateTimePicker dtpEnd;
         private System.Windows.Forms.DateTimePicker dtpStart;

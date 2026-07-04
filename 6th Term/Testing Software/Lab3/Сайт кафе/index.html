@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Моё Кафе</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, 'Segoe UI', 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #fef8f0;
+      color: #2d2a24;
+    }
+
+    /* Шапка и навигация */
+    .header {
+      background: #fff9f0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #c47b3e;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .nav-links button {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      color: #5a4a3a;
+      transition: 0.2s;
+      padding: 0.4rem 0;
+    }
+
+    .nav-links button:hover,
+    .nav-links button.active {
+      color: #c47b3e;
+      border-bottom: 2px solid #c47b3e;
+    }
+
+    .favorite-icon {
+      position: relative;
+      cursor: pointer;
+      font-size: 1.6rem;
+      background: none;
+      border: none;
+    }
+
+    .favorite-count {
+      position: absolute;
+      top: -8px;
+      right: -12px;
+      background: #e67e22;
+      color: white;
+      font-size: 0.7rem;
+      font-weight: bold;
+      border-radius: 50%;
+      padding: 2px 6px;
+      min-width: 20px;
+      text-align: center;
+    }
+
+    /* Основной контейнер */
+    .page {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .page-section {
+      display: none;
+      animation: fade 0.3s ease;
+    }
+
+    .page-section.active-page {
+      display: block;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Карточки блюд */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .menu-card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: 0.2s;
+      position: relative;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-img {
+      width: 100%;
+      height: 160px;
+      background: #e9ddcf;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .menu-info {
+      padding: 1rem;
+    }
+
+    .menu-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .favorite-btn {
+      background: none;
+      border: none;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: #ccc;
+      transition: 0.2s;
+    }
+
+    .favorite-btn.active-fav {
+      color: #e63946;
+    }
+
+    .menu-desc {
+      font-size: 0.85rem;
+      color: #6b5a4a;
+      margin: 0.5rem 0;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #c47b3e;
+      margin-top: 0.5rem;
+    }
+
+    /* фильтры */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-btn {
+      background: #f0e4d4;
+      border: none;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .filter-btn.active-filter {
+      background: #c47b3e;
+      color: white;
+    }
+
+    .veg-check {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-left: 0.5rem;
+    }
+
+    /* форма бронирования */
+    .booking-form {
+      background: white;
+      padding: 2rem;
+      border-radius: 32px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      max-width: 500px;
+      margin: 1rem auto;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #e2d6ca;
+      border-radius: 16px;
+      font-size: 1rem;
+    }
+
+    button.btn {
+      background: #c47b3e;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    .message {
+      margin-top: 1rem;
+      padding: 0.8rem;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .success {
+      background: #e0f2e9;
+      color: #2c6e49;
+    }
+
+    /* контакты, акции */
+    .info-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 28px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #f5ede2;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 720px) {
+      .nav-container {
+        flex-direction: column;
+      }
+      .nav-links {
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="nav-container">
+    <div class="logo">🍽️ Моё Кафе</div>
+    <ul class="nav-links">
+      <li><button data-page="home" class="nav-btn active">Главная</button></li>
+      <li><button data-page="menu" class="nav-btn">Меню</button></li>
+      <li><button data-page="booking" class="nav-btn">Бронирование</button></li>
+      <li><button data-page="offers" class="nav-btn">Акции</button></li>
+      <li><button data-page="contacts" class="nav-btn">Контакты</button></li>
+    </ul>
+    <button class="favorite-icon" id="favoriteIconBtn">
+      ❤️ <span id="favCount" class="favorite-count">0</span>
+    </button>
+  </div>
+</div>
+
+<main class="page">
+  <!-- ГЛАВНАЯ -->
+  <div id="home" class="page-section active-page">
+    <h1>Добро пожаловать!</h1>
+    <p>Уютное кафе с домашней кухней, авторским кофе и тёплой атмосферой.</p>
+    <div style="margin: 2rem 0;">
+      <img src="interior.png" alt="интерьер" style="width:60%; border-radius: 28px;">
+    </div>
+    <div class="info-card">
+      <h3>⭐ Специальное предложение</h3>
+      <p>«Счастливые часы»: с 16:00 до 18:00 кофе и десерты со скидкой 20%!</p>
+    </div>
+    <div class="info-card">
+      <h3>📝 Отзывы гостей</h3>
+      <p>«Лучший сырник в городе!» – Анна<br>«Очень удобно бронировать столик онлайн» – Дмитрий</p>
+    </div>
+  </div>
+
+  <!-- МЕНЮ (динамическое) -->
+  <div id="menu" class="page-section">
+    <h2>Наше меню</h2>
+    <div class="filters">
+      <button data-cat="all" class="filter-btn active-filter">Все</button>
+      <button data-cat="breakfast" class="filter-btn">Завтраки</button>
+      <button data-cat="salad" class="filter-btn">Салаты</button>
+      <button data-cat="hot" class="filter-btn">Горячее</button>
+      <button data-cat="dessert" class="filter-btn">Десерты</button>
+      <button data-cat="drink" class="filter-btn">Напитки</button>
+      <label class="veg-check">
+        <input type="checkbox" id="vegOnly"> Только вегетарианские
+      </label>
+    </div>
+    <div id="menuGrid" class="menu-grid"></div>
+  </div>
+
+  <!-- БРОНИРОВАНИЕ -->
+  <div id="booking" class="page-section">
+    <h2>Забронировать столик</h2>
+    <div class="booking-form">
+      <div class="form-group">
+        <label>Дата</label>
+        <input type="date" id="bookDate" min="2026-06-15" value="2026-06-20">
+      </div>
+      <div class="form-group">
+        <label>Время</label>
+        <select id="bookTime">
+          <option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Количество гостей</label>
+        <input type="number" id="bookGuests" min="1" max="10" value="2">
+      </div>
+      <div class="form-group">
+        <label>Пожелания</label>
+        <textarea id="bookNotes" rows="2" placeholder="Например, столик у окна..."></textarea>
+      </div>
+      <button class="btn" id="submitBooking">Забронировать</button>
+      <div id="bookingMessage"></div>
+    </div>
+  </div>
+
+  <!-- АКЦИИ -->
+  <div id="offers" class="page-section">
+    <h2>Акции и новости</h2>
+    <div class="info-card">
+      <h3>🥗 Комбо-ланч</h3>
+      <p>Салат + суп + горячее = 450₽. Действует по будням до 16:00.</p>
+    </div>
+    <div class="info-card">
+      <h3>🍰 Именинникам</h3>
+      <p>Десерт в подарок при предъявлении паспорта и бронировании от 4 гостей.</p>
+    </div>
+  </div>
+
+  <!-- КОНТАКТЫ -->
+  <div id="contacts" class="page-section">
+    <h2>Контакты</h2>
+    <div class="info-card">
+      <p>📍 Адрес: ул. Центральная, 15, Москва</p>
+      <p>📞 Телефон: +7 (999) 123-45-67</p>
+      <p>⏰ Пн–Вс: 09:00 – 23:00</p>
+      <p>📧 Email: my_cafe@yandex.ru</p>
+      <p>📱 Мы в соцсетях: @my_cafe</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Моё Кафе</p>
+</footer>
+
+<script>
+  // ------ ДАННЫЕ МЕНЮ ------
+  const dishes = [
+    { id: 1, name: "Сырники", category: "breakfast", veg: true, price: 320, desc: "Нежные сырники с вареньем", img: "🥞" },
+    { id: 2, name: "Омлет с грибами", category: "breakfast", veg: true, price: 280, desc: "Пышный омлет + шампиньоны", img: "🍳" },
+    { id: 3, name: "Цезарь с курицей", category: "salad", veg: false, price: 390, desc: "Классический Цезарь", img: "🥗" },
+    { id: 4, name: "Греческий салат", category: "salad", veg: true, price: 340, desc: "Сыр фета, оливки, овощи", img: "🥗" },
+    { id: 5, name: "Стейк из лосося", category: "hot", veg: false, price: 750, desc: "С овощами-гриль", img: "🐟" },
+    { id: 6, name: "Карбонара", category: "hot", veg: false, price: 420, desc: "Паста с беконом и сливочным соусом", img: "🍝" },
+    { id: 7, name: "Чизкейк", category: "dessert", veg: true, price: 250, desc: "Нью-Йорк чизкейк", img: "🍰" },
+    { id: 8, name: "Тирамису", category: "dessert", veg: true, price: 280, desc: "Классический итальянский", img: "🍫" },
+    { id: 9, name: "Капучино", category: "drink", veg: true, price: 180, desc: "Кофе с молоком", img: "☕" },
+    { id: 10, name: "Смузи манго-маракуйя", category: "drink", veg: true, price: 220, desc: "Освежающий", img: "🥭" },
+    { id: 11, name: "Борщ", category: "hot", veg: false, price: 290, desc: "С мясом и сметаной", img: "🍲" },
+    { id: 12, name: "Салат с киноа", category: "salad", veg: true, price: 360, desc: "Суперфуды и фета", img: "🥗" }
+  ];
+
+  // Избранное (localStorage)
+  let favorites = JSON.parse(localStorage.getItem('cafeFav')) || [];
+
+  function saveFavorites() {
+    localStorage.setItem('cafeFav', JSON.stringify(favorites));
+    updateFavCounter();
+  }
+
+  function updateFavCounter() {
+    document.getElementById('favCount').innerText = favorites.length;
+  }
+
+  function isFavorite(id) {
+    return favorites.includes(id);
+  }
+
+  function toggleFavorite(id) {
+    if (isFavorite(id)) {
+      favorites = favorites.filter(fid => fid !== id);
+    } else {
+      favorites.push(id);
+    }
+    saveFavorites();
+    renderMenu();      // перерисовываем меню, чтобы обновить сердечки
+  }
+
+  // Фильтрация меню
+  let currentCategory = "all";
+  let vegOnly = false;
+
+  function renderMenu() {
+    const container = document.getElementById('menuGrid');
+    let filtered = dishes.filter(dish => {
+      if (currentCategory !== "all" && dish.category !== currentCategory) return false;
+      if (vegOnly && !dish.veg) return false;
+      return true;
+    });
+    container.innerHTML = filtered.map(dish => `
+      <div class="menu-card">
+        <div class="menu-img">${dish.img}</div>
+        <div class="menu-info">
+          <div class="menu-title">
+            ${dish.name}
+            <button class="favorite-btn ${isFavorite(dish.id) ? 'active-fav' : ''}" data-id="${dish.id}">❤️</button>
+          </div>
+          <div class="menu-desc">${dish.desc}</div>
+          <div class="price">${dish.price} ₽</div>
+          ${dish.veg ? '<span style="font-size:0.7rem; background:#d9e6cf; padding:2px 8px; border-radius:20px;">🌱 Вегетарианское</span>' : ''}
+        </div>
+      </div>
+    `);
+    // Навешиваем события на кнопки сердечек после перерисовки
+    document.querySelectorAll('.favorite-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const id = parseInt(btn.dataset.id);
+        toggleFavorite(id);
+      });
+    });
+  }
+
+  // Обработчики фильтров
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active-filter'));
+      btn.classList.add('active-filter');
+      currentCategory = btn.dataset.cat;
+      renderMenu();
+    });
+  });
+  document.getElementById('vegOnly').addEventListener('change', (e) => {
+    vegOnly = e.target.checked;
+    renderMenu();
+  });
+
+  // Бронирование
+  const submitBtn = document.getElementById('submitBooking');
+  const messageDiv = document.getElementById('bookingMessage');
+  submitBtn.addEventListener('click', () => {
+    const date = document.getElementById('bookDate').value;
+    const time = document.getElementById('bookTime').value;
+    const guests = document.getElementById('bookGuests').value;
+    const notes = document.getElementById('bookNotes').value;
+    if (!date || !guests || guests < 1) {
+      messageDiv.innerHTML = '<div class="message" style="background:#ffe0b5;">Пожалуйста, заполните все поля корректно</div>';
+      return;
+    }
+    // Имитация отправки
+    console.log(`Бронь: ${date} ${time}, гостей: ${guests}, пожелания: ${notes}`);
+    messageDiv.innerHTML = '<div class="message success">✅ Столик успешно забронирован! Подтверждение отправлено на ваш контакт.</div>';
+    // Очистка полей (опционально)
+    document.getElementById('bookNotes').value = '';
+    setTimeout(() => {
+      messageDiv.innerHTML = '';
+    }, 4000);
+  });
+
+  // Навигация между страницами
+  const sections = document.querySelectorAll('.page-section');
+  const navBtns = document.querySelectorAll('.nav-btn');
+  function showPage(pageId) {
+    sections.forEach(section => section.classList.remove('active-page'));
+    document.getElementById(pageId).classList.add('active-page');
+    navBtns.forEach(btn => {
+      if(btn.dataset.page === pageId) btn.classList.add('active');
+      else btn.classList.remove('active');
+    });
+    // Если открыто меню, перерисуем фильтры (для обновления)
+    if(pageId === 'menu') renderMenu();
+  }
+  navBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      showPage(btn.dataset.page);
+    });
+  });
+
+  // кнопка избранное (иконка в шапке) – переход на меню
+  document.getElementById('favoriteIconBtn').addEventListener('click', () => {
+    showPage('menu');
+  });
+
+  // Инициализация
+  updateFavCounter();
+  renderMenu();
+  // Установка минимальной даты для календаря (сегодня)
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('bookDate').setAttribute('min', today);
+</script>
+</body>
+</html>

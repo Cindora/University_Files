@@ -71,8 +71,26 @@ namespace SportRentalApp
                     var p3 = new NpgsqlParameter("mn", form.MiddleName ?? (object)DBNull.Value);
                     var p4 = new NpgsqlParameter("ph", form.Phone);
                     var p5 = new NpgsqlParameter("pass", form.Passport);
-                    DatabaseHelper.ExecuteNonQuery(query, p1, p2, p3, p4, p5);
-                    LoadClients(); // обновить DataGridView с клиентами
+                    try
+                    {
+                        DatabaseHelper.ExecuteNonQuery(query, p1, p2, p3, p4, p5);
+                        LoadClients();
+                        MessageBox.Show("Клиент успешно добавлен.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (PostgresException ex) when (ex.SqlState == "23505")
+                    {
+                        // Код 23505 – нарушение уникальности (дубликат паспорта)
+                        MessageBox.Show("Клиент с таким номером паспорта уже существует. Добавление отклонено.",
+                                        "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    catch (PostgresException ex)
+                    {
+                        MessageBox.Show($"Ошибка базы данных: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Произошла ошибка: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }

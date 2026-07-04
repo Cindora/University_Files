@@ -1,0 +1,234 @@
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+495  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+544  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+544  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+591  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+1134 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+494  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+563  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+563  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+611  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+400  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+456  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+456  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+491  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+22015 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+465  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+545  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+546  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+609  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+22447 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+86027 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+154960 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+154962 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+154963 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+154963 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+235868 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+325354 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+364343 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+364344 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+364345 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+468262 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+473744 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+473747 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+473749 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+473751 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+473751 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+506881 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+509561 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setTopLeftCorner
+509561 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setTopLeftCorner
+509562 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+510834 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+510834 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+510835 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+510836 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+510836 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+587374 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+587374 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+699746 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+718119 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+718119 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+769303 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+769304 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+769305 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+779623 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+958538 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+985116 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+1002374 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+1002375 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+1002376 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+1116069 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+1120612 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+1128665 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+1280658 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+1282391 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+1285289 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+1286810 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+1307472 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+2236547 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+2310995 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+2327792 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+2333759 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+2380008 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+2403589 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10387931 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10395356 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10397588 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10408098 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10410373 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10412379 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10416873 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10419294 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10425826 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10443183 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+10515035 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@b365a1]
+11887389 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+11958408 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+11958408 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+893  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+998  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+999  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+1085 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+24457 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+249396 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+320295 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+320295 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+320296 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+320303 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE prod.Size (
+                Size VARCHAR(15) NOT NULL,
+                CONSTRAINT size_pk PRIMARY KEY (Size)
+)
+320304 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE SEQUENCE prod.inventory_book_inventory_id_seq
+320311 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE prod.Inventory_book (
+                Inventory_ID INTEGER NOT NULL DEFAULT nextval('prod.inventory_book_inventory_id_seq'),
+                Inventory_date DATE NOT NULL,
+                Akt_number INTEGER NOT NULL,
+                Actual_balance INTEGER DEFAULT 0 NOT NULL,
+                CONSTRAINT inventory_book_pk PRIMARY KEY (Inventory_ID)
+)
+320312 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+ALTER SEQUENCE prod.inventory_book_inventory_id_seq OWNED BY prod.Inventory_book.Inventory_ID
+320314 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE prod.Group_prod (
+                Group_code INTEGER NOT NULL,
+                Group_name VARCHAR(20) NOT NULL,
+                CONSTRAINT group_prod_pk PRIMARY KEY (Group_code)
+)
+320315 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE prod.Prod (
+                Article INTEGER NOT NULL,
+                Name VARCHAR NOT NULL,
+                Unit VARCHAR(15) DEFAULT mm NOT NULL,
+                Group_code INTEGER NOT NULL,
+                Size VARCHAR(15) NOT NULL,
+                CONSTRAINT prod_pk PRIMARY KEY (Article)
+)
+320316 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE SEQUENCE prod.assortment_assortment_id_seq
+320318 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE prod.Assortment (
+                Assortment_ID INTEGER NOT NULL DEFAULT nextval('prod.assortment_assortment_id_seq'),
+                Inventory_ID INTEGER NOT NULL,
+                Sort VARCHAR(20) NOT NULL,
+                Actual_quantity INTEGER NOT NULL,
+                Size VARCHAR(15) NOT NULL,
+                Article INTEGER NOT NULL,
+                CONSTRAINT assortment_pk PRIMARY KEY (Assortment_ID)
+)
+320322 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+ALTER SEQUENCE prod.assortment_assortment_id_seq OWNED BY prod.Assortment.Assortment_ID
+320322 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE SEQUENCE prod.book_leftovers_leftover_id_seq
+320324 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE prod.Book_leftovers (
+                Leftover_ID INTEGER NOT NULL DEFAULT nextval('prod.book_leftovers_leftover_id_seq'),
+                Sort VARCHAR(20) NOT NULL,
+                Quantity_balances INTEGER NOT NULL,
+                Size VARCHAR(15) NOT NULL,
+                Room_code INTEGER NOT NULL,
+                CONSTRAINT book_leftovers_pk PRIMARY KEY (Leftover_ID)
+)
+320324 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+ALTER SEQUENCE prod.book_leftovers_leftover_id_seq OWNED BY prod.Book_leftovers.Leftover_ID
+320325 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE prod.Assortment ADD CONSTRAINT size_assortment_fk
+FOREIGN KEY (Size)
+REFERENCES prod.Size (Size)
+ON DELETE RESTRICT
+ON UPDATE RESTRICT
+NOT DEFERRABLE
+320327 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE prod.Book_leftovers ADD CONSTRAINT size_book_leftovers_fk
+FOREIGN KEY (Size)
+REFERENCES prod.Size (Size)
+ON DELETE RESTRICT
+ON UPDATE RESTRICT
+NOT DEFERRABLE
+320328 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE prod.Prod ADD CONSTRAINT size_prod_fk
+FOREIGN KEY (Size)
+REFERENCES prod.Size (Size)
+ON DELETE RESTRICT
+ON UPDATE RESTRICT
+NOT DEFERRABLE
+320329 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE prod.Assortment ADD CONSTRAINT inventory_book_assortment_fk
+FOREIGN KEY (Inventory_ID)
+REFERENCES prod.Inventory_book (Inventory_ID)
+ON DELETE RESTRICT
+ON UPDATE RESTRICT
+NOT DEFERRABLE
+320330 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE prod.Prod ADD CONSTRAINT group_code_prod_fk
+FOREIGN KEY (Group_code)
+REFERENCES prod.Group_prod (Group_code)
+ON DELETE RESTRICT
+ON UPDATE RESTRICT
+NOT DEFERRABLE
+320331 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE prod.Book_leftovers ADD CONSTRAINT prod_book_leftovers_fk
+FOREIGN KEY (Room_code)
+REFERENCES prod.Prod (Article)
+ON DELETE RESTRICT
+ON UPDATE RESTRICT
+NOT DEFERRABLE
+320333 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE prod.Assortment ADD CONSTRAINT prod_assortment_fk
+FOREIGN KEY (Article)
+REFERENCES prod.Prod (Article)
+ON DELETE RESTRICT
+ON UPDATE RESTRICT
+NOT DEFERRABLE
+320338 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :19
+336133 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - SQL_FILE_FILTER:Файлы сценариев SQL :[sql, ddl]

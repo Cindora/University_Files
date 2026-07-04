@@ -1,0 +1,12 @@
+COPY prod.size TO 'c:/data_out/size.csv' CSV 
+    DELIMITER ';' HEADER ENCODING 'WIN1251';
+COPY prod.group_prod TO 'c:/data_out/group_prod.csv' CSV 
+    DELIMITER ';' HEADER ENCODING 'WIN1251';
+COPY prod.inventory_book TO 'c:/data_out/inventory_book.csv' CSV 
+    DELIMITER ';' HEADER ENCODING 'WIN1251';
+COPY prod.prod TO 'c:/data_out/prod.csv' CSV 
+    DELIMITER ';' HEADER ENCODING 'WIN1251';
+COPY prod.assortment TO 'c:/data_out/assortment.csv' CSV 
+    DELIMITER ';' HEADER ENCODING 'WIN1251';
+COPY prod.book_leftovers TO 'c:/data_out/book_leftovers.csv' CSV 
+    DELIMITER ';' HEADER ENCODING 'WIN1251';
