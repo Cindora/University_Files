@@ -1,0 +1,232 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\rentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:rentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\returnform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:returnform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\addclientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:addclientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\rentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:rentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\rentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:rentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|c:\\files\\university_files\\6th term\\practice\\sportrentalapp\\addclientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A986034-B462-4C09-8ECE-7D38D584F9C1}|SportRentalApp.csproj|solutionrelative:addclientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReturnForm.Designer.cs",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\ReturnForm.Designer.cs",
+              "RelativeDocumentMoniker": "ReturnForm.Designer.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\ReturnForm.Designer.cs",
+              "RelativeToolTip": "ReturnForm.Designer.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwE0AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T12:41:44.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "MainForm.Designer.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\MainForm.Designer.cs",
+              "RelativeToolTip": "MainForm.Designer.cs",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAUwNcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T11:21:37.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RentForm.Designer.cs",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\RentForm.Designer.cs",
+              "RelativeDocumentMoniker": "RentForm.Designer.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\RentForm.Designer.cs",
+              "RelativeToolTip": "RentForm.Designer.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAYwFQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T11:15:59.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReturnForm.cs",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\ReturnForm.cs",
+              "RelativeDocumentMoniker": "ReturnForm.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\ReturnForm.cs",
+              "RelativeToolTip": "ReturnForm.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwIYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T09:19:21.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReturnForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\ReturnForm.cs",
+              "RelativeDocumentMoniker": "ReturnForm.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\ReturnForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "ReturnForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T09:16:14.898Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RentForm.cs",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\RentForm.cs",
+              "RelativeDocumentMoniker": "RentForm.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\RentForm.cs",
+              "RelativeToolTip": "RentForm.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAApwDQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T09:10:32.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\RentForm.cs",
+              "RelativeDocumentMoniker": "RentForm.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\RentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "RentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T09:06:08.604Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddClientForm.cs",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\AddClientForm.cs",
+              "RelativeDocumentMoniker": "AddClientForm.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\AddClientForm.cs",
+              "RelativeToolTip": "AddClientForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T09:04:18.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddClientForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\AddClientForm.cs",
+              "RelativeDocumentMoniker": "AddClientForm.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\AddClientForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "AddClientForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:54:47.415Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAADwv18AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:41:54.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "DatabaseHelper.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\DatabaseHelper.cs",
+              "RelativeToolTip": "DatabaseHelper.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIAwwCYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:33:41.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Files\\University_Files\\6th Term\\Practice\\SportRentalApp\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:31:43.327Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
